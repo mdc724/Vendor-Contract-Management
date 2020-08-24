@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>//Created by - Udaya Sadhineni&#13;
+//Created on - 06 Feb 2019&#13;
+//Purpose - To set the value of a 'Project' and 'Assignment' if there is only one Project Task record.</description>
+        <field>invoice_amount</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OnLoad Set Project &amp; Assignment Values</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	var name;
+	var venName = g_form.getReference('invoice', getName);
+	
+	function getName(venName){
+		name = venName.vendor_company_name;
+		
+		var ga = new GlideAjax('ScriptIncludeClientCallableUtils');
+		ga.addParam('sysparm_name','returnProjectTasks');
+		ga.addParam('name',name);
+		ga.getXML(setUserValues);
+	}
+}
+
+function setUserValues(response) {
+	var answer = response.responseXML.documentElement.getAttribute("answer");
+	var number = answer.split(',');
+	if(number.length == 2){
+		g_form.setValue('project', number[1]);
+		assignment();
+	}
+}
+
+function assignment(){
+	
+	var number;
+	var proNo = g_form.getReference('project', venName);
+	
+	function venName(proNo){
+		number = proNo.project_lvl2_number;
+		
+		var gaAssign = new GlideAjax('ScriptIncludeClientCallableUtils');
+		gaAssign.addParam('sysparm_name','returnAssignments');
+		gaAssign.addParam('number',number);
+		gaAssign.getXML(setValues);
+	}
+}
+
+function setValues(response) {
+	var answer = response.responseXML.documentElement.getAttribute("answer");
+	var name = answer.split(',');
+	if(name.length == 2){
+		g_form.setValue('assignment', name[1]);
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-06 07:43:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>36687e80db6feb00ccd6f2f5ab96191e</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>OnLoad Set Project &amp; Assignment Values</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_script_client_36687e80db6feb00ccd6f2f5ab96191e</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-06 08:54:08</sys_updated_on>
+        <table>x_icir_vcm_invoice_per_task</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

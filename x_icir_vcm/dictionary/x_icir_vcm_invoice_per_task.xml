@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Invoice Project Task" max_length="40" name="x_icir_vcm_invoice_per_task" sizeclass="36" type="collection">
+        <element label="Assignment" max_length="32" name="assignment" reference="x_icir_vcm_vendor_l3_project" reference_qual="javascript:new ScriptIncludeServerSideUtils().returnProjectIds()" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Invoice" max_length="32" name="invoice" read_only="true" reference="x_icir_vcm_invoices" type="reference"/>
+        <element attributes="omit_sys_original=true" display="true" label="Amount" mandatory="true" max_length="20" name="invoice_amount" type="currency"/>
+        <element label="Project" mandatory="true" max_length="32" name="project" reference="x_icir_vcm_task" reference_qual="javascript:new ScriptIncludeServerSideUtils().returnProjects()" type="reference" use_reference_qualifier="advanced"/>
+        <element attributes="edge_encryption_enabled=true" label="Project-Lvl2-Name" max_length="40" name="project_lvl2_name" read_only="true" type="string"/>
+        <index name="index">
+            <element name="assignment"/>
+        </index>
+        <index name="index2">
+            <element name="project"/>
+        </index>
+        <index name="index3">
+            <element name="invoice"/>
+        </index>
+    </element>
+</database>

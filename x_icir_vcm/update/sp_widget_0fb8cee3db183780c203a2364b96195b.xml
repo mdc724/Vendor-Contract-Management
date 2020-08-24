@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.vcm-portal-tasks-widget__heading {
+  border-bottom: 1px solid #ccc;
+  color: $text-muted;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  span {
+  	display: inline-block;
+    width: auto;
+    position: relative;
+    &amp;:after {
+    	content: '';
+      display: block;
+      position: absolute;
+      height: 3px;
+    	bottom: -10px;
+      width: 100%;
+      background: $brand-primary;
+    }
+  }
+}
+
+.vcm-portal-tasks-widget__items {
+	list-style: none;
+  padding: 0;
+}
+
+.vcm-portal-tasks-widget__item {
+	p {
+    color: $text-color;
+  }
+  a:hover .panel-heading-shader {
+    opacity: 0.6;
+  }
+  .panel-heading {
+    padding: 20px;
+    position: relative;
+  	min-height: 160px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    &amp;.task-item--submit-invoice {
+    	background-image: url(task-submit-invoice.jpg);
+    }
+    &amp;.task-item--manage-account {
+    	background-image: url(task-manage-account.jpg);
+    }
+    &amp;.task-item--view-invoices {
+    	background-image: url(task-view-invoices.jpg);
+    }
+    .panel-title {
+    	position: absolute;
+      bottom: 30px;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+      z-index: 2;
+    }
+    .panel-heading-shader {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: #000;
+      opacity: 0.4;
+    	transition: opacity .25s ease, background .25s ease;
+      z-index: 1;
+    }
+  }
+  .panel-body {
+  	padding: 20px;
+    p {
+    	font-size:16px;
+      margin-bottom: 15px;
+    }
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>vcm_portal_tasks</id>
+        <internal>false</internal>
+        <link/>
+        <name>VCM Portal Tasks</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	
+// 	data.vendorId = '';
+// 	var vendor = new GlideRecord('x_icir_vcm_vendor');
+// 	vendor.addQuery('primary_user', data.currUser);
+// 	vendor.query();
+// 	if(vendor.next()){
+// 		data.vendorId = vendor.sys_id.toString();
+// 	}
+	
+	//
+	data.currUser = gs.getUserID();	
+	var contact = new GlideRecord('x_icir_vcm_contacts');
+	contact.addQuery('contact', data.currUser);
+	contact.query();
+	if(contact.next()){		
+		data.vendorId = contact.vendor_id.toString();			
+		var invoice = new GlideRecord('x_icir_vcm_invoices');
+		invoice.addQuery('vendor_company_name', contact.vendor_id.toString());
+		invoice.query();		
+		while(invoice.next())
+			data.invoiceId = invoice.sys_id + ',' + data.invoiceId;		
+	}
+	
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>mac.bleser@glew.io</sys_created_by>
+        <sys_created_on>2019-03-26 07:59:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0fb8cee3db183780c203a2364b96195b</sys_id>
+        <sys_mod_count>52</sys_mod_count>
+        <sys_name>VCM Portal Tasks</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_widget_0fb8cee3db183780c203a2364b96195b</sys_update_name>
+        <sys_updated_by>mac.bleser@glew.io</sys_updated_by>
+        <sys_updated_on>2019-03-26 15:33:41</sys_updated_on>
+        <template><![CDATA[<div class="vcm-portal-tasks-widget">
+  <div class="vcm-portal-tasks-widget__heading"><span>Take Action</span></div>
+  <div class="vcm-portal-tasks-widget__container">
+    <div class="vcm-portal-tasks-widget__content">
+			<ul class="vcm-portal-tasks-widget__items row">
+        <li class="vcm-portal-tasks-widget__item col-xs-12 col-md-4">
+        	<a href="/vcm/?id=vcm_invoice_rec_prod&sys_id=096d4054db6beb00c203a2364b9619d4">
+            <div class="vcm-portal-tasks-widget__item-content panel panel-default">
+            	<div class="panel-heading task-item--submit-invoice">
+                <h3 class="panel-title item-title">Submit an Invoice</h3>
+                <div class="panel-heading-shader"></div>
+              </div>
+              <div class="panel-body">
+                <p class="item-description">Submit your requests for payment</p>
+              	<button type="button" class="item-cta btn btn-primary">Submit Invoice</button>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="vcm-portal-tasks-widget__item col-xs-12 col-md-4">
+        	<a href="/vcm/?id=vcm_vendor_form&table=x_icir_vcm_vendor&sys_id={{data.vendorId}}">
+            <div class="vcm-portal-tasks-widget__item-content panel panel-default">
+            	<div class="panel-heading task-item--manage-account">
+                <h3 class="panel-title item-title">Manage Your Account</h3>
+                <div class="panel-heading-shader"></div>
+              </div>
+              <div class="panel-body">
+                <p class="item-description">Maintain your company information</p>
+             		<button type="button" class="item-cta btn btn-primary">Manage Account</button>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="vcm-portal-tasks-widget__item col-xs-12 col-md-4">
+        	<a href="/vcm?spa=1&table=x_icir_vcm_invoices&id=vcm_invoices_list&filter=sys_idIN{{data.invoiceId}}&d=desc&o=number">
+            <div class="vcm-portal-tasks-widget__item-content panel panel-default">
+              <div class="panel-heading task-item--view-invoices">
+                <h3 class="panel-title item-title">View Your Invoices</h3>
+                <div class="panel-heading-shader"></div>
+              </div>
+            	<div class="panel-body">
+                <p class="item-description">View your submitted invoices</p>
+              	<button type="button" class="item-cta btn btn-primary">View Invoices</button>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

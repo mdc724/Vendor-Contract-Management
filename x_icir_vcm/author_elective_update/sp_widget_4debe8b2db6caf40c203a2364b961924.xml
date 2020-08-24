@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <client_script><![CDATA[function($scope) {
+	/* widget controller */
+	var c = this;
+	//alert("InvoiceId:" + c.data.invoiceIds);
+	
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.navbar{&#13;
+  	background-color:#fff;&#13;
+  	border-bottom:2px solid #39b54a;&#13;
+}&#13;
+.navbar ul li{&#13;
+ 		float:left;&#13;
+}&#13;
+.navbar ul li:hover{&#13;
+ 		background:#f0f0f2; &#13;
+}&#13;
+.navbar ul li a{&#13;
+  	color:#202020;&#13;
+}&#13;
+/* On screens that are 992px or less, set the background color to blue */&#13;
+@media screen and (max-width: 100px) {&#13;
+  .navbar ul li{&#13;
+ 		float:none;&#13;
+  	width:100%;&#13;
+}&#13;
+}&#13;
+&#13;
+/* On screens that are 600px or less, set the background color to olive */&#13;
+@media screen and (max-width: 600px) {&#13;
+  .navbar ul li{&#13;
+ 		float:none;&#13;
+  	width:100%;&#13;
+}&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>vcm-nav-bar</id>
+        <internal>false</internal>
+        <link/>
+        <name>VCM Navigation Bar</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	
+	data.currUser = gs.getUserID();
+	data.vendorId ='';
+	var vendor = new GlideRecord('x_icir_vcm_vendor');
+	vendor.addQuery('vendor_nm',gs.getUserID());
+	vendor.query();
+	if(vendor.next()){
+		data.vendorId = vendor.sys_id.toString();
+	}
+	
+	data.invoiceIds = '';
+	var invoice = new GlideRecord('x_icir_vcm_vendor_contract_management');
+	invoice.addQuery('vendor_name.vendor_nm',gs.getUserID());
+	invoice.query();
+	while(invoice.next()){
+		data.invoiceIds = invoice.sys_id.toString() + "," + data.invoiceIds;
+	}
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Nehal.Ranpise@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-18 07:23:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4debe8b2db6caf40c203a2364b961924</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_name>VCM Navigation Bar</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_widget_4debe8b2db6caf40c203a2364b961924</sys_update_name>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-20 07:31:32</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- dropdown-navigation starts here -->
+  <div >
+    <!--<img src="hopsHubstr.jpg" width="85" height="40-->
+  </div>  
+  <div class="navbar navbar-inverse">
+      <div class="container-fluid">
+       
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav"> 
+            
+<li><a href="/vcm?id=vcm_home_page">Home</a></li>     
+<li><a href="/vcm?id=vcm_vendor_form&table=x_icir_vcm_vendor&sys_id={{data.vendorId}}">Manage Profile</a></li>
+<li><a href="vcm/?spa=1&table=x_icir_vcm_vendor_contract_management&id=vcm_invoices&filter=vendor_name={{data.vendorId}}">Invoices</a></li>     
+                      
+	</ul>
+        </div><!-- /.nav-collapse -->
+      </div>
+</div>
+  
+ <!-- dropdown-navigation ends here -->
+</div>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sp_widget_4debe8b2db6caf40c203a2364b961924</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope) {
+	/* widget controller */
+	var c = this;
+	//alert("InvoiceId:" + c.data.invoiceIds);
+	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.navbar{&amp;#13;
+  	background-color:#fff;&amp;#13;
+  	border-bottom:2px solid #39b54a;&amp;#13;
+}&amp;#13;
+.navbar ul li{&amp;#13;
+ 		float:left;&amp;#13;
+}&amp;#13;
+.navbar ul li:hover{&amp;#13;
+ 		background:#f0f0f2; &amp;#13;
+}&amp;#13;
+.navbar ul li a{&amp;#13;
+  	color:#202020;&amp;#13;
+}&amp;#13;
+/* On screens that are 992px or less, set the background color to blue */&amp;#13;
+@media screen and (max-width: 100px) {&amp;#13;
+  .navbar ul li{&amp;#13;
+ 		float:none;&amp;#13;
+  	width:100%;&amp;#13;
+}&amp;#13;
+}&amp;#13;
+&amp;#13;
+/* On screens that are 600px or less, set the background color to olive */&amp;#13;
+@media screen and (max-width: 600px) {&amp;#13;
+  .navbar ul li{&amp;#13;
+ 		float:none;&amp;#13;
+  	width:100%;&amp;#13;
+}&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;vcm-nav-bar&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;VCM Navigation Bar&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	
+	data.currUser = gs.getUserID();
+	data.vendorId ='';
+	var vendor = new GlideRecord('x_icir_vcm_vendor');
+	vendor.addQuery('vendor_nm',gs.getUserID());
+	vendor.query();
+	if(vendor.next()){
+		data.vendorId = vendor.sys_id.toString();
+	}
+	
+	data.invoiceIds = '';
+	var invoice = new GlideRecord('x_icir_vcm_vendor_contract_management');
+	invoice.addQuery('vendor_name.vendor_nm',gs.getUserID());
+	invoice.query();
+	while(invoice.next()){
+		data.invoiceIds = invoice.sys_id.toString() + "," + data.invoiceIds;
+	}
+	
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Nehal.Ranpise@infocenter.io&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-18 07:23:05&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;4debe8b2db6caf40c203a2364b961924&lt;/sys_id&gt;&lt;sys_mod_count&gt;48&lt;/sys_mod_count&gt;&lt;sys_name&gt;VCM Navigation Bar&lt;/sys_name&gt;&lt;sys_package display_value="Vendor Contract Management" source="x_icir_vcm"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Vendor Contract Management"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_4debe8b2db6caf40c203a2364b961924&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Anagha.Kunjeer@infocenter.io&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-20 07:31:32&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+&lt;!-- dropdown-navigation starts here --&gt;
+  &lt;div &gt;
+    &lt;!--&lt;img src="hopsHubstr.jpg" width="85" height="40--&gt;
+  &lt;/div&gt;  
+  &lt;div class="navbar navbar-inverse"&gt;
+      &lt;div class="container-fluid"&gt;
+       
+        &lt;div class="collapse navbar-collapse" id="myNavbar"&gt;
+          &lt;ul class="nav navbar-nav"&gt; 
+            
+&lt;li&gt;&lt;a href="/vcm?id=vcm_home_page"&gt;Home&lt;/a&gt;&lt;/li&gt;     
+&lt;li&gt;&lt;a href="/vcm?id=vcm_vendor_form&amp;table=x_icir_vcm_vendor&amp;sys_id={{data.vendorId}}"&gt;Manage Profile&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="vcm/?spa=1&amp;table=x_icir_vcm_vendor_contract_management&amp;id=vcm_invoices&amp;filter=vendor_name={{data.vendorId}}"&gt;Invoices&lt;/a&gt;&lt;/li&gt;     
+                      
+	&lt;/ul&gt;
+        &lt;/div&gt;&lt;!-- /.nav-collapse --&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+  
+ &lt;!-- dropdown-navigation ends here --&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-196269712</payload_hash>
+        <record_name>VCM Navigation Bar</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-20 07:31:32</sys_created_on>
+        <sys_id>a7118bdbdbe02380c203a2364b9619a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>165f5e41f430000001</sys_recorded_at>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-20 07:31:32</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>6f118bdb38e023805ef0c932dc63a3a8</update_guid>
+        <update_guid_history>6f118bdb38e023805ef0c932dc63a3a8:-196269712,5ac08bdbd7e02380046737c87309adc3:-322582433,d56007dbe3e02380d8f3c8a58e95eba6:-2092001776,b6af76db50e023805c06a6e0e073393c:225292904,459f76db5ae02380571620d353ffe539:-1336394508,405f3a9b7ae0238047a1782e04ae0558:-204495743,e32fba9bfde02380f4261a8409469ddf:901013545,36ee32db97e02380c383ca0cb85d28ff:-1007932628,4dcefe5bb4e02380918065473fd34a0e:-600240895,071eba9be3e02380b7a73e2eb7d3e7da:1550060853,33cdfad394e02380cb0167e75520dbea:-655727697,0b2d321708e023808c2d329b40f1f661:-1922473874,a52c365b4ee02380dae6c8b9a53b4e8b:-1069655302,76f97ed359e02380bcfadf7b27a43fcd:-1395730908,59c8fad30be02380e246eca5db0894e5:-224549734,a98832174de023809a4ee28976678e5a:1999704939,4708b2d359e02380d3a7753822756009:550116392,211732d378e02380b311bff6efafa91a:-197379754,5b3a12dff96023805da1662ac3855f8a:-187337369,a0b7525fd8602380ad925231c2e35e6c:-1573191823,d734870bfcecaf40127ccb7b09959e9e:1847000498,3a8247cb17ecaf4052ae9a9372f77c3d:-412530716,97624b8b3decaf40323a86981ae33fd4:-1166663743,c5810f8bbaecaf405112aa6cc35b6361:811937639,79a0838b87ecaf40ed7f3ad2ec78e76d:1370797000,befa3a0339ecaf4012dff7cc2cadafb0:1401190867,bfcab68755ecaf402d6ba609f664e6ea:1690079361,ce2752c36dacaf40b19647775db7e130:-1930631711,81d65e832facaf406dfb0709d061f571:248299124,0096168397acaf40c9798e14f22b8533:101351060,1684924399acaf4012ff4dfe406e9773:-839853882,cf7412435bacaf40a7ed53d76a6b1ce7:1961572353,13bece0f006caf40c6e355ba39a168fa:-1120344087,56bb4a8bc36caf40f5ecbc51facb5a9e:-1589765026,3e8bc68bef6caf405308608f70a92cc2:1025993780,adba068b166caf40554ef441f2ece139:400828534,83290a4bb86caf40c82f4c031f4d618a:-2038202328,be548a47696caf4064243fa1f6feef18:1166351949,45f081b261acaf40968ac564563a865e:708619610,2f10c532b0acaf40104ea24a319e5894:-46871235,519f3832a4acaf40377acc13d065b70d:-1909504107,866f743284acaf40e6806563649849f6:242926507,7d4f74fe596caf40b0c67fce54727df1:1148267524,771f3032d2acaf400b4a39d5a1417db6:-964756078,26def8fe546caf4028b774120331d3d9:938517837,268e70fe046caf40bc725f74b688c587:-754347093,e1f034b6596caf40a301493281d30ce0:1892322593,444ce8b2446caf4033749cd2a2d42de3:2079377970,cc0ce8b27b6caf400af27a600895e1bc:-90008249</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2018-09-21 09:27:45">873c5df7dba06380c203a2364b961953</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-21 13:27:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>16f2bd92a27f43168f1c4d549a4a7a29</sys_id>
+        <sys_metadata>4debe8b2db6caf40c203a2364b961924</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VCM Navigation Bar</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sp_widget_4debe8b2db6caf40c203a2364b961924</sys_update_name>
+        <sys_update_version display_value="sp_widget_4debe8b2db6caf40c203a2364b961924">a7118bdbdbe02380c203a2364b9619a9</sys_update_version>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-21 13:27:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

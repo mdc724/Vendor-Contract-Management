@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">9205d790dbeb2f00ccd6f2f5ab961909</sp_column>
+        <sp_widget display_value="VCM Invoices SC Catalog Item New">db6508acdb272f00c203a2364b96196c</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 07:57:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>14b54cacdb272f00c203a2364b9619f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_instance_14b54cacdb272f00c203a2364b9619f3</sys_update_name>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 07:57:44</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sp_instance_14b54cacdb272f00c203a2364b9619f3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">9205d790dbeb2f00ccd6f2f5ab961909</sp_column><sp_widget display_value="VCM Invoices SC Catalog Item New">db6508acdb272f00c203a2364b96196c</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by><sys_created_on>2019-02-07 07:57:44</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>14b54cacdb272f00c203a2364b9619f3</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>sp_instance_14b54cacdb272f00c203a2364b9619f3</sys_update_name><sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by><sys_updated_on>2019-02-07 07:57:44</sys_updated_on><title/><url/><widget_parameters/></sp_instance></record_update>]]></payload>
+        <payload_hash>-1657754573</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>640c41f7db17ab00c203a2364b9619cf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 07:57:44</sys_created_on>
+        <sys_id>d0b54cacdb272f00c203a2364b9619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>168c6f66c1f0000001</sys_recorded_at>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 07:57:44</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>d8b54cac95272f0038d604cdab4deaf4</update_guid>
+        <update_guid_history>d8b54cac95272f0038d604cdab4deaf4:-1657754573</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2019-02-07 02:59:11">190680ecdb272f00c203a2364b9619c2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 07:59:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>044cd7ea674d4b54bed15e9df6b983e9</sys_id>
+        <sys_metadata>14b54cacdb272f00c203a2364b9619f3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sp_instance_14b54cacdb272f00c203a2364b9619f3</sys_update_name>
+        <sys_update_version display_value="sp_instance_14b54cacdb272f00c203a2364b9619f3">d0b54cacdb272f00c203a2364b9619f5</sys_update_version>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 07:59:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

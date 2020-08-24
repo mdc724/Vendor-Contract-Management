@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <css_variables>$brand-primary: #9d1535;
+$body-bg: #f1f4f8;
+$state-success-text: #5cb85c;
+$sp-homepage-bg: #fff;
+$sp-navbar-divider-color: #cccccc;
+$text-color: #515153;
+$sp-logo-margin-y: 0px;
+$navbar-inverse-link-hover-color: #9d1535;
+$panel-bg: #fff;
+$brand-success: #5cb85c;
+$navbar-inverse-bg: #ffffff;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+$sp-tagline-color: #717171;
+$navbar-inverse-link-color: #515153;
+$brand-info: #5bc0de;
+$link-color: #9d1535;
+$sp-logo-margin-x: 0px;
+$btn-default-bg: #fff;
+$text-muted: #5e6977;
+</css_variables>
+        <default>false</default>
+        <homepage display_value="vcm_portal_home">b5427ce7dbd03780c203a2364b96197f</homepage>
+        <icon/>
+        <kb_knowledge_base/>
+        <kb_knowledge_page/>
+        <login_page/>
+        <logo>2488fcabdbd03780c203a2364b96197a</logo>
+        <notfound_page/>
+        <quick_start_config/>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu/>
+        <sqanda_knowledge_base/>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>Nehal.Ranpise@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-18 07:18:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>897aac32db6caf40c203a2364b96197b</sys_id>
+        <sys_mod_count>45</sys_mod_count>
+        <sys_name>Vendor Contract Management</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_portal_897aac32db6caf40c203a2364b96197b</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-03-06 11:43:56</sys_updated_on>
+        <theme display_value="VCM Stock Theme">0eb93c2fdbd03780c203a2364b961916</theme>
+        <title>Vendor Contract Management</title>
+        <ts_index_group display_value="portal_index_group">2c3e7d1513c93300e618bfd63244b0d7</ts_index_group>
+        <url_suffix>vcm</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=897aac32db6caf40c203a2364b96197b"/>
+</record_update>

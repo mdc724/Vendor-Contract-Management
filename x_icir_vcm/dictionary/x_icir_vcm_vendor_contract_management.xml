@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element max_length="40" name="x_icir_vcm_vendor_contract_management" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Address 1" mandatory="true" max_length="40" name="address_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Address 2" max_length="40" name="address_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="City" mandatory="true" max_length="40" name="city" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Explanation of rejection" max_length="4000" name="explanation_of_rejection" type="string"/>
+        <element attributes="omit_sys_original=true" label="Invoice Amount assigned to Task:" max_length="20" name="invoice_amount_assigned_to_task" type="currency"/>
+        <element label="Invoice Date" mandatory="true" max_length="40" name="invoice_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Invoice Information" max_length="40" name="invoice_information" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Invoice Number" mandatory="true" max_length="40" name="invoice_number" type="string"/>
+        <element attributes="omit_sys_original=true" label="Invoice Total" mandatory="true" max_length="20" name="invoice_total" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Notes to AP" max_length="4000" name="notes_to_ap" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Notes to PM" max_length="4000" name="notes_to_pm" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Reason for Rejection" max_length="40" name="reason_for_rejection" type="string">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="State" mandatory="true" max_length="40" name="state" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="New" label="Status" max_length="40" name="status" type="string">
+            <choice/>
+        </element>
+        <element label="Vendor Name" mandatory="true" max_length="32" name="vendor_name" reference="x_icir_vcm_vendor" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Vendor Number" mandatory="true" max_length="40" name="vendor_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Zip" mandatory="true" max_length="40" name="zip" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="DELETE">
+        <css/>
+        <draft>false</draft>
+        <id>copy_of_scm_certificate_of_insurance_1</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-10-01 05:17:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a3db4bbedbbc2700c203a2364b9619cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>copy_of_scm_certificate_of_insurance_1</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_page_a3db4bbedbbc2700c203a2364b9619cf</sys_update_name>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-10-01 05:17:14</sys_updated_on>
+        <title>Copy of SCM Certificate Of Insurance (1)</title>
+    </sp_page>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sp_page_a3db4bbedbbc2700c203a2364b9619cf</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><css/><draft>false</draft><id>copy_of_scm_certificate_of_insurance_1</id><internal>false</internal><public>false</public><roles/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by><sys_created_on>2018-10-01 05:17:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>a3db4bbedbbc2700c203a2364b9619cf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>copy_of_scm_certificate_of_insurance_1</sys_name><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>sp_page_a3db4bbedbbc2700c203a2364b9619cf</sys_update_name><sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by><sys_updated_on>2018-10-01 05:17:14</sys_updated_on><title>Copy of SCM Certificate Of Insurance (1)</title></sp_page></record_update>]]></payload>
+        <payload_hash>600881195</payload_hash>
+        <record_name>copy_of_scm_certificate_of_insurance_1</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-10-01 05:17:14</sys_created_on>
+        <sys_id>2bdb4bbedbbc2700c203a2364b9619d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1662e0f1f1b0000001</sys_recorded_at>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-10-01 05:17:14</sys_updated_on>
+        <type>Page</type>
+        <update_guid>23db4bbec5bc2700c18524954627f5d0</update_guid>
+        <update_guid_history>23db4bbec5bc2700c18524954627f5d0:600881195</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2018-10-01 01:17:57">ca0ccbbedbbc2700c203a2364b9619d3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-10-01 05:17:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_page">sp_page</sys_db_object>
+        <sys_id>0b18388de4674030aa3ac6c2d7aae040</sys_id>
+        <sys_metadata>a3db4bbedbbc2700c203a2364b9619cf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>copy_of_scm_certificate_of_insurance_1</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sp_page_a3db4bbedbbc2700c203a2364b9619cf</sys_update_name>
+        <sys_update_version display_value="sp_page_a3db4bbedbbc2700c203a2364b9619cf">2bdb4bbedbbc2700c203a2364b9619d0</sys_update_version>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-10-01 05:17:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

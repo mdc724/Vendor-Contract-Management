@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_icir_vcm.certificate_of_insurance_user</name>
+        <suffix>certificate_of_insurance_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-28 04:45:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ebd7af75dbf0e300ccd6f2f5ab9619ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_icir_vcm.certificate_of_insurance_user</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_user_role_ebd7af75dbf0e300ccd6f2f5ab9619ed</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-28 04:45:40</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sys_user_role_ebd7af75dbf0e300ccd6f2f5ab9619ed</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><encryption_context/><grantable>true</grantable><includes_roles/><name>x_icir_vcm.certificate_of_insurance_user</name><suffix>certificate_of_insurance_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-28 04:45:40</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>ebd7af75dbf0e300ccd6f2f5ab9619ed</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_icir_vcm.certificate_of_insurance_user</sys_name><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>sys_user_role_ebd7af75dbf0e300ccd6f2f5ab9619ed</sys_update_name><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-28 04:45:40</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>-1013380451</payload_hash>
+        <record_name>x_icir_vcm.certificate_of_insurance_user</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-28 04:45:40</sys_created_on>
+        <sys_id>6bd7af75dbf0e300ccd6f2f5ab9619f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1661e7f21da0000001</sys_recorded_at>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-28 04:45:40</sys_updated_on>
+        <type>Role</type>
+        <update_guid>63d7af75fbf0e300f488b2b73adbc3f0</update_guid>
+        <update_guid_history>63d7af75fbf0e300f488b2b73adbc3f0:-1013380451</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2019-03-14 01:10:28">cb0f6be3dbc4bf40ccd6f2f5ab9619c2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-03-14 05:10:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>83c3d8201e034c608888d9e7a96a28a4</sys_id>
+        <sys_metadata>ebd7af75dbf0e300ccd6f2f5ab9619ed</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_icir_vcm.certificate_of_insurance_user</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sys_user_role_ebd7af75dbf0e300ccd6f2f5ab9619ed</sys_update_name>
+        <sys_update_version display_value="sys_user_role_ebd7af75dbf0e300ccd6f2f5ab9619ed">6bd7af75dbf0e300ccd6f2f5ab9619f0</sys_update_version>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-03-14 05:10:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

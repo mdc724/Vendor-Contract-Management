@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>//Created by - Udaya Sadhineni&#13;
+//Created on - 19-sept-2018&#13;
+//Purpose - Call to a Script Include that will auto-populate field values in VCM table from Vendor table</description>
+        <field>vendor_name</field>
+        <global>true</global>
+        <messages/>
+        <name>Populate Fields Onchange Of Vendor Name</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading) {
+		return;
+	}
+	
+	//alert('Test');
+if(window == null){
+	var vendor_name = newValue;
+	var ga = new GlideAjax('ScriptIncludeClientCallableUtils');
+	ga.addParam('sysparm_name','getValues');
+	ga.addParam('name',vendor_name);
+	ga.getXML(setUserValues);
+	//ga.getXMLAnswer(setUserValues);
+	
+}
+	function setUserValues(response) {
+		var answer = response.responseXML.documentElement.getAttribute("answer");
+		var name=answer.split('#!#');
+		g_form.setValue('vendor_number',name[0]);
+		g_form.setValue('address_1',name[1]);
+		g_form.setValue('address_2',name[2]);
+		g_form.setValue('city',name[3]);
+		g_form.setValue('state',name[4]);
+		g_form.setValue('zip',name[5]);
+			
+		}
+
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-19 05:52:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b5ae1947dbe4ef40c203a2364b961923</sys_id>
+        <sys_mod_count>56</sys_mod_count>
+        <sys_name>Populate Fields Onchange Of Vendor Name</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_script_client_b5ae1947dbe4ef40c203a2364b961923</sys_update_name>
+        <sys_updated_by>Nehal.Ranpise@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-20 14:17:00</sys_updated_on>
+        <table>x_icir_vcm_vendor_contract_management</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sys_script_client_b5ae1947dbe4ef40c203a2364b961923</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;//Created by - Udaya Sadhineni&amp;#13;
+//Created on - 19-sept-2018&amp;#13;
+//Purpose - Call to a Script Include that will auto-populate field values in VCM table from Vendor table&lt;/description&gt;&lt;field&gt;vendor_name&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;messages/&gt;&lt;name&gt;Populate Fields Onchange Of Vendor Name&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading) {
+		return;
+	}
+	
+	//alert('Test');
+if(window == null){
+	var vendor_name = newValue;
+	var ga = new GlideAjax('ScriptIncludeClientCallableUtils');
+	ga.addParam('sysparm_name','getValues');
+	ga.addParam('name',vendor_name);
+	ga.getXML(setUserValues);
+	//ga.getXMLAnswer(setUserValues);
+	
+}
+	function setUserValues(response) {
+		var answer = response.responseXML.documentElement.getAttribute("answer");
+		var name=answer.split('#!#');
+		g_form.setValue('vendor_number',name[0]);
+		g_form.setValue('address_1',name[1]);
+		g_form.setValue('address_2',name[2]);
+		g_form.setValue('city',name[3]);
+		g_form.setValue('state',name[4]);
+		g_form.setValue('zip',name[5]);
+			
+		}
+
+	
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;udaya.sadhineni&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-19 05:52:21&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;b5ae1947dbe4ef40c203a2364b961923&lt;/sys_id&gt;&lt;sys_mod_count&gt;56&lt;/sys_mod_count&gt;&lt;sys_name&gt;Populate Fields Onchange Of Vendor Name&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Vendor Contract Management" source="x_icir_vcm"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Vendor Contract Management"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_b5ae1947dbe4ef40c203a2364b961923&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Nehal.Ranpise@infocenter.io&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-20 14:17:00&lt;/sys_updated_on&gt;&lt;table&gt;x_icir_vcm_vendor_contract_management&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>551035231</payload_hash>
+        <record_name>Populate Fields Onchange Of Vendor Name</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Nehal.Ranpise@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-20 14:17:00</sys_created_on>
+        <sys_id>baeddce7dbe42380c203a2364b96195b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>165f75754c40000001</sys_recorded_at>
+        <sys_updated_by>Nehal.Ranpise@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-20 14:17:00</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>72eddce75ae423807b22c3605420be5b</update_guid>
+        <update_guid_history>72eddce75ae423807b22c3605420be5b:551035231,27cd102b85e42380d627620efa5b993c:1463659986,c49d102b9ee423802139661fe2b87036:608671058,605c98e791e42380204388599e205fc1:-71481033,1534d863b2e42380a6efe98ebdb40160:454883284,e21398236ae42380cf6f3fab3066ae7e:531013232,ca52dc2368e42380507039b9f1cffe3b:-2043683033,903218af37a42380b3fcc3b062cdcb5d:1228454139,4c1b80eb1ea4238091ebf94de6bdad04:-1250917028,5727bb5fb96423806d789d52c9e8b6e9:401355482,5faf271bb9642380765aabe98277f964:-831323445,2f5fa35b1d64238010e3e4555d056b96:-1217227078,cb0fa31b946423806b815a195fe334ec:-290940909,849bab97da64238044448da92da14e2b:-228973661,e54b2357ec642380393bc4042a3b065a:-2009457085,3f1b2357d664238034f94bb199a960d3:-1884330953,b8838f83dfe8ef40b0a008f190867505:526660653,44ae160fa468ef409059c11a3c2c45c6:-1712598147,1febda8bd268ef4082da6500496580d6:-2018361540,d17a8e8f8d28ef4039e7d37b02be8b91:-1525705330,3c1a864f8628ef40cc2f29d6f71c414d:-327047081,8b180a0f3828ef4072048f00032c992f:-504262466,6ff74ecba828ef40238e92539add4158:1693162033,6987820f5528ef40857fca4db0e4ce71:562222968,e946ca8b3128ef40a33ddd53cb3f0af7:330656466,cc854e8b5c28ef404ddab1d82bea1b1a:1605796807,dc25068be328ef407b39013fd32dcf98:-1580808393,4e15c64b3928ef40aad65c87f7b6569c:-628041186,4b44c60bf228ef400c82493cb5ff4923:-860335525,2804028b3028ef40cbb6533902b054f7:1670294423,6601860b1528ef406078989425c8581b:-2398091,71e0820bb328ef40f3c117b602dd87f8:-28418826,28b0cac73128ef40cdb814e191890ba9:2020720756,59df3d873728ef401f09226d801da0f3:-63772976,870ef987cf28ef40980a8086da549b16:942901973,528cbd47ac28ef401f43ab0d7294bd11:-2140068510,ce5c79470828ef40c728efcf6984914a:939062154,aa0c79072c28ef40cbcf48999729435a:-1686505991,f4ebb9435f28ef4007ebb1b988e343c3:388802777,71bbb1473628ef4031a732d29e975676:2030881207,230bbd075028ef407912f5d187413f78:-1801118166,8e7af5074128ef40ad5b15aefbed05d1:-107907280,a57471034d28ef407b80cc0176604574:-101806381,7f347103e428ef40ee41fdc4cd82c26e:-703598419,b851f5cf8fe4ef40d110aeecb34eec19:761329193,13a0f5cf53e4ef4087661d8db30bde15:747916514,ec90b5cf0de4ef40aa336d1a13556eae:-279242942,cdbc2dcb00e4ef406df213895c585c1c:564847495,8379698b34e4ef40f38038eb1f0a72d7:607814682,0037298b9ce4ef401abd0f632ccd8df3:1942447607,1616654bdbe4ef400178ab895e84cff7:431462532,8805650bf8e4ef40b076f35e27676bc8:1942447607,fe53e1c748e4ef401717bca00827c1e1:189111010,33916d876de4ef4082b8bb28f0f3b569:209423173,b761ad87f3e4ef409458cc07a5454853:-298655917,2ee02d87c2e4ef40f830b4de114c77e2:-1470479114,fcd02d8738e4ef400eec10eac26c37a5:66005710</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>shweta.bagde@infocenter.io</sys_created_by>
+        <sys_created_on>2019-03-11 09:26:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>5952d91bbc8b405ca923981f25fcd910</sys_id>
+        <sys_metadata>b5ae1947dbe4ef40c203a2364b961923</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Populate Fields Onchange Of Vendor Name</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent display_value="">8d995872db2caf40c203a2364b9619ba</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sys_script_client_b5ae1947dbe4ef40c203a2364b961923</sys_update_name>
+        <sys_update_version display_value="sys_script_client_b5ae1947dbe4ef40c203a2364b961923">baeddce7dbe42380c203a2364b96195b</sys_update_version>
+        <sys_updated_by>shweta.bagde@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-03-11 09:26:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

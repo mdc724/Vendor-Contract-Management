@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_icir_vcm_vendor_contract_task</description>
+        <name>x_icir_vcm_vendor_contract_task</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-20 04:44:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0eda5adfdb602380c203a2364b96195f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_icir_vcm_vendor_contract_task</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_security_acl_0eda5adfdb602380c203a2364b96195f</sys_update_name>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-20 04:44:20</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sys_security_acl_0eda5adfdb602380c203a2364b96195f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_icir_vcm_vendor_contract_task</description><name>x_icir_vcm_vendor_contract_task</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by><sys_created_on>2018-09-20 04:44:20</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>0eda5adfdb602380c203a2364b96195f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_icir_vcm_vendor_contract_task</sys_name><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>sys_security_acl_0eda5adfdb602380c203a2364b96195f</sys_update_name><sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by><sys_updated_on>2018-09-20 04:44:20</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>668747526</payload_hash>
+        <record_name>x_icir_vcm_vendor_contract_task</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-20 04:44:20</sys_created_on>
+        <sys_id>cada5adfdb602380c203a2364b96196f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>165f54b0a080000001</sys_recorded_at>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-20 04:44:20</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>c2da5adfd7602380925534f8cbd0336f</update_guid>
+        <update_guid_history>c2da5adfd7602380925534f8cbd0336f:668747526</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 09:02:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>90b9d87d30e94d889aaa70f2be0e8640</sys_id>
+        <sys_metadata>0eda5adfdb602380c203a2364b96195f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_icir_vcm_vendor_contract_task</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent display_value="">abf2603edb2caf40c203a2364b9619d7</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sys_security_acl_0eda5adfdb602380c203a2364b96195f</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_0eda5adfdb602380c203a2364b96195f">cada5adfdb602380c203a2364b96196f</sys_update_version>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 09:02:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

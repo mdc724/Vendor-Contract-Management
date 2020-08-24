@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>false</active>
+        <category/>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Vendor Contract Management</name>
+        <order/>
+        <roles>x_icir_vcm.all</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-07 10:37:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5d3a2068db2b2f00c203a2364b961940</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>VCM</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_app_application_5d3a2068db2b2f00c203a2364b961940</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-07 10:39:35</sys_updated_on>
+        <title>VCM</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sys_app_application_5d3a2068db2b2f00c203a2364b961940</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>false</active><category/><description/><device_type>browser</device_type><hint/><name>Vendor Contract Management</name><order/><roles>x_icir_vcm.all</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2019-02-07 10:37:18</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5d3a2068db2b2f00c203a2364b961940</sys_id><sys_mod_count>2</sys_mod_count><sys_name>VCM</sys_name><sys_overrides/><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>sys_app_application_5d3a2068db2b2f00c203a2364b961940</sys_update_name><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2019-02-07 10:39:35</sys_updated_on><title>VCM</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>300859876</payload_hash>
+        <record_name>VCM</record_name>
+        <reverted_from/>
+        <source>640c41f7db17ab00c203a2364b9619cf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-07 10:39:35</sys_created_on>
+        <sys_id>7abae4e8db2b2f00c203a2364b961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>168c78a979f0000001</sys_recorded_at>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-07 10:39:35</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>32bae4e8562b2f003fae5486b8b15128</update_guid>
+        <update_guid_history>32bae4e8562b2f003fae5486b8b15128:300859876,b88a6468072b2f001005a4807c92ff3b:-353384600,d93a2068b82b2f009c3391592e80fa42:-459496857</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2019-03-14 01:32:31">121477e7dbc4bf40ccd6f2f5ab961941</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-03-14 05:32:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>3452dcbad2cb4b56991f288ac646bf04</sys_id>
+        <sys_metadata>5d3a2068db2b2f00c203a2364b961940</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VCM</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sys_app_application_5d3a2068db2b2f00c203a2364b961940</sys_update_name>
+        <sys_update_version display_value="sys_app_application_5d3a2068db2b2f00c203a2364b961940">7abae4e8db2b2f00c203a2364b961928</sys_update_version>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-03-14 05:32:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

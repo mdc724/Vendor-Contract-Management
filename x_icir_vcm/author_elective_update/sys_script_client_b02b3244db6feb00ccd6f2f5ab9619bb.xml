@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>//Created by - Udaya Sadhineni&#13;
+//Created on - 06 Feb 2019&#13;
+//Purpose - To set the value of a 'Assignment' if there is only one Project Task record.</description>
+        <field>invoice_amount</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OnLoad Set Project &amp; Assignment Values</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	var number;
+	var proNo = g_form.getReference('project', venName);
+	alert(proNo);
+	
+	function venName(proNo){
+		number = proNo.project_lvl2_number;
+		alert(number);
+		
+		var ga = new GlideAjax('ScriptIncludeClientCallableUtils');
+		ga.addParam('sysparm_name','returnAssignments');
+		ga.addParam('number',number);
+		ga.getXML(setUserValues);
+	}
+}
+
+function setUserValues(response) {
+	var answer = response.responseXML.documentElement.getAttribute("answer");
+	alert(answer);
+	var number = answer.split(',');
+	alert(number[1]);
+	alert(number.length);
+	if(number.length == 2){
+		g_form.setValue('assignment', number[1]);
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-06 07:55:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b02b3244db6feb00ccd6f2f5ab9619bb</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>OnLoad Set Project &amp; Assignment Values</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_script_client_b02b3244db6feb00ccd6f2f5ab9619bb</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-06 08:53:54</sys_updated_on>
+        <table>x_icir_vcm_invoice_per_task</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sys_script_client_b02b3244db6feb00ccd6f2f5ab9619bb</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;//Created by - Udaya Sadhineni&amp;#13;
+//Created on - 06 Feb 2019&amp;#13;
+//Purpose - To set the value of a 'Assignment' if there is only one Project Task record.&lt;/description&gt;&lt;field&gt;invoice_amount&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;OnLoad Set Project &amp;amp; Assignment Values&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+	var number;
+	var proNo = g_form.getReference('project', venName);
+	alert(proNo);
+	
+	function venName(proNo){
+		number = proNo.project_lvl2_number;
+		alert(number);
+		
+		var ga = new GlideAjax('ScriptIncludeClientCallableUtils');
+		ga.addParam('sysparm_name','returnAssignments');
+		ga.addParam('number',number);
+		ga.getXML(setUserValues);
+	}
+}
+
+function setUserValues(response) {
+	var answer = response.responseXML.documentElement.getAttribute("answer");
+	alert(answer);
+	var number = answer.split(',');
+	alert(number[1]);
+	alert(number.length);
+	if(number.length == 2){
+		g_form.setValue('assignment', number[1]);
+	}
+	
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;udaya.sadhineni&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-02-06 07:55:51&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;b02b3244db6feb00ccd6f2f5ab9619bb&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;OnLoad Set Project &amp;amp; Assignment Values&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Vendor Contract Management" source="x_icir_vcm"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Vendor Contract Management"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_b02b3244db6feb00ccd6f2f5ab9619bb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;udaya.sadhineni&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-06 08:53:54&lt;/sys_updated_on&gt;&lt;table&gt;x_icir_vcm_invoice_per_task&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-138913868</payload_hash>
+        <record_name>OnLoad Set Project &amp; Assignment Values</record_name>
+        <reverted_from/>
+        <source>640c41f7db17ab00c203a2364b9619cf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-06 08:53:54</sys_created_on>
+        <sys_id>49f84f44dbafeb00ccd6f2f5ab961918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>168c203797a0000001</sys_recorded_at>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-06 08:53:54</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>01f84f4473afeb00a49f670406015418</update_guid>
+        <update_guid_history>01f84f4473afeb00a49f670406015418:-138913868,a51787049dafeb0011a1184e397b5806:-2106035948,0007c7404aafeb007870d8801762ae2c:2004004423,3e560fc0b0afeb00ebb7b175ea500ad5:-1291092690,d6400f8c7a6feb006e9134294b60e1d8:-767407135,193083ccac6feb003e2d8f3c5f368dd3:1938982952,cccfb2cc946feb00e3abaa3464a7b912:-275534937,8d9ef28c386feb004849e1ff120bc130:2078106999,090ebe4c496feb0057f5df7470fa6644:1373608042,746d7a4c576feb0079d0fdee916c9cd1:-1741575985,8b2d7a843a6feb00ff4ddcf2fcce7da1:247924024,f0ec7a84bd6feb006a8915e4cd56c49c:-66789842,d2acf684176feb002954eff074436004:1704391299,f6ab72445d6feb006cab9b35cae43714:1175630947</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-06 08:54:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>2340319e63bf444e9ec20ba0ff2a8864</sys_id>
+        <sys_metadata>b02b3244db6feb00ccd6f2f5ab9619bb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OnLoad Set Project &amp; Assignment Values</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent display_value="Invoice Project Task">4320283adb2caf40c203a2364b9619ae</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sys_script_client_b02b3244db6feb00ccd6f2f5ab9619bb</sys_update_name>
+        <sys_update_version display_value="sys_script_client_b02b3244db6feb00ccd6f2f5ab9619bb">49f84f44dbafeb00ccd6f2f5ab961918</sys_update_version>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-06 08:54:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

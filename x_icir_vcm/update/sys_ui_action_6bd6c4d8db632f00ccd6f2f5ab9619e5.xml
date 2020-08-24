@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>false</active>
+        <client>false</client>
+        <client_script_v2/>
+        <comments/>
+        <condition>current.status == 'Pending PM Approval' || current.status == 'Pending Finance Approval'</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Approve</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[//Created By - Anagha Kunjeer
+//Created On - 06 Feb 2019
+//Purpose - Project Manager or User from Biller group can approve the request
+
+var approver = '';
+var grTask = new GlideRecordSecure('x_icir_vcm_invoice_per_task');
+grTask.addQuery('invoice', current.sys_id);
+grTask.query();
+while(grTask.next()){
+	var grProjTask = new GlideRecordSecure('x_icir_vcm_task');
+	grProjTask.addQuery('sys_id', grTask.project);
+	grProjTask.query();
+	if(grProjTask.next()){
+		
+		if(grProjTask.project_manager == gs.getUserID() && current.status == 'Pending PM Approval')
+			approver = grProjTask.project_manager;
+		
+		if(current.status == 'Pending Finance Approval') {
+			
+			if(grProjTask.project_accountant == gs.getUserID()){
+				approver = gs.getUserID();
+			}
+			else{
+				var gr = new GlideRecordSecure('sys_user_grmember');
+				gr.addQuery('group', grProjTask.biller_group);
+				gr.addQuery('user', gs.getUserID());
+				gr.query();
+				if(gr.hasNext())
+					approver = gs.getUserID();
+			}
+		}
+	}
+	if(approver) {
+		var grApp = new GlideRecordSecure('sysapproval_approver');
+		grApp.addQuery('document_id', current.sys_id);
+		grApp.addQuery('approver', approver);
+		grApp.addQuery('state', 'requested');
+		grApp.query();
+		gs.addInfoMessage('count:'+grApp.getRowCount());
+		if(grApp.next()) {
+			grApp.state = 'approved';
+			grApp.update();
+		}
+	}
+	
+}
+
+action.setRedirectURL(current);]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-06 13:31:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6bd6c4d8db632f00ccd6f2f5ab9619e5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Approve</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_ui_action_6bd6c4d8db632f00ccd6f2f5ab9619e5</sys_update_name>
+        <sys_updated_by>shweta.bagde@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 10:37:26</sys_updated_on>
+        <table>x_icir_vcm_invoices</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+</record_update>

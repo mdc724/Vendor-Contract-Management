@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Invoice" max_length="40" name="x_icir_vcm_invoices" sizeclass="28" type="collection">
+        <element label="Accounting period" max_length="32" name="accounting_period" reference="x_icir_vcm_accounting_period" type="reference"/>
+        <element label="Explanation of rejection" max_length="4000" name="explanation_of_rejection" type="string"/>
+        <element default="Entered" label="External status" max_length="40" name="external_status" read_only="true" type="string"/>
+        <element label="Invoice date" max_length="40" name="invoice_date" type="glide_date"/>
+        <element display="true" label="Invoice number" max_length="40" name="invoice_number" type="string"/>
+        <element label="Invoice total" max_length="20" name="invoice_total" type="currency"/>
+        <element label="Notes to accounting" max_length="4000" name="notes_to_accounting" type="string"/>
+        <element label="Notes to project manager" max_length="4000" name="notes_to_project_manager" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="PDF Attachment" max_length="40" name="pdf_attachment" type="boolean"/>
+        <element label="Rejection reason" max_length="32" name="rejection_reason" reference="x_icir_vcm_choices_configuration" reference_qual="active=true^table_name=x_icir_vcm_invoices^field_name=rejection_reason^EQ" reference_qual_condition="active=true^table_name=x_icir_vcm_invoices^field_name=rejection_reason^EQ" type="reference"/>
+        <element label="Retainage %" max_length="40" name="retainage" type="string"/>
+        <element label="Retainage amount" max_length="40" name="retainage_amount" type="currency"/>
+        <element label="Show rejection reason" max_length="40" name="show_rejection_reason" type="boolean"/>
+        <element label="Show Submit for Approval" max_length="40" name="show_submit_for_approval" type="boolean"/>
+        <element choice="3" default="New" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="0" value="New"/>
+                <element inactive_on_update="false" label="Pending PM Approval" sequence="1" value="Pending PM Approval"/>
+                <element inactive_on_update="false" label="Pending Finance Approval" sequence="2" value="Pending Finance Approval"/>
+                <element inactive_on_update="false" label="Approved Pending Transfer" sequence="3" value="Approved Pending Transfer"/>
+                <element inactive_on_update="false" label="Declined" sequence="4" value="Declined"/>
+                <element inactive_on_update="false" label="Approved" sequence="5" value="Approved"/>
+                <element inactive_on_update="false" label="Closed" sequence="6" value="Closed"/>
+            </choice>
+        </element>
+        <element default="javascript:gs.now()" dynamic_default_value="fb7553e85f220100a9ad2572f2b477b4" label="Submitted date" max_length="40" name="submitted_date" type="glide_date" use_dynamic_default="true"/>
+        <element label="Submit Approval Flag Portal" max_length="40" name="submit_approval_flag_portal" type="boolean"/>
+        <element label="Trigger Workflow" max_length="40" name="trigger_workflow" type="boolean"/>
+        <element label="Vendor company name" max_length="32" name="vendor_company_name" read_only="true" reference="x_icir_vcm_vendor" type="reference"/>
+        <element label="Vendor number" max_length="40" name="vendor_number" read_only="true" type="string"/>
+        <index name="index">
+            <element name="rejection_reason"/>
+        </index>
+        <index name="index2">
+            <element name="vendor_company_name"/>
+        </index>
+        <index name="index3">
+            <element name="accounting_period"/>
+        </index>
+    </element>
+</database>

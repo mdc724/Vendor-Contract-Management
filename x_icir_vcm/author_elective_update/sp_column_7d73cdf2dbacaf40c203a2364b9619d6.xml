@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <size>12</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">7573cdf2dbacaf40c203a2364b9619d5</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>Nehal.Ranpise@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-18 09:05:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7d73cdf2dbacaf40c203a2364b9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_column_7d73cdf2dbacaf40c203a2364b9619d6</sys_update_name>
+        <sys_updated_by>Nehal.Ranpise@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-18 09:05:36</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sp_column_7d73cdf2dbacaf40c203a2364b9619d6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">7573cdf2dbacaf40c203a2364b9619d5</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>Nehal.Ranpise@infocenter.io</sys_created_by><sys_created_on>2018-09-18 09:05:36</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>7d73cdf2dbacaf40c203a2364b9619d6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>sp_column_7d73cdf2dbacaf40c203a2364b9619d6</sys_update_name><sys_updated_by>Nehal.Ranpise@infocenter.io</sys_updated_by><sys_updated_on>2018-09-18 09:05:36</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>-740060438</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Nehal.Ranpise@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-18 09:05:36</sys_created_on>
+        <sys_id>fd73cdf2dbacaf40c203a2364b9619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>165ebed834a0000001</sys_recorded_at>
+        <sys_updated_by>Nehal.Ranpise@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-18 09:05:36</sys_updated_on>
+        <type>Column</type>
+        <update_guid>f573cdf227acaf405bb4d05db9d5b9d7</update_guid>
+        <update_guid_history>f573cdf227acaf405bb4d05db9d5b9d7:-740060438</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2018-09-19 06:13:59">9dbc9e87dbacaf40ccd6f2f5ab9619ce</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-19 10:13:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>547b7be2d4a341fdb510f6b3d258ff31</sys_id>
+        <sys_metadata>7d73cdf2dbacaf40c203a2364b9619d6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sp_column_7d73cdf2dbacaf40c203a2364b9619d6</sys_update_name>
+        <sys_update_version display_value="sp_column_7d73cdf2dbacaf40c203a2364b9619d6">fd73cdf2dbacaf40c203a2364b9619d7</sys_update_version>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-19 10:13:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

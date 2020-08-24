@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Contacts" max_length="40" name="x_icir_vcm_contacts" sizeclass="9" type="collection">
+        <element display="true" label="Contact" mandatory="true" max_length="32" name="contact" reference="sys_user" type="reference"/>
+        <element label="Contact email" max_length="40" name="contact_email" type="string"/>
+        <element label="Contact first name" max_length="40" name="contact_first_name" type="string"/>
+        <element label="Contact last name" max_length="40" name="contact_last_name" type="string"/>
+        <element label="Contact phone#" max_length="40" name="contact_phone" type="string"/>
+        <element label="Vendor ID" max_length="32" name="vendor_id" read_only="true" reference="x_icir_vcm_vendor" type="reference"/>
+        <index name="index">
+            <element name="contact"/>
+        </index>
+        <index name="index2">
+            <element name="vendor_id"/>
+        </index>
+    </element>
+</database>

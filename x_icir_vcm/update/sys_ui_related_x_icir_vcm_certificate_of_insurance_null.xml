@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_icir_vcm_certificate_of_insurance" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Certificate of Insurance - Default view" name="x_icir_vcm_certificate_of_insurance" related_list="NULL" sys_domain="global" view="Default view">fefe1c4adb74e300ccd6f2f5ab961907</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>REL:70ee1c4adb74e300ccd6f2f5ab9619de</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-28 08:46:27</sys_created_on>
+            <sys_id>bafe1c4adb74e300ccd6f2f5ab961908</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-28 08:46:27</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Certificate of Insurance - Default view</calculated_name>
+            <filter/>
+            <name>x_icir_vcm_certificate_of_insurance</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-28 08:46:27</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fefe1c4adb74e300ccd6f2f5ab961907</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Certificate of Insurance - Default view</sys_name>
+            <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+            <sys_update_name>sys_ui_related_x_icir_vcm_certificate_of_insurance_null</sys_update_name>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-28 08:46:27</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Invoice Information" section_id="ccbcdc36db2caf40c203a2364b9619a4" sys_domain="global" table="x_icir_vcm_vendor_contract_management" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>invoice_number</element>
+            <position>0</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-19 05:36:53</sys_created_on>
+            <sys_id>064d1107dbe4ef40c203a2364b96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Invoice Information" display_value="Invoice Information" name="x_icir_vcm_vendor_contract_management" sys_domain="global" view="Default view">ccbcdc36db2caf40c203a2364b9619a4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-19 05:36:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-19 05:36:53</sys_created_on>
+            <sys_id>864d1107dbe4ef40c203a2364b96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Invoice Information" display_value="Invoice Information" name="x_icir_vcm_vendor_contract_management" sys_domain="global" view="Default view">ccbcdc36db2caf40c203a2364b9619a4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-19 05:36:53</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>invoice_date</element>
+            <position>2</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-19 05:36:53</sys_created_on>
+            <sys_id>0a4d1107dbe4ef40c203a2364b96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Invoice Information" display_value="Invoice Information" name="x_icir_vcm_vendor_contract_management" sys_domain="global" view="Default view">ccbcdc36db2caf40c203a2364b9619a4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-19 05:36:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>invoice_total</element>
+            <position>3</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-19 05:36:53</sys_created_on>
+            <sys_id>8a4d1107dbe4ef40c203a2364b96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Invoice Information" display_value="Invoice Information" name="x_icir_vcm_vendor_contract_management" sys_domain="global" view="Default view">ccbcdc36db2caf40c203a2364b9619a4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-19 05:36:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>4</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-19 05:36:53</sys_created_on>
+            <sys_id>0e4d1107dbe4ef40c203a2364b96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Invoice Information" display_value="Invoice Information" name="x_icir_vcm_vendor_contract_management" sys_domain="global" view="Default view">ccbcdc36db2caf40c203a2364b9619a4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-19 05:36:53</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>notes_to_pm</element>
+            <position>5</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-19 05:36:53</sys_created_on>
+            <sys_id>8e4d1107dbe4ef40c203a2364b96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Invoice Information" display_value="Invoice Information" name="x_icir_vcm_vendor_contract_management" sys_domain="global" view="Default view">ccbcdc36db2caf40c203a2364b9619a4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-19 05:36:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>notes_to_ap</element>
+            <position>6</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-19 05:36:53</sys_created_on>
+            <sys_id>024d1107dbe4ef40c203a2364b96196b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Invoice Information" display_value="Invoice Information" name="x_icir_vcm_vendor_contract_management" sys_domain="global" view="Default view">ccbcdc36db2caf40c203a2364b9619a4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-19 05:36:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Invoice Information</caption>
+            <header>false</header>
+            <name>x_icir_vcm_vendor_contract_management</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-18 06:16:11</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ccbcdc36db2caf40c203a2364b9619a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Invoice Information</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+            <sys_update_name>sys_ui_section_ccbcdc36db2caf40c203a2364b9619a4</sys_update_name>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-18 06:16:11</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

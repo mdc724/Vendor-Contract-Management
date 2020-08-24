@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description>What can we help you with?</short_description>
+        <size>md</size>
+        <sp_column display_value="1">759d652bdb943780c203a2364b9619d6</sp_column>
+        <sp_widget display_value="VCM Portal Greeting">6a692163db943780c203a2364b961921</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>satej.kalyani@infocenter.io</sys_created_by>
+        <sys_created_on>2019-03-28 11:37:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d80e0190dbecbb80ccd6f2f5ab9619ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>welcome to the Vendor Contract Management Portal</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_instance_d80e0190dbecbb80ccd6f2f5ab9619ad</sys_update_name>
+        <sys_updated_by>satej.kalyani@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-03-28 11:37:59</sys_updated_on>
+        <title>welcome to the Vendor Contract Management Portal</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"show_name": {
+		"value": "true",
+		"displayValue": "true"
+	},
+	"greeting": {
+		"value": "Hi",
+		"displayValue": "Hi"
+	},
+	"typeahead_search": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=d80e0190dbecbb80ccd6f2f5ab9619ad"/>
+</record_update>

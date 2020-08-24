@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <client_script><![CDATA[function($rootScope, $location) {
+	/* widget controller */
+	var c = this;
+	
+	$rootScope.$on('data_table.click', function(event,obj) {
+		console.log(obj);
+		var link = {};
+		link.sys_id = obj.sys_id;
+		link.table = obj.table;
+		link.id = c.data.page;
+		$location.search(link);
+	})
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.comment {&#13;
+  font-weight: bold;&#13;
+  margin-top: 2px;&#13;
+  margin-bottom: 2px;&#13;
+}&#13;
+.mce-panel, .mce-btn {&#13;
+  background-image: none;&#13;
+  background-color: #f0f3f4;&#13;
+}&#13;
+&#13;
+.action-btn {&#13;
+  margin-right: 5px;&#13;
+}&#13;
+&#13;
+.timeline-container {&#13;
+  max-height: 50vh;&#13;
+  height: 100%;&#13;
+  overflow-y: auto;  &#13;
+}&#13;
+&#13;
+.panel .panel {&#13;
+  height: auto !important;&#13;
+}&#13;
+&#13;
+.attachment-button {&#13;
+  .glyphicon-paperclip {&#13;
+    font-size: 18px;&#13;
+  }&#13;
+}&#13;
+&#13;
+.empty-state-wrapper {&#13;
+  width: 100%;&#13;
+  height: 100%;&#13;
+  align-items: center;&#13;
+  display: flex;&#13;
+  flex-direction: column;&#13;
+  padding: 10vh 20px 20px;&#13;
+&#13;
+  .empty-state {&#13;
+    border: 1px solid #e7e9eb;&#13;
+    border-radius: 10px;&#13;
+    max-width: 700px;&#13;
+    padding: 30px 40px 20px;&#13;
+    position: relative;&#13;
+&#13;
+    .empty-state-badge {&#13;
+      top: -36px;&#13;
+      left: 50%;&#13;
+      position: absolute;&#13;
+      height: 72px;&#13;
+      width: 72px;&#13;
+      -webkit-align-items: center;&#13;
+      -ms-flex-align: center;&#13;
+      align-items: center;&#13;
+      border-radius: 100%;&#13;
+      color: #ffffff;&#13;
+      display: -webkit-flex;&#13;
+      display: -ms-flexbox;&#13;
+      display: flex;&#13;
+      font-size: 40px;&#13;
+      -webkit-justify-content: center;&#13;
+      -ms-flex-pack: center;&#13;
+      justify-content: center;&#13;
+      margin-left: -36px;&#13;
+      text-align: center;&#13;
+    }&#13;
+&#13;
+    .empty-state-header {&#13;
+      font-size: 30px;&#13;
+      text-align: center;&#13;
+      color: #343d47;&#13;
+    }&#13;
+&#13;
+    .empty-state-content {&#13;
+      ul {&#13;
+        list-style: disc outside;&#13;
+        margin: 0 0 10px 0;&#13;
+        padding: 0 0 0 30px;&#13;
+      }&#13;
+    }&#13;
+  }&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link/>
+        <name>VCM Invoice - NewRocket Related List</name>
+        <option_schema>[{"displayValue":"Page","name":"page","label":"Page","type":"reference","value":"sp_page","ed":{"reference":"sp_page"}}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[/*
+Copyright (c) 2017 NewRocket, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+(function() {
+
+	data.f = {};
+	data.table = $sp.getParameter("t") || $sp.getParameter("table") || options.table;
+	data.sys_id = $sp.getParameter("sys_id") || options.sys_id;
+	data.query = $sp.getParameter("query");
+
+	
+	
+	if (!data.table || !data.sys_id)
+		return;
+
+	var f = $sp.getForm(data.table, data.sys_id, data.query);
+	data.related_lists = f._related_lists;
+
+
+	for (var i in data.related_lists) {
+		var list = data.related_lists[i];
+		var params = {
+			table: list.table, 
+			//filter: list.field+"="+data.sys_id,
+			filter: list.parent+"="+data.sys_id,
+			view: 'sp',
+			title: list.label
+		};
+
+		if (options.page) {
+			var page = new GlideRecord('sp_page');
+			if (page.get(options.page))
+				data.page = page.getDisplayValue('id');
+		}
+		if (!data.page) {
+			data.page = "form";	
+		}
+
+		list.widget = $sp.getWidget('widget-data-table', params);
+	}
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-24 07:31:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>db87afa0db782300ccd6f2f5ab96192d</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>VCM Invoice - NewRocket Related List</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_widget_db87afa0db782300ccd6f2f5ab96192d</sys_update_name>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-24 12:22:17</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default" ng-if="data.related_lists.length > 0">
+  <div class="panel-body">
+
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" ng-class='{active:$first}' ng-repeat="list in data.related_lists">
+        <a data-target="#{{list.table}}" aria-controls="{{list.table}}" role="tab" ng-class='{active:$first}' data-toggle="tab">
+          {{list.label}}
+          <span class="label label-as-badge label-primary" ng-if="list.count">{{list.count}}</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane" ng-class='{active:$first}' ng-repeat="list in data.related_lists ">
+
+        <div style="margin-top: -1px;">
+          <div class="alert alert-danger" ng-if="data.invalid_table">
+            Table not defined '{{data.table_label}}'
+          </div>
+          <sp-widget widget="list.widget"></sp-widget>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sp_widget_db87afa0db782300ccd6f2f5ab96192d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($rootScope, $location) {
+	/* widget controller */
+	var c = this;
+	
+	$rootScope.$on('data_table.click', function(event,obj) {
+		console.log(obj);
+		var link = {};
+		link.sys_id = obj.sys_id;
+		link.table = obj.table;
+		link.id = c.data.page;
+		$location.search(link);
+	})
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.comment {&amp;#13;
+  font-weight: bold;&amp;#13;
+  margin-top: 2px;&amp;#13;
+  margin-bottom: 2px;&amp;#13;
+}&amp;#13;
+.mce-panel, .mce-btn {&amp;#13;
+  background-image: none;&amp;#13;
+  background-color: #f0f3f4;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.action-btn {&amp;#13;
+  margin-right: 5px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.timeline-container {&amp;#13;
+  max-height: 50vh;&amp;#13;
+  height: 100%;&amp;#13;
+  overflow-y: auto;  &amp;#13;
+}&amp;#13;
+&amp;#13;
+.panel .panel {&amp;#13;
+  height: auto !important;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.attachment-button {&amp;#13;
+  .glyphicon-paperclip {&amp;#13;
+    font-size: 18px;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.empty-state-wrapper {&amp;#13;
+  width: 100%;&amp;#13;
+  height: 100%;&amp;#13;
+  align-items: center;&amp;#13;
+  display: flex;&amp;#13;
+  flex-direction: column;&amp;#13;
+  padding: 10vh 20px 20px;&amp;#13;
+&amp;#13;
+  .empty-state {&amp;#13;
+    border: 1px solid #e7e9eb;&amp;#13;
+    border-radius: 10px;&amp;#13;
+    max-width: 700px;&amp;#13;
+    padding: 30px 40px 20px;&amp;#13;
+    position: relative;&amp;#13;
+&amp;#13;
+    .empty-state-badge {&amp;#13;
+      top: -36px;&amp;#13;
+      left: 50%;&amp;#13;
+      position: absolute;&amp;#13;
+      height: 72px;&amp;#13;
+      width: 72px;&amp;#13;
+      -webkit-align-items: center;&amp;#13;
+      -ms-flex-align: center;&amp;#13;
+      align-items: center;&amp;#13;
+      border-radius: 100%;&amp;#13;
+      color: #ffffff;&amp;#13;
+      display: -webkit-flex;&amp;#13;
+      display: -ms-flexbox;&amp;#13;
+      display: flex;&amp;#13;
+      font-size: 40px;&amp;#13;
+      -webkit-justify-content: center;&amp;#13;
+      -ms-flex-pack: center;&amp;#13;
+      justify-content: center;&amp;#13;
+      margin-left: -36px;&amp;#13;
+      text-align: center;&amp;#13;
+    }&amp;#13;
+&amp;#13;
+    .empty-state-header {&amp;#13;
+      font-size: 30px;&amp;#13;
+      text-align: center;&amp;#13;
+      color: #343d47;&amp;#13;
+    }&amp;#13;
+&amp;#13;
+    .empty-state-content {&amp;#13;
+      ul {&amp;#13;
+        list-style: disc outside;&amp;#13;
+        margin: 0 0 10px 0;&amp;#13;
+        padding: 0 0 0 30px;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;VCM Invoice - NewRocket Related List&lt;/name&gt;&lt;option_schema&gt;[{"displayValue":"Page","name":"page","label":"Page","type":"reference","value":"sp_page","ed":{"reference":"sp_page"}}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[/*
+Copyright (c) 2017 NewRocket, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+(function() {
+
+	data.f = {};
+	data.table = $sp.getParameter("t") || $sp.getParameter("table") || options.table;
+	data.sys_id = $sp.getParameter("sys_id") || options.sys_id;
+	data.query = $sp.getParameter("query");
+
+	
+	
+	if (!data.table || !data.sys_id)
+		return;
+
+	var f = $sp.getForm(data.table, data.sys_id, data.query);
+	data.related_lists = f._related_lists;
+
+
+	for (var i in data.related_lists) {
+		var list = data.related_lists[i];
+		var params = {
+			table: list.table, 
+			//filter: list.field+"="+data.sys_id,
+			filter: list.parent+"="+data.sys_id,
+			view: 'sp',
+			title: list.label
+		};
+
+		if (options.page) {
+			var page = new GlideRecord('sp_page');
+			if (page.get(options.page))
+				data.page = page.getDisplayValue('id');
+		}
+		if (!data.page) {
+			data.page = "form";	
+		}
+
+		list.widget = $sp.getWidget('widget-data-table', params);
+	}
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Anagha.Kunjeer@infocenter.io&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-24 07:31:52&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;db87afa0db782300ccd6f2f5ab96192d&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_name&gt;VCM Invoice - NewRocket Related List&lt;/sys_name&gt;&lt;sys_package display_value="Vendor Contract Management" source="x_icir_vcm"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Vendor Contract Management"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_db87afa0db782300ccd6f2f5ab96192d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Anagha.Kunjeer@infocenter.io&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-24 12:22:17&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel panel-default" ng-if="data.related_lists.length &gt; 0"&gt;
+  &lt;div class="panel-body"&gt;
+
+    &lt;ul class="nav nav-tabs" role="tablist"&gt;
+      &lt;li role="presentation" ng-class='{active:$first}' ng-repeat="list in data.related_lists"&gt;
+        &lt;a data-target="#{{list.table}}" aria-controls="{{list.table}}" role="tab" ng-class='{active:$first}' data-toggle="tab"&gt;
+          {{list.label}}
+          &lt;span class="label label-as-badge label-primary" ng-if="list.count"&gt;{{list.count}}&lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class="tab-content"&gt;
+      &lt;div role="tabpanel" class="tab-pane" ng-class='{active:$first}' ng-repeat="list in data.related_lists "&gt;
+
+        &lt;div style="margin-top: -1px;"&gt;
+          &lt;div class="alert alert-danger" ng-if="data.invalid_table"&gt;
+            Table not defined '{{data.table_label}}'
+          &lt;/div&gt;
+          &lt;sp-widget widget="list.widget"&gt;&lt;/sp-widget&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1544561704</payload_hash>
+        <record_name>VCM Invoice - NewRocket Related List</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-24 12:22:17</sys_created_on>
+        <sys_id>610a24bcdbf82300ccd6f2f5ab9619fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1660b87bf260000001</sys_recorded_at>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-24 12:22:17</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>290a24bc3cf823004c9859419e94adfa</update_guid>
+        <update_guid_history>290a24bc3cf823004c9859419e94adfa:-1544561704,370d00f878b823005b104cc58f5c3430:-1900798425,b0edbf2ce9782300f091902b1d9f17f4:-1377582709,49adb32079b82300d9e7eda15bc5df90:171848521,41dbbfacca782300d4556e383941d57b:-1241121043,22bbbb6c7078230054de0d788c31f59b:729771842,ca3b3fac3b78230048c4514b87e63526:-1241121043,382bffaced78230023a3bb8a3814a06d:882381501,31aafbacef78230051550ac6f9aa1002:-2141295487,9c7abb6c5b782300ee153710f8a345a8:-685372911,33d9bb6c7e78230006d339ec1efddaf3:1133864158,c6e8b36ce2782300219e84965bd027d7:1390428552,5698bb6cc178230060f30b7e834537a2:610517361,94383f2c0a78230094afa86bcf982109:859239849,7c06f32c93782300489baebdae6bb3a6:-1241121043,f4e53fe8a57823003ff2f08c4fcb515e:1964969952,2945fba43e782300483b5ec09ab9ad42:854492542,86f8ab2483782300c7f01cc6ac705b75:1723891816,1f87afa035782300a9b5a8eeeb02ac2e:-420791448</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2018-09-27 04:54:54">4d57d3e1db38a300c203a2364b961939</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-27 08:54:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>17092bcf21e6494cab3fa784d280bef1</sys_id>
+        <sys_metadata>db87afa0db782300ccd6f2f5ab96192d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VCM Invoice - NewRocket Related List</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sp_widget_db87afa0db782300ccd6f2f5ab96192d</sys_update_name>
+        <sys_update_version display_value="sp_widget_db87afa0db782300ccd6f2f5ab96192d">610a24bcdbf82300ccd6f2f5ab9619fb</sys_update_version>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-27 08:54:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

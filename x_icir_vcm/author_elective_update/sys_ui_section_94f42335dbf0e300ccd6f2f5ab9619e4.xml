@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="" section_id="94f42335dbf0e300ccd6f2f5ab9619e4" sys_domain="global" table="x_icir_vcm_subconsultant" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-28 04:44:06</sys_created_on>
+            <sys_id>e487eb75dbf0e300ccd6f2f5ab9619dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-28 04:44:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>subconsultant_name</element>
+            <position>1</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-28 04:44:06</sys_created_on>
+            <sys_id>6887eb75dbf0e300ccd6f2f5ab9619dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-28 04:44:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>subconsultant_contact</element>
+            <position>2</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-28 04:44:06</sys_created_on>
+            <sys_id>e887eb75dbf0e300ccd6f2f5ab9619dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-28 04:44:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>area_of_work</element>
+            <position>3</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-28 04:44:06</sys_created_on>
+            <sys_id>6c87eb75dbf0e300ccd6f2f5ab9619dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-28 04:44:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email_address</element>
+            <position>4</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-28 04:44:06</sys_created_on>
+            <sys_id>ec87eb75dbf0e300ccd6f2f5ab9619dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-28 04:44:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fax</element>
+            <position>5</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-28 04:44:06</sys_created_on>
+            <sys_id>6087eb75dbf0e300ccd6f2f5ab9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-28 04:44:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-28 04:44:06</sys_created_on>
+            <sys_id>e087eb75dbf0e300ccd6f2f5ab9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-28 04:44:06</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>address_1</element>
+            <position>7</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-28 04:44:06</sys_created_on>
+            <sys_id>6487eb75dbf0e300ccd6f2f5ab9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-28 04:44:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>address_2</element>
+            <position>8</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-28 04:44:06</sys_created_on>
+            <sys_id>e487eb75dbf0e300ccd6f2f5ab9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-28 04:44:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>city</element>
+            <position>9</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-28 04:44:06</sys_created_on>
+            <sys_id>6887eb75dbf0e300ccd6f2f5ab9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-28 04:44:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>10</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-28 04:44:06</sys_created_on>
+            <sys_id>e887eb75dbf0e300ccd6f2f5ab9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-28 04:44:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>zip</element>
+            <position>11</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-28 04:44:06</sys_created_on>
+            <sys_id>6c87eb75dbf0e300ccd6f2f5ab9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-28 04:44:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>business_phone</element>
+            <position>12</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-28 04:44:06</sys_created_on>
+            <sys_id>ec87eb75dbf0e300ccd6f2f5ab9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-28 04:44:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mobile_phone</element>
+            <position>13</position>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-28 04:44:06</sys_created_on>
+            <sys_id>6087eb75dbf0e300ccd6f2f5ab9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-28 04:44:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption/>
+            <header>false</header>
+            <name>x_icir_vcm_subconsultant</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2018-09-28 04:32:52</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>94f42335dbf0e300ccd6f2f5ab9619e4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_icir_vcm_subconsultant</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+            <sys_update_name>sys_ui_section_94f42335dbf0e300ccd6f2f5ab9619e4</sys_update_name>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2018-09-28 04:32:52</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sys_ui_section_94f42335dbf0e300ccd6f2f5ab9619e4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="94f42335dbf0e300ccd6f2f5ab9619e4" sys_domain="global" table="x_icir_vcm_subconsultant" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-28 04:44:06</sys_created_on><sys_id>e487eb75dbf0e300ccd6f2f5ab9619dd</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-28 04:44:06</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>subconsultant_name</element><position>1</position><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-28 04:44:06</sys_created_on><sys_id>6887eb75dbf0e300ccd6f2f5ab9619dd</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-28 04:44:06</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>subconsultant_contact</element><position>2</position><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-28 04:44:06</sys_created_on><sys_id>e887eb75dbf0e300ccd6f2f5ab9619dd</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-28 04:44:06</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>area_of_work</element><position>3</position><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-28 04:44:06</sys_created_on><sys_id>6c87eb75dbf0e300ccd6f2f5ab9619dd</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-28 04:44:06</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>email_address</element><position>4</position><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-28 04:44:06</sys_created_on><sys_id>ec87eb75dbf0e300ccd6f2f5ab9619dd</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-28 04:44:06</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>fax</element><position>5</position><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-28 04:44:06</sys_created_on><sys_id>6087eb75dbf0e300ccd6f2f5ab9619de</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-28 04:44:06</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>6</position><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-28 04:44:06</sys_created_on><sys_id>e087eb75dbf0e300ccd6f2f5ab9619de</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-28 04:44:06</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>address_1</element><position>7</position><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-28 04:44:06</sys_created_on><sys_id>6487eb75dbf0e300ccd6f2f5ab9619de</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-28 04:44:06</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>address_2</element><position>8</position><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-28 04:44:06</sys_created_on><sys_id>e487eb75dbf0e300ccd6f2f5ab9619de</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-28 04:44:06</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>city</element><position>9</position><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-28 04:44:06</sys_created_on><sys_id>6887eb75dbf0e300ccd6f2f5ab9619de</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-28 04:44:06</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>state</element><position>10</position><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-28 04:44:06</sys_created_on><sys_id>e887eb75dbf0e300ccd6f2f5ab9619de</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-28 04:44:06</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>zip</element><position>11</position><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-28 04:44:06</sys_created_on><sys_id>6c87eb75dbf0e300ccd6f2f5ab9619de</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-28 04:44:06</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>business_phone</element><position>12</position><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-28 04:44:06</sys_created_on><sys_id>ec87eb75dbf0e300ccd6f2f5ab9619de</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-28 04:44:06</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>mobile_phone</element><position>13</position><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-28 04:44:06</sys_created_on><sys_id>6087eb75dbf0e300ccd6f2f5ab9619df</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_icir_vcm_subconsultant" sys_domain="global" view="Default view">94f42335dbf0e300ccd6f2f5ab9619e4</sys_ui_section><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-28 04:44:06</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_icir_vcm_subconsultant</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-28 04:32:52</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>94f42335dbf0e300ccd6f2f5ab9619e4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_icir_vcm_subconsultant</sys_name><sys_overrides/><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>sys_ui_section_94f42335dbf0e300ccd6f2f5ab9619e4</sys_update_name><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-28 04:32:52</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>596832717</payload_hash>
+        <record_name>Subconsultant</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-28 04:44:06</sys_created_on>
+        <sys_id>6487eb75dbf0e300ccd6f2f5ab9619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1661e7db2290000001</sys_recorded_at>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-28 04:44:06</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>2c87eb753af0e3002ef696c19e9d73e1</update_guid>
+        <update_guid_history>2c87eb753af0e3002ef696c19e9d73e1:596832717,bd272b7509f0e30094e3744a555eb63d:1812763588,fd272b75a8f0e3005a792cd220be0835:-1253759487,fd27e775b3f0e3008a15b26ca87b967f:-1773128471,3da663753cf0e300d0043941a65f07e2:-425818874,f1a6637553f0e300215a0116a8d531db:1950250719,3da6637530f0e3004c011a202a9cd4d3:-1285112795,e5a663750af0e300b1e9c1fcf661b7cc:-428238448,25a6637503f0e3006afbc00508ed59c5:807769866,a1a66375a6f0e300804823bd35ddfbbe:-691679325,61a66375fef0e30077aaffaf59a6eb47:1300791626,01c5a3f1e2f0e3004fcc8f4f4761831c:1111105221,12552335bcf0e3009f44cd8ddb3d8d8a:644793376,50f4233573f0e300cd1d36148df4bbfa:-1998658671,d8f4233561f0e30062e7b7d655dc39e6:-900527193</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 09:01:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>5682a115ccbf47b8ab874b768b97ac10</sys_id>
+        <sys_metadata>94f42335dbf0e300ccd6f2f5ab9619e4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_icir_vcm_subconsultant</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent display_value="">ca84ebf1dbf0e300ccd6f2f5ab96199a</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sys_ui_section_94f42335dbf0e300ccd6f2f5ab9619e4</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_94f42335dbf0e300ccd6f2f5ab9619e4">6487eb75dbf0e300ccd6f2f5ab9619e2</sys_update_version>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 09:01:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

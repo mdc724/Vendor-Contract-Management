@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>
+.title-definiton {
+	width: 500px;
+	margin-bottom: 30px;
+}
+
+.breadcrumb {
+	list-style-type: none;
+	padding: 0;
+  background: none;
+}
+
+.breadcrumb &gt; li + li:before{
+ 	content: no-close-quote !important; 
+}
+
+li {
+	display: inline-block;
+	position: relative;
+		// Last child
+	&amp;:last-child {
+		a {
+			cursor: default;
+		}
+		
+		&amp;::before,
+		&amp;::after {
+			background: #ffffc0;
+		}
+	}
+	
+	// :Hover
+	&amp;:not(:last-child):hover {
+		&amp;::before,
+		&amp;::after {
+			background: lightsalmon;
+		}
+	}
+	
+	&amp;::before,
+	&amp;::after{
+		content: '';
+		position: absolute;
+		left: 0;
+		height: 50%;
+		width: 100%;
+		background: white;
+		border-left: 2px solid #666;
+		border-right: 2px solid #666;
+		z-index: -2;
+	}
+	
+	&amp;::before {
+		top: -2px;
+		transform: skew(30deg);
+		border-top: 2px solid #666;
+	}
+	
+	&amp;::after {
+		bottom: 2px;
+		transform: skew(-30deg);
+		border-bottom: 2px solid #666;
+	}
+}
+
+a {
+	display: inline-block;
+	position: relative;
+	line-height: 2.5;
+	padding: 0 20px;
+	color: #666;
+	text-decoration: none;
+}
+
+li {
+	&amp;:first-child {
+		background-color: white;
+		border-left: 2px solid #666;
+		left: -3px;
+		box-sizing: content-box;
+
+		&amp;:hover {
+ 			background-color: lightsalmon;			
+		}
+
+		&amp;::before,
+		&amp;::after {
+				left: 3px;
+
+
+			}
+		}
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>custom_breadcrumbs</id>
+        <internal>false</internal>
+        <link/>
+        <name>Custom Breadcrumbs</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>satej.kalyani@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-08 08:59:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6d8d1574db236300ccd6f2f5ab9619b3</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Custom Breadcrumbs</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_widget_6d8d1574db236300ccd6f2f5ab9619b3</sys_update_name>
+        <sys_updated_by>satej.kalyani@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-08 09:36:16</sys_updated_on>
+        <template><![CDATA[
+<nav> <!--To provide navigation links-->
+  <ol class="breadcrumb " itemscope itemtype="http://schema.org/BreadcrumbList">
+
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a itemprop="item" href="#">
+        <span itemprop="name">Home</span>
+      </a>
+      <meta itemprop="position" content="1" />
+    </li>
+
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a itemprop="item" href="#">
+        <span itemprop="name">Level 1</span>
+      </a>
+      <meta itemprop="position" content="2" />
+    </li>
+
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a itemprop="item" href="#">
+        <span itemprop="name">Level 2</span>
+      </a>
+      <meta itemprop="position" content="3" />
+    </li>
+
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a itemprop="item" href="#"> 
+        <span itemprop="name">Current Location</span>
+      </a>
+      <meta itemprop="position" content="4" />
+    </li>
+
+  </ol>
+</nav>]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="States" max_length="40" name="x_icir_vcm_states" sizeclass="55" type="collection">
+        <element label="Abbreviation" mandatory="true" max_length="40" name="abbreviation" type="string"/>
+        <element label="Country" max_length="32" name="country" reference="core_country" type="reference"/>
+        <element display="true" label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <index name="index">
+            <element name="country"/>
+        </index>
+    </element>
+</database>

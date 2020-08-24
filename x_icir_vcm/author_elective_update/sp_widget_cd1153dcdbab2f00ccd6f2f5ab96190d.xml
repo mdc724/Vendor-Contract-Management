@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>standard</category>
+        <client_script><![CDATA[function($scope, $rootScope, spUtil) {
+	var c = this;
+	c.expanded = !spUtil.isMobile();
+	c.expand = function() {
+		c.expanded = true;
+	};
+
+	var deregister = $rootScope.$on("sp.update.breadcrumbs", function(e, list) {
+		c.breadcrumbs = list;
+	});
+
+	$scope.$on('$destroy', function(){
+		deregister();
+	});
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.nav {
+  li {
+    padding: 10px 7px;
+
+    &gt; span {
+      &gt; a {
+          display: inline;
+      }
+
+      &gt; i {
+          padding-left: 15px;
+      }
+    }
+  }
+}
+
+.a-disabled {
+  cursor: default;
+  color: inherit;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link/>
+        <name>VCM Invoices Breadcrumbs</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	data.currUser = gs.getUserID();
+	data.page = $sp.getParameter('id');
+	
+	//get My invoices
+	data.subConsultantId = '';
+	var contact = new GlideRecord('x_icir_scm_contacts');
+	contact.addQuery('user_name', data.currUser);
+	contact.query();
+	if(contact.next()){
+		var vendorId = contact.vendor_id;
+		data.subConsultantId = vendorId.toString();
+		var invoice = new GlideRecord('x_icir_scm_invoice');
+		invoice.addQuery('subconsultant_name', contact.vendor_id.toString());
+		invoice.query();
+		while(invoice.next()){
+			data.invId = invoice.sys_id + ',' + data.invId;
+		}
+	}
+	
+	//take invoice ID
+	if(data.page == 'scm_invoice_formwidget')
+		data.invoiceRecordID = $sp.getParameter("sys_id");
+	
+	else if(data.page == 'scm_invoiceprojtask_lf' && !data.invoiceRecordID)
+		data.invoiceRecordID = $sp.getParameter("apply_to_sys_id");	
+	
+	if(!data.invoiceRecordID)
+		data.invoiceRecordID = $sp.getParameter("invoice_id");		
+	
+	if(!data.invoiceRecordID){		
+		var invTask = $sp.getParameter('sys_id');
+		var invProTask = new GlideRecord('x_icir_scm_invoice_project_and_task');
+		if(invProTask.get(invTask))
+			data.invoiceRecordID  = invProTask.invoice.toString();
+		invProTask.query();	
+	}
+	
+	
+	
+	//for my invoices breadcrumbs
+	if(data.page == 'scm_invoices_list' || data.page == 'scm_invoice_formwidget' || data.page == 'scm_invoiceprojtask_lf' || data.page == 'scm_inv_proj_task_form' || data.page == 'scm_invprojtask_form')
+		data.myInvoices = 'true';
+	
+	if(data.page == 'scm_invoice_formwidget' || data.page == 'scm_invoiceprojtask_lf' || data.page == 'scm_inv_proj_task_form' || data.page == 'scm_invprojtask_form')
+		data.invoice = 'true';
+	
+	if(data.page == 'scm_invoiceprojtask_lf' || data.page == 'scm_inv_proj_task_form' || data.page == 'scm_invprojtask_form')
+		data.invProTaskList = 'true';
+	
+	if(data.page == 'scm_inv_proj_task_form' || data.page == 'scm_invprojtask_form')
+		data.invProTask = 'true';	
+	
+	//Submit Invoice breadcrumbs
+	if(data.page == 'vcm_invoice_rec_prod')
+		data.submitInvoice = 'true';	
+	
+	
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 04:07:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cd1153dcdbab2f00ccd6f2f5ab96190d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>VCM Invoices Breadcrumbs</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_widget_cd1153dcdbab2f00ccd6f2f5ab96190d</sys_update_name>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 04:12:41</sys_updated_on>
+        <template><![CDATA[<ul class="nav nav-pills nav-sm" aria-label="${Navigation breadcrumbs}">
+  <li><a ng-href="?id={{portal.homepage_dv}}">${Home}</a></li>
+  
+ <!-- <li aria-hidden="true" if="data.submitInvoice == 'true'" ng-repeat-end><i class="fa fa-chevron-right"></i></li> -->
+  <li ng-if="data.submitInvoice == 'true'"><a href="">${Submit}</a></li>
+  
+  <!--<li aria-hidden="true" ng-if="data.myInvoices == 'true'" ng-repeat-end><i class="fa fa-chevron-right"></i></li>    -->
+  <li ng-if="data.myInvoices == 'true'"><a ng-href="/scm?spa=1&table=x_icir_scm_invoice&id=scm_invoices_list&filter=sys_idIN{{data.invId}}&d=desc&o=number">${My Invoices}</a></li> 
+  
+  <!--<li aria-hidden="true" ng-if="data.invoice == 'true'"><i class="fa fa-chevron-right"></i></li>   -->
+  <li ng-if="data.invoice == 'true'"><a ng-href="/scm?id=scm_invoice_formwidget&table=x_icir_scm_invoice&sys_id={{data.invoiceRecordID}}">${Invoice}</a></li>  
+  
+  <!--<li aria-hidden="true" ng-if="data.invProTaskList == 'true'"><i class="fa fa-chevron-right"></i></li>    -->
+  <!--<li ng-if="data.invProTaskList == 'true'"><a href="scm?id=scm_invoiceprojtask_lf&table=x_icir_scm_invoice_project_and_task&relationship_id=REL:50535502db38e300ccd6f2f5ab9619b6&apply_to=x_icir_scm_invoice&apply_to_sys_id={{data.invoiceRecordID}}">${Invoice Project Task List}</a></li>-->
+  
+  <!--<li aria-hidden="true" if="data.invProTask == 'true'" ng-repeat-end><i class="fa fa-chevron-right"></i></li> -->
+  <li ng-if="data.invProTask == 'true'"><a href="">${Invoice Project Task}</a></li>
+  
+  <!--<li aria-hidden="true" ng-if="data.invProTask == 'true'" ng-repeat-end><i class="fa fa-chevron-right"></i></li>-->
+  
+  <!--<li ng-repeat-start="item in c.breadcrumbs">
+    <a ng-href="{{item.url}}">{{item.label}}</a>
+  </li>-->
+  <!--<li ng-if="!c.breadcrumbs"><a href>{{page.title}}</a></li>-->
+  
+</ul>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sp_widget_cd1153dcdbab2f00ccd6f2f5ab96190d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;standard&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, $rootScope, spUtil) {
+	var c = this;
+	c.expanded = !spUtil.isMobile();
+	c.expand = function() {
+		c.expanded = true;
+	};
+
+	var deregister = $rootScope.$on("sp.update.breadcrumbs", function(e, list) {
+		c.breadcrumbs = list;
+	});
+
+	$scope.$on('$destroy', function(){
+		deregister();
+	});
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.nav {
+  li {
+    padding: 10px 7px;
+
+    &amp;gt; span {
+      &amp;gt; a {
+          display: inline;
+      }
+
+      &amp;gt; i {
+          padding-left: 15px;
+      }
+    }
+  }
+}
+
+.a-disabled {
+  cursor: default;
+  color: inherit;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;VCM Invoices Breadcrumbs&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	data.currUser = gs.getUserID();
+	data.page = $sp.getParameter('id');
+	
+	//get My invoices
+	data.subConsultantId = '';
+	var contact = new GlideRecord('x_icir_scm_contacts');
+	contact.addQuery('user_name', data.currUser);
+	contact.query();
+	if(contact.next()){
+		var vendorId = contact.vendor_id;
+		data.subConsultantId = vendorId.toString();
+		var invoice = new GlideRecord('x_icir_scm_invoice');
+		invoice.addQuery('subconsultant_name', contact.vendor_id.toString());
+		invoice.query();
+		while(invoice.next()){
+			data.invId = invoice.sys_id + ',' + data.invId;
+		}
+	}
+	
+	//take invoice ID
+	if(data.page == 'scm_invoice_formwidget')
+		data.invoiceRecordID = $sp.getParameter("sys_id");
+	
+	else if(data.page == 'scm_invoiceprojtask_lf' &amp;&amp; !data.invoiceRecordID)
+		data.invoiceRecordID = $sp.getParameter("apply_to_sys_id");	
+	
+	if(!data.invoiceRecordID)
+		data.invoiceRecordID = $sp.getParameter("invoice_id");		
+	
+	if(!data.invoiceRecordID){		
+		var invTask = $sp.getParameter('sys_id');
+		var invProTask = new GlideRecord('x_icir_scm_invoice_project_and_task');
+		if(invProTask.get(invTask))
+			data.invoiceRecordID  = invProTask.invoice.toString();
+		invProTask.query();	
+	}
+	
+	
+	
+	//for my invoices breadcrumbs
+	if(data.page == 'scm_invoices_list' || data.page == 'scm_invoice_formwidget' || data.page == 'scm_invoiceprojtask_lf' || data.page == 'scm_inv_proj_task_form' || data.page == 'scm_invprojtask_form')
+		data.myInvoices = 'true';
+	
+	if(data.page == 'scm_invoice_formwidget' || data.page == 'scm_invoiceprojtask_lf' || data.page == 'scm_inv_proj_task_form' || data.page == 'scm_invprojtask_form')
+		data.invoice = 'true';
+	
+	if(data.page == 'scm_invoiceprojtask_lf' || data.page == 'scm_inv_proj_task_form' || data.page == 'scm_invprojtask_form')
+		data.invProTaskList = 'true';
+	
+	if(data.page == 'scm_inv_proj_task_form' || data.page == 'scm_invprojtask_form')
+		data.invProTask = 'true';	
+	
+	//Submit Invoice breadcrumbs
+	if(data.page == 'vcm_invoice_rec_prod')
+		data.submitInvoice = 'true';	
+	
+	
+	
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Anagha.Kunjeer@infocenter.io&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-02-07 04:07:53&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;cd1153dcdbab2f00ccd6f2f5ab96190d&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;VCM Invoices Breadcrumbs&lt;/sys_name&gt;&lt;sys_package display_value="Vendor Contract Management" source="x_icir_vcm"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Vendor Contract Management"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_cd1153dcdbab2f00ccd6f2f5ab96190d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Anagha.Kunjeer@infocenter.io&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-07 04:12:41&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;ul class="nav nav-pills nav-sm" aria-label="${Navigation breadcrumbs}"&gt;
+  &lt;li&gt;&lt;a ng-href="?id={{portal.homepage_dv}}"&gt;${Home}&lt;/a&gt;&lt;/li&gt;
+  
+ &lt;!-- &lt;li aria-hidden="true" if="data.submitInvoice == 'true'" ng-repeat-end&gt;&lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;&lt;/li&gt; --&gt;
+  &lt;li ng-if="data.submitInvoice == 'true'"&gt;&lt;a href=""&gt;${Submit}&lt;/a&gt;&lt;/li&gt;
+  
+  &lt;!--&lt;li aria-hidden="true" ng-if="data.myInvoices == 'true'" ng-repeat-end&gt;&lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;&lt;/li&gt;    --&gt;
+  &lt;li ng-if="data.myInvoices == 'true'"&gt;&lt;a ng-href="/scm?spa=1&amp;table=x_icir_scm_invoice&amp;id=scm_invoices_list&amp;filter=sys_idIN{{data.invId}}&amp;d=desc&amp;o=number"&gt;${My Invoices}&lt;/a&gt;&lt;/li&gt; 
+  
+  &lt;!--&lt;li aria-hidden="true" ng-if="data.invoice == 'true'"&gt;&lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;&lt;/li&gt;   --&gt;
+  &lt;li ng-if="data.invoice == 'true'"&gt;&lt;a ng-href="/scm?id=scm_invoice_formwidget&amp;table=x_icir_scm_invoice&amp;sys_id={{data.invoiceRecordID}}"&gt;${Invoice}&lt;/a&gt;&lt;/li&gt;  
+  
+  &lt;!--&lt;li aria-hidden="true" ng-if="data.invProTaskList == 'true'"&gt;&lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;&lt;/li&gt;    --&gt;
+  &lt;!--&lt;li ng-if="data.invProTaskList == 'true'"&gt;&lt;a href="scm?id=scm_invoiceprojtask_lf&amp;table=x_icir_scm_invoice_project_and_task&amp;relationship_id=REL:50535502db38e300ccd6f2f5ab9619b6&amp;apply_to=x_icir_scm_invoice&amp;apply_to_sys_id={{data.invoiceRecordID}}"&gt;${Invoice Project Task List}&lt;/a&gt;&lt;/li&gt;--&gt;
+  
+  &lt;!--&lt;li aria-hidden="true" if="data.invProTask == 'true'" ng-repeat-end&gt;&lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;&lt;/li&gt; --&gt;
+  &lt;li ng-if="data.invProTask == 'true'"&gt;&lt;a href=""&gt;${Invoice Project Task}&lt;/a&gt;&lt;/li&gt;
+  
+  &lt;!--&lt;li aria-hidden="true" ng-if="data.invProTask == 'true'" ng-repeat-end&gt;&lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;&lt;/li&gt;--&gt;
+  
+  &lt;!--&lt;li ng-repeat-start="item in c.breadcrumbs"&gt;
+    &lt;a ng-href="{{item.url}}"&gt;{{item.label}}&lt;/a&gt;
+  &lt;/li&gt;--&gt;
+  &lt;!--&lt;li ng-if="!c.breadcrumbs"&gt;&lt;a href&gt;{{page.title}}&lt;/a&gt;&lt;/li&gt;--&gt;
+  
+&lt;/ul&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1896931729</payload_hash>
+        <record_name>VCM Invoices Breadcrumbs</record_name>
+        <reverted_from/>
+        <source>640c41f7db17ab00c203a2364b9619cf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 04:12:41</sys_created_on>
+        <sys_id>ef225310dbeb2f00ccd6f2f5ab9619ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>168c62860e80000001</sys_recorded_at>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 04:12:41</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>a7225310b0eb2f00cab8d328677efaed</update_guid>
+        <update_guid_history>a7225310b0eb2f00cab8d328677efaed:1896931729,a4c19fdc0eab2f00bd1af723fa1cf529:-2045146223,ea61d7dc03ab2f00dc93121710f551a1:1567088570,483153dcf9ab2f00e3c5fb485fc7d472:-1595224838,491153dcf2ab2f00c43c7b867ac5540f:-1716612379</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2019-02-06 23:24:20">cad49390dbeb2f00ccd6f2f5ab96193d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 04:24:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>8a795df5707e4b9088a2c866b8cc95a4</sys_id>
+        <sys_metadata>cd1153dcdbab2f00ccd6f2f5ab96190d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VCM Invoices Breadcrumbs</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sp_widget_cd1153dcdbab2f00ccd6f2f5ab96190d</sys_update_name>
+        <sys_update_version display_value="sp_widget_cd1153dcdbab2f00ccd6f2f5ab96190d">ef225310dbeb2f00ccd6f2f5ab9619ed</sys_update_version>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 04:24:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

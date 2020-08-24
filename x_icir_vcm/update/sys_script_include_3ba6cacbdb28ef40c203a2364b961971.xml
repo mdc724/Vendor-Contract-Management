@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_icir_vcm.ScriptIncludeClientCallableUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>//Created by - Udaya Sadhineni&#13;
+//Created on - 19-sept-2018&#13;
+//Purpose - To auto-populate fields on VCM table from Vendor table</description>
+        <name>ScriptIncludeClientCallableUtils</name>
+        <script><![CDATA[var ScriptIncludeClientCallableUtils = Class.create();
+ScriptIncludeClientCallableUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	
+	//Populate project name from subconsultant project task table on 'COI' form
+	getProject: function(){
+		var name;
+		var gr = new GlideRecord('x_icir_vcm_task');
+		gr.addQuery('sys_id',this.getParameter('number'));
+		gr.query();
+		if(gr.next()){
+			name = gr.project_lvl3_name;
+		}
+		return name;
+	},
+	
+	//Populate project lvl2 name from subconsultant project task table on 'Invoice Project and Task' form
+	setName: function(){
+		var name;
+		var gr = new GlideRecordSecure('x_icir_vcm_task');
+		gr.addQuery('sys_id',this.getParameter('number'));
+		gr.query();
+		if(gr.next()){
+			name = gr.project_lvl2_name;
+		}
+		return name;
+	},
+	
+	//returns list of Project task on OnLoad Client script 'OnLoad Sets Assignment Value'
+	returnProjectTasks:function(){
+		
+		var task = '';
+		var grProj = new GlideRecordSecure('x_icir_vcm_projects');
+		grProj.addQuery('vendor_id', this.getParameter('name'));
+		grProj.query();
+		while(grProj.next()){
+			var grTask = new GlideRecordSecure('x_icir_vcm_task');
+			grTask.addQuery('project_lvl3_number', grProj.project_lvl3_number);
+			grTask.query();
+			while(grTask.next()){
+				task = task + "," + grTask.sys_id;
+				// 				gs.addInfoMessage(task);
+			}
+		}
+		return 'sys_idIN' + task;
+	},
+	
+	//returns list of Project task on OnLoad Client script 'OnLoad Set Project & Assignment Values'
+	returnAssignments:function(){
+		
+		var proj3Ids = '';
+		var grProject = new GlideRecordSecure('x_icir_vcm_vendor_l3_project');
+		grProject.addQuery('project_l2_number',this.getParameter('number'));
+		grProject.query();
+		// 		gs.addInfoMessage(grProject.getRowCount());
+		while(grProject.next()){
+			proj3Ids = proj3Ids + ',' + grProject.sys_id;
+		}
+		return 'sys_idIN' + proj3Ids;
+	},
+	
+	//This returns Vendor details from 'x_icir_scm_contacts' table, on Catalog client script 'OnLoad Set Values'
+	//same function is used for Additional Profile updates form
+	returnVendorDetails: function(){
+		
+		var vendor,venId;
+		var contact = new GlideRecord('x_icir_vcm_contacts');
+		contact.addQuery('contact',gs.getUserID());
+		contact.query();
+		if(contact.next()){
+			vendor = contact.vendor_id;
+			venId = contact.vendor_id.number;
+		}
+		return vendor + ',' + venId;
+	},
+	
+	//If coi type is not umbrella then clear out the field value
+	returnCOIType: function(){
+		var coiTypeUmbrella = gs.getProperty('x_icir_scm.coi.type.umbrella');
+		var coi, flag;
+		coi = this.getParameter('sysparam_coi');
+		// 		gs.addErrorMessage(coiTypeUmbrella+ ' coiTypeUmbrella');
+		// 		gs.addInfoMessage(coi+ ' COIType');
+		if(coiTypeUmbrella == coi){
+			flag = 1;
+		}
+		return flag;
+	},
+	
+	
+	//This check if amount form Invoice project task exceeding the Invoice total amount or not, this function is called from catalog client script of SCM Invoice Project Task Form record producer
+	returnValueOnInvProTask : function(){
+		
+		var invoiceID = this.getParameter('sysparm_invoice');
+		var invAmount= this.getParameter('sysparm_inv_Amount');
+		
+		var flag='';
+		var inv_tot=0;
+		var totAmount=0;
+		var total=0;
+		var grInv = new GlideRecord('x_icir_vcm_invoices');
+		grInv.addQuery('sys_id', invoiceID);
+		grInv.query();
+		if(grInv.next())
+			totAmount = parseFloat(grInv.invoice_total.getCurrencyValue());
+		
+		var grProjTask = new GlideRecord('x_icir_vcm_invoice_per_task');
+		grProjTask.addQuery('invoice', invoiceID);
+		grProjTask.query();
+		while(grProjTask.next())
+			total = parseFloat(total) + parseFloat(grProjTask.invoice_amount.getCurrencyValue());
+		
+		total = total + parseFloat(invAmount);
+		if(total > totAmount)
+			flag = 'Exceed';
+		else
+			flag = 'NotExceed';
+		
+		return flag;
+	},
+	
+	type: 'ScriptIncludeClientCallableUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-19 08:38:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3ba6cacbdb28ef40c203a2364b961971</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_name>ScriptIncludeClientCallableUtils</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_script_include_3ba6cacbdb28ef40c203a2364b961971</sys_update_name>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 10:36:03</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="compliant" table="x_icir_vcm_certificate_of_insurance" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compliant</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Yes</label>
+            <language>en</language>
+            <name>x_icir_vcm_certificate_of_insurance</name>
+            <sequence>0</sequence>
+            <sys_created_by>arpita.patil@infocenter.io</sys_created_by>
+            <sys_created_on>2019-02-05 06:39:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d880adbfdb57ab00c203a2364b9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>arpita.patil@infocenter.io</sys_updated_by>
+            <sys_updated_on>2019-02-05 06:39:04</sys_updated_on>
+            <value>Yes</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compliant</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No</label>
+            <language>en</language>
+            <name>x_icir_vcm_certificate_of_insurance</name>
+            <sequence>1</sequence>
+            <sys_created_by>arpita.patil@infocenter.io</sys_created_by>
+            <sys_created_on>2019-02-05 06:39:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1080adbfdb57ab00c203a2364b9619b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>arpita.patil@infocenter.io</sys_updated_by>
+            <sys_updated_on>2019-02-05 06:39:04</sys_updated_on>
+            <value>No</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>compliant</element>
+            <name>x_icir_vcm_certificate_of_insurance</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>arpita.patil@infocenter.io</sys_created_by>
+            <sys_created_on>2019-02-05 06:39:04</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>5480adbfdb57ab00c203a2364b9619b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>compliant</sys_name>
+            <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+            <sys_update_name>sys_choice_x_icir_vcm_certificate_of_insurance_compliant</sys_update_name>
+            <sys_updated_by>arpita.patil@infocenter.io</sys_updated_by>
+            <sys_updated_on>2019-02-05 06:39:04</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

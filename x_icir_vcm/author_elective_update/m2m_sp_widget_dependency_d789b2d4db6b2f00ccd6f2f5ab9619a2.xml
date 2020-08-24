@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
+    <m2m_sp_widget_dependency action="DELETE">
+        <sp_dependency display_value="sp_codemirror_includes">016f19255b301200e39fc7ad31f91abd</sp_dependency>
+        <sp_widget display_value="Copy of Invoice SC Catalog Item">d789b2d4db6b2f00ccd6f2f5ab9619a0</sp_widget>
+        <sys_class_name>m2m_sp_widget_dependency</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 02:25:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d789b2d4db6b2f00ccd6f2f5ab9619a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sp_codemirror_includes.Copy of Invoice SC Catalog Item</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>m2m_sp_widget_dependency_d789b2d4db6b2f00ccd6f2f5ab9619a2</sys_update_name>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 02:25:05</sys_updated_on>
+    </m2m_sp_widget_dependency>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>m2m_sp_widget_dependency_d789b2d4db6b2f00ccd6f2f5ab9619a2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="sp_codemirror_includes">016f19255b301200e39fc7ad31f91abd</sp_dependency><sp_widget display_value="Copy of Invoice SC Catalog Item">d789b2d4db6b2f00ccd6f2f5ab9619a0</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by><sys_created_on>2019-02-07 02:25:05</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>d789b2d4db6b2f00ccd6f2f5ab9619a2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sp_codemirror_includes.Copy of Invoice SC Catalog Item</sys_name><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>m2m_sp_widget_dependency_d789b2d4db6b2f00ccd6f2f5ab9619a2</sys_update_name><sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by><sys_updated_on>2019-02-07 02:25:05</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+        <payload_hash>56076348</payload_hash>
+        <record_name>sp_codemirror_includes.Copy of Invoice SC Catalog Item</record_name>
+        <reverted_from/>
+        <source>640c41f7db17ab00c203a2364b9619cf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 02:25:05</sys_created_on>
+        <sys_id>db8976d4db6b2f00ccd6f2f5ab961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>168c5c5ddec0000001</sys_recorded_at>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 02:25:05</sys_updated_on>
+        <type>Widget Dependency</type>
+        <update_guid>d38976d4e46b2f000f045b25399a5b05</update_guid>
+        <update_guid_history>d38976d4e46b2f000f045b25399a5b05:56076348</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2019-02-07 07:55:22">f7c981acdbab2f00c203a2364b961923</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 12:55:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="m2m_sp_widget_dependency">m2m_sp_widget_dependency</sys_db_object>
+        <sys_id>3ec98da038bc4840ac37db6cb88d6a40</sys_id>
+        <sys_metadata>d789b2d4db6b2f00ccd6f2f5ab9619a2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sp_codemirror_includes.Copy of Invoice SC Catalog Item</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>m2m_sp_widget_dependency_d789b2d4db6b2f00ccd6f2f5ab9619a2</sys_update_name>
+        <sys_update_version display_value="m2m_sp_widget_dependency_d789b2d4db6b2f00ccd6f2f5ab9619a2">db8976d4db6b2f00ccd6f2f5ab961905</sys_update_version>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 12:55:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

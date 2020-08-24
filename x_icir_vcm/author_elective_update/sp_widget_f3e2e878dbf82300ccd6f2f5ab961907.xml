@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <client_script><![CDATA[function($scope, $rootScope, $location, spUtil, $timeout, spAriaFocusManager) {
+	if ($scope.data.dataTableWidget)
+		angular.extend($scope.data.dataTableWidget.options, $scope.options);
+
+	$scope.$on('data_table.click', function(e, parms) {
+		var oid = $location.search().id;
+		var p = $scope.data.page_id || 'form';
+		var s = {id: p, table: parms.table, sys_id: parms.sys_id, view: $scope.data.view};
+		if (oid == p) {
+			s.spa = 1;
+			var t = $location.search();
+			s = angular.extend(t, s);
+			$rootScope.$broadcast('$sp.list.click', s);
+		}
+
+		var newURL = $location.search(s);
+		spAriaFocusManager.navigateToLink(newURL.url());
+	});
+
+	$scope.$on('select2.ready', function(e, $el){
+		if ($scope.data.invalid_table){
+			e.stopPropagation();
+			$el.select2('open');
+		}
+	})
+
+	$scope.selectedTable = {
+		displayValue: $scope.data.table,
+		value: $scope.data.table
+	}
+
+	function resetParams(){
+		delete $scope.data.p;
+		delete $scope.data.o;
+		delete $scope.data.d;
+		delete $scope.data.q;
+		delete $scope.data.table;
+	}
+
+	$scope.onChange = function() {
+		resetParams();
+		$scope.data.table = $scope.selectedTable.value;
+		$scope.data.fields = "";  // reset
+		$scope.data.invalid_table = false;
+		getData(true);
+	}
+
+	function getData(updateUrl) {
+		var f = $scope.data;
+		spUtil.update($scope).then(function(data) {
+				$scope.data.dataTableWidget = null;
+				$timeout(function(){
+					$scope.data.dataTableWidget = data.dataTableWidget;
+					angular.extend($scope.data.dataTableWidget.options, $scope.options);
+					if (updateUrl)
+						setPermalink(f.table);
+				});
+		});
+	}
+
+	function setPermalink(table) {
+		$scope.ignoreLocationChange = true;
+		var searchParms = $location.search();
+		var search = {
+			spa: 1,
+			table: table,
+			id: searchParms.id
+		};
+		$location.search(search);
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.widget-data-table .clearfix{&#13;
+	display: none;&#13;
+}</css>
+        <data_table>sp_instance_table</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title,glyph,color,sp_page,field_list</field_list>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link/>
+        <name>VCM Inv Task Data Table from URL Def</name>
+        <option_schema>[{"hint":"Show Instance option title instead of the table's plural label","name":"use_instance_title","label":"Use Instance Title","type":"boolean"},{"hint":"If enabled, show the filter in the breadcrumb section of the table","name":"enable_filter","default_value":"false","label":"Enable Filter","type":"boolean"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	deleteOptions(['table','field_list','filter','order_by', 'order_direction','order','maximum_entries']);
+	if (input) {
+		data.table = input.table;
+		data.view = input.view;
+	} else {
+		data.table = $sp.getParameter('table') || $sp.getParameter('t');
+		data.view = $sp.getParameter('view');
+	}
+
+	if (!data.table) {
+		data.invalid_table = true;
+		data.table_label = "";
+		return;
+	}
+
+	var gr = new GlideRecordSecure(data.table);
+	if (!gr.isValid()) {
+		data.invalid_table = true;
+		data.table_label = data.table;
+		return;
+	}
+
+	// page is where the record URLs go, URL parameter wins
+	data.page_id = $sp.getParameter("target_page_id");
+	if (!data.page_id) {
+		var sp_page = $sp.getValue('sp_page');
+		if (sp_page) {
+			var pageGR = new GlideRecord('sp_page');
+			pageGR.get(sp_page);
+			data.page_id = pageGR.id.getDisplayValue();
+		}
+	}
+
+	// widget parameters
+	data.table_label = gr.getLabel();
+	data.fields = $sp.getListColumns(data.table, data.view);
+	//data.title = gr.getPlural();
+	copyParameters(data, ['p', 'o', 'd', 'filter']);
+	copyParameters(data, ['relationship_id', 'apply_to', 'apply_to_sys_id']);
+	data.filterACLs = true;
+	data.show_new = true;
+	data.show_keywords  = true;
+	data.show_breadcrumbs = true;
+	data.fromUrl = true;
+	//data.enable_filter = input.enable_filter || options.enable_filter == true || options.enable_filter == "true";
+
+	data.dataTableWidget = $sp.getWidget('widget-data-table', data);
+
+	function copyParameters(to, names) {
+		names.forEach(function(name) {
+			data[name] = $sp.getParameter(name);
+		})
+	}
+
+	// in case this widget is tied to the wrong instance type
+	function deleteOptions(names) {
+		names.forEach(function(name) {
+			delete options[name];
+		})
+	}
+})()]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-24 11:51:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f3e2e878dbf82300ccd6f2f5ab961907</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>VCM Inv Task Data Table from URL Def</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_widget_f3e2e878dbf82300ccd6f2f5ab961907</sys_update_name>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-24 11:53:08</sys_updated_on>
+        <template><![CDATA[<div>
+  <div ng-if="data.invalid_table">
+    <div class="alert alert-info">
+      <span ng-if="data.table_label">${Table not defined} '{{data.table_label}}'</span>
+      <span ng-if="!data.table_label">${Select table on field below or specify on URL} ?id=list&amp;table=table_name</span>
+    </div>
+    <sn-record-picker field="selectedTable" table="'sys_db_object'"
+                      display-field="'label'"
+                      value-field="'name'"
+                      display-fields="'name'"
+                      search-fields="'label,name'" page-size="100" on-change="onChange()" ></sn-record-picker>
+  </div>
+  <div ng-if="data.dataTableWidget && !data.invalid_table">
+  	<sp-widget widget="data.dataTableWidget"></sp-widget>
+  </div>
+</div>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sp_widget_f3e2e878dbf82300ccd6f2f5ab961907</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, $rootScope, $location, spUtil, $timeout, spAriaFocusManager) {
+	if ($scope.data.dataTableWidget)
+		angular.extend($scope.data.dataTableWidget.options, $scope.options);
+
+	$scope.$on('data_table.click', function(e, parms) {
+		var oid = $location.search().id;
+		var p = $scope.data.page_id || 'form';
+		var s = {id: p, table: parms.table, sys_id: parms.sys_id, view: $scope.data.view};
+		if (oid == p) {
+			s.spa = 1;
+			var t = $location.search();
+			s = angular.extend(t, s);
+			$rootScope.$broadcast('$sp.list.click', s);
+		}
+
+		var newURL = $location.search(s);
+		spAriaFocusManager.navigateToLink(newURL.url());
+	});
+
+	$scope.$on('select2.ready', function(e, $el){
+		if ($scope.data.invalid_table){
+			e.stopPropagation();
+			$el.select2('open');
+		}
+	})
+
+	$scope.selectedTable = {
+		displayValue: $scope.data.table,
+		value: $scope.data.table
+	}
+
+	function resetParams(){
+		delete $scope.data.p;
+		delete $scope.data.o;
+		delete $scope.data.d;
+		delete $scope.data.q;
+		delete $scope.data.table;
+	}
+
+	$scope.onChange = function() {
+		resetParams();
+		$scope.data.table = $scope.selectedTable.value;
+		$scope.data.fields = "";  // reset
+		$scope.data.invalid_table = false;
+		getData(true);
+	}
+
+	function getData(updateUrl) {
+		var f = $scope.data;
+		spUtil.update($scope).then(function(data) {
+				$scope.data.dataTableWidget = null;
+				$timeout(function(){
+					$scope.data.dataTableWidget = data.dataTableWidget;
+					angular.extend($scope.data.dataTableWidget.options, $scope.options);
+					if (updateUrl)
+						setPermalink(f.table);
+				});
+		});
+	}
+
+	function setPermalink(table) {
+		$scope.ignoreLocationChange = true;
+		var searchParms = $location.search();
+		var search = {
+			spa: 1,
+			table: table,
+			id: searchParms.id
+		};
+		$location.search(search);
+	}
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.widget-data-table .clearfix{&amp;#13;
+	display: none;&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance_table&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;title,glyph,color,sp_page,field_list&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;VCM Inv Task Data Table from URL Def&lt;/name&gt;&lt;option_schema&gt;[{"hint":"Show Instance option title instead of the table's plural label","name":"use_instance_title","label":"Use Instance Title","type":"boolean"},{"hint":"If enabled, show the filter in the breadcrumb section of the table","name":"enable_filter","default_value":"false","label":"Enable Filter","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	deleteOptions(['table','field_list','filter','order_by', 'order_direction','order','maximum_entries']);
+	if (input) {
+		data.table = input.table;
+		data.view = input.view;
+	} else {
+		data.table = $sp.getParameter('table') || $sp.getParameter('t');
+		data.view = $sp.getParameter('view');
+	}
+
+	if (!data.table) {
+		data.invalid_table = true;
+		data.table_label = "";
+		return;
+	}
+
+	var gr = new GlideRecordSecure(data.table);
+	if (!gr.isValid()) {
+		data.invalid_table = true;
+		data.table_label = data.table;
+		return;
+	}
+
+	// page is where the record URLs go, URL parameter wins
+	data.page_id = $sp.getParameter("target_page_id");
+	if (!data.page_id) {
+		var sp_page = $sp.getValue('sp_page');
+		if (sp_page) {
+			var pageGR = new GlideRecord('sp_page');
+			pageGR.get(sp_page);
+			data.page_id = pageGR.id.getDisplayValue();
+		}
+	}
+
+	// widget parameters
+	data.table_label = gr.getLabel();
+	data.fields = $sp.getListColumns(data.table, data.view);
+	//data.title = gr.getPlural();
+	copyParameters(data, ['p', 'o', 'd', 'filter']);
+	copyParameters(data, ['relationship_id', 'apply_to', 'apply_to_sys_id']);
+	data.filterACLs = true;
+	data.show_new = true;
+	data.show_keywords  = true;
+	data.show_breadcrumbs = true;
+	data.fromUrl = true;
+	//data.enable_filter = input.enable_filter || options.enable_filter == true || options.enable_filter == "true";
+
+	data.dataTableWidget = $sp.getWidget('widget-data-table', data);
+
+	function copyParameters(to, names) {
+		names.forEach(function(name) {
+			data[name] = $sp.getParameter(name);
+		})
+	}
+
+	// in case this widget is tied to the wrong instance type
+	function deleteOptions(names) {
+		names.forEach(function(name) {
+			delete options[name];
+		})
+	}
+})()]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Anagha.Kunjeer@infocenter.io&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-24 11:51:19&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;f3e2e878dbf82300ccd6f2f5ab961907&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;VCM Inv Task Data Table from URL Def&lt;/sys_name&gt;&lt;sys_package display_value="Vendor Contract Management" source="x_icir_vcm"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Vendor Contract Management"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_f3e2e878dbf82300ccd6f2f5ab961907&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Anagha.Kunjeer@infocenter.io&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-24 11:53:08&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;div ng-if="data.invalid_table"&gt;
+    &lt;div class="alert alert-info"&gt;
+      &lt;span ng-if="data.table_label"&gt;${Table not defined} '{{data.table_label}}'&lt;/span&gt;
+      &lt;span ng-if="!data.table_label"&gt;${Select table on field below or specify on URL} ?id=list&amp;amp;table=table_name&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;sn-record-picker field="selectedTable" table="'sys_db_object'"
+                      display-field="'label'"
+                      value-field="'name'"
+                      display-fields="'name'"
+                      search-fields="'label,name'" page-size="100" on-change="onChange()" &gt;&lt;/sn-record-picker&gt;
+  &lt;/div&gt;
+  &lt;div ng-if="data.dataTableWidget &amp;&amp; !data.invalid_table"&gt;
+  	&lt;sp-widget widget="data.dataTableWidget"&gt;&lt;/sp-widget&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1958881062</payload_hash>
+        <record_name>VCM Inv Task Data Table from URL Def</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-24 11:53:08</sys_created_on>
+        <sys_id>5a53e4b8dbf82300ccd6f2f5ab9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1660b6d0de60000001</sys_recorded_at>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-24 11:53:08</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>1253e4b82ff823007c28480dcfb539b2</update_guid>
+        <update_guid_history>1253e4b82ff823007c28480dcfb539b2:-1958881062,a513ec78aef82300240951dc9ec8102e:1995890202,3be2e878f0f82300ba479e11075ec408:-983712909</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2019-02-06 23:00:05">cf4fc35cdbab2f00ccd6f2f5ab9619f8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 04:00:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>0a1a933e29cd47f6a99b7788c2d32e44</sys_id>
+        <sys_metadata>f3e2e878dbf82300ccd6f2f5ab961907</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VCM Inv Task Data Table from URL Def</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sp_widget_f3e2e878dbf82300ccd6f2f5ab961907</sys_update_name>
+        <sys_update_version display_value="sp_widget_f3e2e878dbf82300ccd6f2f5ab961907">5a53e4b8dbf82300ccd6f2f5ab9619b2</sys_update_version>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 04:00:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

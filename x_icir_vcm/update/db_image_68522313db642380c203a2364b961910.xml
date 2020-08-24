@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format>png</format>
+        <height>64</height>
+        <image/>
+        <name>vcm-invoice-icon.png</name>
+        <size_bytes>1874</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>satej.kalyani@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-20 09:56:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>68522313db642380c203a2364b961910</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>vcm-invoice-icon.png</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>db_image_68522313db642380c203a2364b961910</sys_update_name>
+        <sys_updated_by>satej.kalyani@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-20 09:57:24</sys_updated_on>
+        <thumbnail/>
+        <width>64</width>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#0</average_image_color>
+        <chunk_size_bytes/>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>image</file_name>
+        <hash/>
+        <image_height>64</image_height>
+        <image_width>64</image_width>
+        <size_bytes>1874</size_bytes>
+        <size_compressed>1897</size_compressed>
+        <state/>
+        <sys_created_by>satej.kalyani@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-20 09:57:24</sys_created_on>
+        <sys_id>4882679fdb242380c203a2364b96190f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>satej.kalyani@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-20 09:57:24</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>68522313db642380c203a2364b961910</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="4882679fdb242380c203a2364b96190f">4882679fdb242380c203a2364b96190f</sys_attachment>
+        <sys_created_by>satej.kalyani@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-20 09:57:24</sys_created_on>
+        <sys_id>8882679fdb242380c203a2364b96190f</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>2516</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="4882679fdb242380c203a2364b96190f">4882679fdb242380c203a2364b96190f</sys_attachment>
+        <sys_created_by>satej.kalyani@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-20 09:57:24</sys_created_on>
+        <sys_id>0c82679fdb242380c203a2364b96190f</sys_id>
+    </sys_attachment_doc>
+</record_update>

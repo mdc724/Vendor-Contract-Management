@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>true</action_query>
+        <action_update>false</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_icir_vcm_invoices</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Invoice Access To Approvers/Task Manager</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	//Created by - Udaya Sadhineni
+	//Created on - 08 Jan 2019
+	//Purpose - Invoice Record Access
+	
+	//Approvers can access thier Invoice Records.
+	var vendorId = '';
+	var venId = '';
+	var proTask, invoice, invTask;
+	if(!gs.hasRole('admin') && gs.hasRole('x_icir_vcm.all')){
+		
+		var approver = new GlideRecord('sysapproval_approver');
+		approver.addQuery('approver', gs.getUserID());
+		approver.query();
+		while(approver.next()){
+			invoice = new GlideRecordSecure('x_icir_vcm_invoices');
+			invoice.addQuery('sys_id', approver.document_id);
+			invoice.query();
+			while(invoice.next()){
+				vendorId = invoice.sys_id + ',' + vendorId;
+				venId = vendorId.substr(1);
+			}
+		}
+		
+		//Task Managers can access their invoices.
+		proTask = new GlideRecordSecure('x_icir_vcm_task');
+		proTask.addQuery('task_manager', gs.getUserID());
+		proTask.query();
+		while(proTask.next()){
+			invTask = new GlideRecordSecure('x_icir_vcm_invoice_per_task');
+			invTask.addQuery('project.project_lvl3_number', proTask.project_lvl3_number);
+			invTask.query();
+			while(invTask.next()){
+				invoice = new GlideRecordSecure('x_icir_vcm_invoices');
+				invoice.addQuery('sys_id', invTask.invoice);
+				invoice.query();
+				while(invoice.next()){
+					vendorId = invoice.sys_id + ',' + vendorId;
+					venId = vendorId.substr(1);
+				}
+			}
+		}
+		var query = 'sys_idIN'+ venId;
+		var qc = current.addEncodedQuery(query);
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-07 07:36:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5bae3318db272f00c203a2364b9619f4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Invoice Access To Approvers/Task Manager</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_script_5bae3318db272f00c203a2364b9619f4</sys_update_name>
+        <sys_updated_by>shweta.bagde@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 09:40:18</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=5bae3318db272f00c203a2364b9619f4"/>
+</record_update>

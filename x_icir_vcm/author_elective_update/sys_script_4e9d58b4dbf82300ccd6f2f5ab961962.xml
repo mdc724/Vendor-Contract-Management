@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_icir_vcm_vendor_contract_management</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Mandatory Attachment Check On VCM Portal</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	if(!current.hasAttachments())		
+	{	
+		gs.addErrorMessage('Please Attach an Attachment');		
+		current.setAbortAction(true);
+	
+		action.setRedirectURL(current);		
+	}
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Nehal.Ranpise@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-24 11:29:46</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4e9d58b4dbf82300ccd6f2f5ab961962</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Mandatory Attachment Check On VCM Portal</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_script_4e9d58b4dbf82300ccd6f2f5ab961962</sys_update_name>
+        <sys_updated_by>Nehal.Ranpise@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-24 11:34:39</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=4e9d58b4dbf82300ccd6f2f5ab961962"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sys_script_4e9d58b4dbf82300ccd6f2f5ab961962</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_icir_vcm_vendor_contract_management&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Mandatory Attachment Check On VCM Portal&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	if(!current.hasAttachments())		
+	{	
+		gs.addErrorMessage('Please Attach an Attachment');		
+		current.setAbortAction(true);
+	
+		action.setRedirectURL(current);		
+	}
+	
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Nehal.Ranpise@infocenter.io&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-24 11:29:46&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;4e9d58b4dbf82300ccd6f2f5ab961962&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Mandatory Attachment Check On VCM Portal&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Vendor Contract Management" source="x_icir_vcm"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Vendor Contract Management"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_4e9d58b4dbf82300ccd6f2f5ab961962&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Nehal.Ranpise@infocenter.io&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-24 11:34:39&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=4e9d58b4dbf82300ccd6f2f5ab961962"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2116809777</payload_hash>
+        <record_name>Mandatory Attachment Check On VCM Portal</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Nehal.Ranpise@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-24 11:34:39</sys_created_on>
+        <sys_id>eb1f58f4dbf82300ccd6f2f5ab9619eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1660b5c210f0000001</sys_recorded_at>
+        <sys_updated_by>Nehal.Ranpise@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-24 11:34:39</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>231f58f454f823004c0bff14d33119eb</update_guid>
+        <update_guid_history>231f58f454f823004c0bff14d33119eb:-2116809777,ec3ed4b47ef8230010fadde4c5e25a33:1192970878,480e5cb435f82300a4ff22289ca2797f:2007439977</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-27 06:21:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>2634a163f15e4d6c99c08eb6820c6890</sys_id>
+        <sys_metadata>4e9d58b4dbf82300ccd6f2f5ab961962</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Mandatory Attachment Check On VCM Portal</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent display_value="">8d995872db2caf40c203a2364b9619ba</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sys_script_4e9d58b4dbf82300ccd6f2f5ab961962</sys_update_name>
+        <sys_update_version display_value="sys_script_4e9d58b4dbf82300ccd6f2f5ab961962">eb1f58f4dbf82300ccd6f2f5ab9619eb</sys_update_version>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-27 06:21:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

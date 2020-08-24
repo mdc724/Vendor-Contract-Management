@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>Sindhu.Papineni@infocenter.io</sys_created_by>
+        <sys_created_on>2019-03-11 13:59:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3e3b0ebadb403f40ccd6f2f5ab961980</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approve.x_icir_vcm.all</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_ui_action display_value="Approve">6bd6c4d8db632f00ccd6f2f5ab9619e5</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_3e3b0ebadb403f40ccd6f2f5ab961980</sys_update_name>
+        <sys_updated_by>Sindhu.Papineni@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-03-11 13:59:17</sys_updated_on>
+        <sys_user_role display_value="x_icir_vcm.all" name="x_icir_vcm.all">7e944b0fdbecaf40ccd6f2f5ab961939</sys_user_role>
+    </sys_ui_action_role>
+</record_update>

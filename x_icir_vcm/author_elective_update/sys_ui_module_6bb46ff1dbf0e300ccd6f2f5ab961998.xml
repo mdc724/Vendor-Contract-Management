@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application display_value="Vendor Contract Management">48b990b2db2caf40c203a2364b9619e6</application>
+        <filter/>
+        <name>Subconsultants</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_icir_vcm.subconsultant_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-28 04:32:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>6bb46ff1dbf0e300ccd6f2f5ab961998</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Subconsultants</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_ui_module_6bb46ff1dbf0e300ccd6f2f5ab961998</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-28 04:32:00</sys_updated_on>
+        <table>x_icir_vcm_subconsultant</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sys_ui_module_6bb46ff1dbf0e300ccd6f2f5ab961998</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Vendor Contract Management">48b990b2db2caf40c203a2364b9619e6</application><filter/><name>Subconsultants</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>x_icir_vcm.subconsultant_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-28 04:32:00</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path/><sys_id>6bb46ff1dbf0e300ccd6f2f5ab961998</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Subconsultants</sys_name><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>sys_ui_module_6bb46ff1dbf0e300ccd6f2f5ab961998</sys_update_name><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-28 04:32:00</sys_updated_on><table>x_icir_vcm_subconsultant</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>1779399639</payload_hash>
+        <record_name>Subconsultants</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-28 04:32:01</sys_created_on>
+        <sys_id>abb46ff1dbf0e300ccd6f2f5ab96199a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1661e72a20c0000001</sys_recorded_at>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-28 04:32:01</sys_updated_on>
+        <type>Module</type>
+        <update_guid>a3b46ff12af0e300a4dd99f8889b219a</update_guid>
+        <update_guid_history>a3b46ff12af0e300a4dd99f8889b219a:1779399639</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 09:01:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>0898227fd1e643979dd8dada85ad00e9</sys_id>
+        <sys_metadata>6bb46ff1dbf0e300ccd6f2f5ab961998</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Subconsultants</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sys_ui_module_6bb46ff1dbf0e300ccd6f2f5ab961998</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_6bb46ff1dbf0e300ccd6f2f5ab961998">abb46ff1dbf0e300ccd6f2f5ab96199a</sys_update_version>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 09:01:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

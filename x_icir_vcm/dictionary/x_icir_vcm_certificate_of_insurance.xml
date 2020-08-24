@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Certificate of Insurance" max_length="40" name="x_icir_vcm_certificate_of_insurance" sizeclass="16" type="collection">
+        <element display="true" label="COI type" mandatory="true" max_length="32" name="coi_type" reference="x_icir_vcm_choices_configuration" reference_qual="table_name=x_icir_vcm_certificate_of_insurance^field_name=coi_type^active=true^EQ" reference_qual_condition="table_name=x_icir_vcm_certificate_of_insurance^field_name=coi_type^active=true^EQ" type="reference"/>
+        <element choice="1" label="Compliant" max_length="20" name="compliant" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="Yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="No"/>
+            </choice>
+        </element>
+        <element label="Expiration date" mandatory="true" max_length="40" name="expiration_of_insurance" type="glide_date"/>
+        <element choice="1" label=" KH as additional insured" max_length="20" name="kh_as_additional_insured" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="Yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="No"/>
+            </choice>
+        </element>
+        <element choice="1" label="KH as additional insured exception" max_length="30" name="kh_as_additional_insured_exception" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="Yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="No"/>
+            </choice>
+        </element>
+        <element choice="1" label="KH waiver" max_length="20" name="kh_waiver" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="Yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="No"/>
+            </choice>
+        </element>
+        <element choice="1" label="Meets KH minimum" max_length="40" name="meets_kh_minimum" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="Yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="No"/>
+            </choice>
+        </element>
+        <element label="Notes" max_length="4000" name="notes" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Project-Lvl3 – Name" max_length="20" name="project_lvl3_name" read_only="true" type="string"/>
+        <element label="Project-Lvl3 – Number" max_length="32" name="project_lvl3_number" reference="x_icir_vcm_task" reference_qual="javascript:new ScriptIncludeServerSideUtils().returnProjTasks()" type="reference" use_reference_qualifier="advanced"/>
+        <element choice="3" default="New" label="Status" mandatory="true" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="0" value="New"/>
+                <element inactive_on_update="false" label="Under Review" sequence="1" value="Under Review"/>
+                <element inactive_on_update="false" label="Active" sequence="2" value="Active"/>
+                <element inactive_on_update="false" label="Expired" sequence="3" value="Expired"/>
+                <element inactive_on_update="false" label="Rejected" sequence="4" value="Rejected"/>
+            </choice>
+        </element>
+        <element attributes="omit_sys_original=true" label="Umbrella coverage amount" max_length="20" name="umbrella_coverage_amount" type="currency"/>
+        <element label="Vendor ID" max_length="32" name="vendor_id" read_only="true" reference="x_icir_vcm_vendor" type="reference"/>
+        <index name="index">
+            <element name="vendor_id"/>
+        </index>
+        <index name="index2">
+            <element name="project_lvl3_number"/>
+        </index>
+        <index name="index3">
+            <element name="coi_type"/>
+        </index>
+    </element>
+</database>

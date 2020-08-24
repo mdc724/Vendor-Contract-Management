@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Choices Configuration" max_length="40" name="x_icir_vcm_choices_configuration" sizeclass="38" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Dependent Field" max_length="40" name="dependent_field" type="string"/>
+        <element label="Dependent Value" max_length="40" name="dependent_value" type="string"/>
+        <element label="Field Name" max_length="60" name="field_name" type="string"/>
+        <element label="Order" max_length="40" name="order" type="integer"/>
+        <element label="Table Name" max_length="100" name="table_name" type="string"/>
+        <element display="true" label="Value" max_length="100" name="value" type="string"/>
+    </element>
+</database>

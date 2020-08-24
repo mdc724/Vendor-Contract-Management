@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_header_footer">
+    <sp_header_footer action="INSERT_OR_UPDATE">
+        <category>standard</category>
+        <client_script><![CDATA[function ($rootScope, $scope, snRecordWatcher, spUtil, $location, $uibModal, cabrillo, $timeout, $window) {
+
+	$scope.avatarProfile = {
+		userID: $scope.user.sys_id,
+		name: $scope.user.name,
+		initials: $window.NOW.user_initials
+	};
+	
+	if ($window.NOW.user_avatar) {
+		$scope.avatarProfile.userImage = $window.NOW.user_avatar;
+	}
+
+	if (cabrillo.isNative())
+		$scope.isViewNative = true;
+
+	$scope.openPopUp = function() {
+		var url = "$chat_support.do?queueID=" + $scope.data.connect_support_queue_id;
+		var popup = window.open (url, "popup", "width=900, height=600");
+	};
+
+	$scope.openLogin = function () {
+		$scope.modalInstance = $uibModal.open({
+			templateUrl: 'modalLogin',
+			scope: $scope
+		});
+	};
+
+	var xsScreenSize = isXSScreenSize();
+	$scope.showXSAvatar = isXSScreenSize();
+	$scope.showAvatar = !isXSScreenSize();
+	
+	angular.element($window).on('resize', function () {
+		if(xsScreenSize !== isXSScreenSize() && (!$scope.showXSAvatar || !$scope.showAvatar)){
+			$scope.showXSAvatar = true;
+			$scope.showAvatar = true;
+		}	   
+	});
+	
+	
+	function isXSScreenSize() {
+		return $window.matchMedia('(max-width: 767px)').matches;
+	}
+	
+	$rootScope.$on('sp.avatar_changed', function() {
+		$scope.userID = "";
+		$timeout(function(){
+			$scope.userID = $scope.user.sys_id;
+		});
+	});
+
+	$scope.isHomepage = function() {
+		if (!$scope.page.id)
+			return true;
+
+		if ($scope.page.id == $scope.portal.homepage_dv)
+			return true;
+
+		return false;
+	};
+}
+		]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.navbar {
+  background: #fff;
+  transition: 250ms opacity ease-in-out;
+  -webkit-transition: 250ms opacity ease-in-out;
+  border: 0;
+  border-bottom: 1px solid $sp-navbar-divider-color;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.navbar-brand {
+  max-height: 60px;
+  padding: 0;
+  img {
+    padding: 18px 15px;
+    display: inline-block;
+    position: relative;
+    max-height: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  span {
+    display: inline-block;
+    height: 100%;
+  	font-size: 16px;
+    line-height: 1.2;
+    vertical-align: top;
+    padding: 20px 15px;
+    position: relative;
+    font-weight: 400;
+  }
+  &amp;.navbar-brand-logo span {
+    color: #454645;
+    &amp;:before {
+      content: '';
+      display: block;
+      height: 40%;
+      width: 1px;
+      background: $sp-navbar-divider-color;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.navbar-nav {
+  &gt; li &gt; a {
+  	text-transform: uppercase;
+    color: $text-muted;
+    font-weight: 400;
+    &amp;:hover {
+    	color: $link-color;
+    }
+  }
+  &gt; li &gt; a &gt; .fa {
+  	margin-right: 5px;
+  }
+}
+
+.navbar-avatar {
+  .avatar-container {
+  	background: $brand-primary;
+  }
+  + span {
+  	text-transform: none;
+    color: $text-color;
+    font-weight: 700;
+  }
+}
+
+.navbar-fade {
+  opacity: 0.4;
+}
+
+.navbar-collapse {
+	border-top-color: $sp-navbar-divider-color;
+}
+
+.navbar-toggle {
+  margin-right: 8px;
+  .icon-bar {
+  	background: $text-muted;
+  }
+}
+
+// Mobile / Small Screens Only
+@media screen and (max-width: 768px) {
+  .navbar-brand.navbar-brand-logo {
+    img {
+    	display: none;
+    }
+    span {
+    	font-weight: 500;
+    }
+    span:before {
+    	display: none;
+    }
+  }
+}
+
+// Larger Screen Sizes Only
+@media screen and (min-width: 769px) {
+  .navbar-right {
+  	margin-right: -15px;
+  }
+  .navbar-nav &gt; li &gt; a {
+  	min-height: 60px;
+  }
+}
+
+
+/* for mobile app */
+.navbar-inverse.is-native {
+  background-color: #405060;
+}
+
+
+// PRB711244: Dropdown menu is scrollable when too many items
+.scrollable-dropdown {
+  max-height: 80vh;
+  overflow: auto;
+  height: auto;
+}
+.is-native {
+ .scrollable-dropdown {
+  max-height: 100vh;
+  overflow: scroll;
+  height: auto;
+	}
+}
+
+
+/* PRB923910: Fix for Service Portal - Header Poorly Aligned in Safari */
+@media screen and (min-width: 768px) {
+  .navbar-collapse {
+    display: flex !important;
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function(scope, element) {
+	$(document).keyup(function(event) {
+		if (event.which == 9) { //tab key handler + arrow keys
+			if ($(event.target).parents(".dropdown-menu").length == 0) { //if we are NOT inside a dropdown...
+				//close the dropdowns
+				$(".dropdown").removeClass("open");
+				$("[data-toggle='dropdown']").attr("aria-expanded", "false");
+			}
+		}
+	});
+	
+	$(element).on('click.nav','.navbar-collapse.in',function(e) {
+		var target = $(e.target);
+		if (target.is('a')) {
+			if (target.hasClass('sp-menu-has-items'))
+				return; // menu item has a submenu, so just toggle it
+			
+			// collapse mobile nav if clicked an anchor
+			$(this).removeClass('in').addClass('collapse');
+			return;
+		}
+
+		if (target.parent().hasClass("toggle-dropdown")) {
+			// collapse mobile nav if parent has toggle-dropdown class
+			$(this).removeClass('in').addClass('collapse');
+			return;
+		}
+
+		// if neither target nor parent is an anchor, do nothing
+		if (!target.parent().is('a'))
+			return;
+
+		// collapse mobile nav if target is part of a submenu
+		if (target.parents("ul.dropdown-menu").length > 0)
+			$(this).removeClass('in').addClass('collapse');
+	});
+}]]></link>
+        <name>VCM Stock Header</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[// Defines the support queue ID that will be linked to by the Live Chat link in header
+data.connect_support_queue_id = $sp.getValue('sp_chat_queue');
+data.login_page = $sp.getValue('login_page');
+data.profileBtnMsg = gs.getMessage("User options");
+var menu = $sp.getValue("sp_rectangle_menu");
+data.menu = $sp.getWidgetFromInstance(menu);
+if (data.menu && data.menu.data) {
+	data.menu.data.replace = true;
+	// Hide login if menu already has link to login
+	data.hasLogin = false;
+	if (data.menu.data.menu.items) {
+		for(var i in data.menu.data.menu.items) {
+			var item = data.menu.data.menu.items[i];
+			if (item.type == 'page' && item.sp_page == data.login_page)
+				data.hasLogin = true;
+		}
+	}
+}
+
+data.loginWidget = $sp.getWidgetFromInstance('login-modal');]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_header_footer</sys_class_name>
+        <sys_created_by>mac.bleser@glew.io</sys_created_by>
+        <sys_created_on>2019-03-26 02:24:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2d1c3423db143780c203a2364b96197c</sys_id>
+        <sys_mod_count>94</sys_mod_count>
+        <sys_name>VCM Stock Header</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_header_footer_2d1c3423db143780c203a2364b96197c</sys_update_name>
+        <sys_updated_by>mac.bleser@glew.io</sys_updated_by>
+        <sys_updated_on>2019-03-26 07:56:22</sys_updated_on>
+        <template><![CDATA[<nav class="navbar" ng-class="::{'navbar':!isViewNative, 'is-native': isViewNative}"
+     role="navigation">
+  <div class="container">
+    <div ng-show="::!isViewNative" class="navbar-header">
+      <a class="navbar-brand" ng-if="::!portal.logo" href="?id={{::portal.homepage_dv}}"><span>{{::portal.title}}</span></a>
+      <a class="navbar-brand navbar-brand-logo" ng-if="::portal.logo" href="?id={{::portal.homepage_dv}}" aria-label="${Go to homepage}">
+        <img ng-src="{{::portal.logo}}" title="ServiceNow" role="presentation" alt="${Portal Logo}" />
+        <span class="navbar-title">{{::portal.title}}</span>
+      </a>
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sp-nav-bar">
+        <span class="sr-only">${Toggle navigation}</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div sp-navbar-toggle="" class="collapse navbar-collapse navbar-right scrollable-dropdown" id="sp-nav-bar">
+      <!-- Include The Menu -->
+      <sp-widget widget="::data.menu"></sp-widget>
+      <ul ng-if="::(!user.logged_in && page.id != portal.login_page_dv && !data.hasLogin)" class="nav navbar-nav" role="presentation">
+        <li role="presentation"><a href ng-click="::openLogin()">${Login}</a></li>
+      </ul>
+      <ul ng-if="::user.logged_in" class="nav navbar-nav" role="menubar">
+        <!-- chat, avatar, and logout -->
+        <li ng-if="::data.connect_support_queue_id" role="presentation"><a href ng-click="openPopUp()" role="menuitem">${Live Chat}</a></li>
+        <li ng-if="showAvatar" class="hidden-xs dropdown" role="presentation">
+          <a href class="toggle-dropdown" data-toggle="dropdown" aria-expanded="false" title="{{::data.profileBtnMsg}}" aria-label="{{::data.profileBtnMsg}}: {{::user.name}}" id="profile-dropdown"  role="menuitem" aria-haspopup="true">
+            <span class="navbar-avatar" aria-hidden="true"><sn-avatar class="avatar-small-medium" primary="avatarProfile" /></span>
+            <span class="visible-lg-inline">{{::user.name}}</span>
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-label="{{::data.profileBtnMsg}}">
+            <li role="presentation"><a tabindex="-1" ng-href="?id=user_profile&sys_id={{::user.sys_id}}" role="menuitem">${Profile}</a></li>
+            <li ng-if="::!isViewNative" role="presentation"><a tabindex="-1" href="{{::portal.logoutUrl}}" role="menuitem">${Logout}</a></li>
+          </ul>
+        </li>
+        <li ng-if="showXSAvatar" class="visible-xs-block" role="presentation"><a role="menuitem" ng-href="?id=user_profile&sys_id={{::user.sys_id}}">
+          <span class="navbar-avatar"><sn-avatar class="avatar-small-medium" primary="avatarProfile" /></span>{{::user.name}}</a>
+        </li>
+        <li ng-if="::!isViewNative" class="visible-xs-block" role="presentation"><a role="menuitem" href="{{::portal.logoutUrl}}">${Logout}</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>]]></template>
+    </sp_header_footer>
+</record_update>

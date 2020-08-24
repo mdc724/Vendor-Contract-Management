@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>VCM Notify On Expired COI</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2019-02-05 13:19:16</run_start>
+        <run_time>1970-01-01 05:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[(function() {
+	
+	//Created by - Udaya Sadhineni
+	//Created on - 05 Feb 2019
+	//Purpose - Notify the Updation of Expired COI's if no other Active COI's exist of same COI type for that Subconsultant.
+	
+	var coi;
+	coi = new GlideRecordSecure('x_icir_vcm_certificate_of_insurance');
+	coi.query();
+	while(coi.next()) {
+		var status = coi.status;
+		if(status == 'Expired'){
+			var newCoi = new GlideRecordSecure('x_icir_vcm_certificate_of_insurance');
+			newCoi.addQuery('coi_type', coi.coi_type);
+			newCoi.addQuery('vendor_id', coi.vendor_id);
+			newCoi.addQuery('status', 'Active');
+			newCoi.query();
+			if(!newCoi.next()){
+				var subject = 'Update COI';
+				gs.eventQueue('x_icir_vcm.coi.expiry',coi,subject,'');
+			}
+		}
+	}
+	
+})();]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 13:30:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a21cf6ffdb9bab00c203a2364b961971</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>VCM Notify On Expired COI</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sysauto_script_a21cf6ffdb9bab00c203a2364b961971</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 13:48:05</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

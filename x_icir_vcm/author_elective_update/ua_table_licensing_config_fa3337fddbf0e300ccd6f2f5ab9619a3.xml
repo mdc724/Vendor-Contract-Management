@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="DELETE">
+        <is_fulfillment>false</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>x_icir_vcm_contract</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition/>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-28 05:35:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fa3337fddbf0e300ccd6f2f5ab9619a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_icir_vcm_contract</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>ua_table_licensing_config_fa3337fddbf0e300ccd6f2f5ab9619a3</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-28 05:35:18</sys_updated_on>
+    </ua_table_licensing_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>ua_table_licensing_config_fa3337fddbf0e300ccd6f2f5ab9619a3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>x_icir_vcm_contract</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-28 05:35:18</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>fa3337fddbf0e300ccd6f2f5ab9619a3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_icir_vcm_contract</sys_name><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>ua_table_licensing_config_fa3337fddbf0e300ccd6f2f5ab9619a3</sys_update_name><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-28 05:35:18</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+        <payload_hash>375379201</payload_hash>
+        <record_name>x_icir_vcm_contract</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-28 05:35:18</sys_created_on>
+        <sys_id>fe3337fddbf0e300ccd6f2f5ab9619a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1661eac94300000001</sys_recorded_at>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-28 05:35:18</sys_updated_on>
+        <type>Table Subscription Configuration</type>
+        <update_guid>f63337fd3bf0e3007819d4bb3b7a0ca4</update_guid>
+        <update_guid_history>f63337fd3bf0e3007819d4bb3b7a0ca4:375379201</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2019-02-05 04:00:13">77c0c67fdbd7ab00c203a2364b961917</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 09:00:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="ua_table_licensing_config">ua_table_licensing_config</sys_db_object>
+        <sys_id>1273ee36225c42269d6e44dbbd099d04</sys_id>
+        <sys_metadata>fa3337fddbf0e300ccd6f2f5ab9619a3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_icir_vcm_contract</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>ua_table_licensing_config_fa3337fddbf0e300ccd6f2f5ab9619a3</sys_update_name>
+        <sys_update_version display_value="ua_table_licensing_config_fa3337fddbf0e300ccd6f2f5ab9619a3">fe3337fddbf0e300ccd6f2f5ab9619a4</sys_update_version>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 09:00:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

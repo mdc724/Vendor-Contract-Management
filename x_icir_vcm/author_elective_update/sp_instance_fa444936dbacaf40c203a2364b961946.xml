@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>0</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">7d73cdf2dbacaf40c203a2364b9619d6</sp_column>
+        <sp_widget display_value="Form">fd1f4ec347730200ba13a5554ee490c0</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>Nehal.Ranpise@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-18 09:09:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fa444936dbacaf40c203a2364b961946</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_instance_fa444936dbacaf40c203a2364b961946</sys_update_name>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-19 07:05:59</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"disableUIActions": {
+		"value": "",
+		"displayValue": ""
+	},
+	"showFormView": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"omitHeaderOptions": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sp_instance_fa444936dbacaf40c203a2364b961946</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;0&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;7d73cdf2dbacaf40c203a2364b9619d6&lt;/sp_column&gt;&lt;sp_widget display_value="Form"&gt;fd1f4ec347730200ba13a5554ee490c0&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Nehal.Ranpise@infocenter.io&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-18 09:09:13&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;fa444936dbacaf40c203a2364b961946&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Vendor Contract Management" source="x_icir_vcm"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Vendor Contract Management"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_fa444936dbacaf40c203a2364b961946&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Anagha.Kunjeer@infocenter.io&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-19 07:05:59&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"disableUIActions": {
+		"value": "",
+		"displayValue": ""
+	},
+	"showFormView": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"omitHeaderOptions": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1265193219</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-19 07:05:59</sys_created_on>
+        <sys_id>1ba1b9cbdb2caf40ccd6f2f5ab961920</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>165f0a65ec40000001</sys_recorded_at>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-19 07:05:59</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>dfa1b9cbb02caf4031ba1f932f82261f</update_guid>
+        <update_guid_history>dfa1b9cbb02caf4031ba1f932f82261f:-1265193219,655489364facaf40fc630065b1597015:1054013468,fa4449363facaf40c04bdda3b6992cf5:1672364448</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2018-09-19 06:13:59">55bc9e87dbacaf40ccd6f2f5ab9619cb</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-19 10:13:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>9a15268638da4d40bdfaee8e46541900</sys_id>
+        <sys_metadata>fa444936dbacaf40c203a2364b961946</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sp_instance_fa444936dbacaf40c203a2364b961946</sys_update_name>
+        <sys_update_version display_value="sp_instance_fa444936dbacaf40c203a2364b961946">1ba1b9cbdb2caf40ccd6f2f5ab961920</sys_update_version>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-19 10:13:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
+    <sp_theme action="INSERT_OR_UPDATE">
+        <css_variables>$font-family-base: "Roboto", Helvetica, Arial, sans-serif;&#13;
+$brand-primary: #9d1535;&#13;
+$body-bg: #f1f4f8;&#13;
+$state-success-text: #5cb85c;&#13;
+$sp-homepage-bg: #fff;&#13;
+$sp-navbar-divider-color: #cccccc;&#13;
+$sp-logo-margin-y: 0px;&#13;
+$navbar-inverse-link-hover-color: #9d1535;&#13;
+$panel-bg: #fff;&#13;
+$brand-success: #5cb85c;&#13;
+$navbar-inverse-bg: #ffffff;&#13;
+$brand-warning: #f0ad4e;&#13;
+$brand-danger: #d9534f;&#13;
+$sp-tagline-color: #717171;&#13;
+$navbar-inverse-link-color: #515153;&#13;
+$brand-info: #5bc0de;&#13;
+$link-color: #9d1535;&#13;
+$sp-logo-margin-x: 0px;&#13;
+$btn-default-bg: #fff;&#13;
+$text-color: #515153;&#13;
+$text-muted: #5e6977;&#13;
+&#13;
+</css_variables>
+        <footer/>
+        <footer_fixed>false</footer_fixed>
+        <header display_value="VCM Stock Header">2d1c3423db143780c203a2364b96197c</header>
+        <name>VCM Stock Theme</name>
+        <navbar_fixed>true</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>mac.bleser@glew.io</sys_created_by>
+        <sys_created_on>2019-03-26 02:14:46</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0eb93c2fdbd03780c203a2364b961916</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>VCM Stock Theme</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_theme_0eb93c2fdbd03780c203a2364b961916</sys_update_name>
+        <sys_updated_by>mac.bleser@glew.io</sys_updated_by>
+        <sys_updated_on>2019-03-26 15:56:11</sys_updated_on>
+    </sp_theme>
+</record_update>

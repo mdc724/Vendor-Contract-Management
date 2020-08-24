@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_icir_vcm_invoice_per_task</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update/Checks Invoice Amount</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	//Created by - Udaya Sadhineni
+	//Created on - 06 Feb 2019
+	//Purpose - If 'Amount' more than the 'Invoice Total' on Invoice form then it will not allow to insert/update the record.
+	
+	var curr_inv = current.invoice;
+	var inv_tot;
+	var totAmount=0;
+	var amt1 = 0;
+	var amt2 = 0;
+	var amt;
+	
+	var grInv = new GlideRecordSecure('x_icir_vcm_invoices');
+	grInv.addQuery('sys_id',curr_inv);
+	grInv.query();
+	if(grInv.next()){
+		inv_tot = grInv.invoice_total;
+	}
+	
+	if(current.operation() == 'insert'){
+		amt1 = current.invoice_amount.getCurrencyString();
+		amt2=amt1.split(';');
+		totAmount = totAmount + parseFloat(amt2[1]) ;
+	}
+	
+	var grProjTask = new GlideRecordSecure('x_icir_vcm_invoice_per_task');
+	grProjTask.addQuery('invoice',grInv.sys_id);
+	grProjTask.query();
+	while(grProjTask.next()){
+		
+		if(grProjTask.sys_id.toString() == current.sys_id.toString()){
+			amount = current.invoice_amount.getCurrencyString();
+		}
+		else{
+			amount = grProjTask.invoice_amount.getCurrencyString();
+		}
+		amt = amount.split(';');
+		totAmount = totAmount + parseFloat(amt[1]);
+	}
+	
+	var total= current.invoice.invoice_total.getCurrencyValue();
+	
+	if(totAmount>total){
+		gs.addInfoMessage('Please confirm available budget for this task');
+		current.setAbortAction(true);
+	}
+	
+	//This will update 'Show Sumbit for Approval' flag to true/false because to show/hide the UI action 'Submit for Approval' on Invoice
+	if(totAmount == total){
+		grInv.show_submit_for_approval = true;
+		grInv.update();
+	}
+	else{
+		grInv.show_submit_for_approval = false;
+		grInv.update();
+	}
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-06 04:17:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7dc8c20cdbabeb00ccd6f2f5ab961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update/Checks Invoice Amount</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_script_7dc8c20cdbabeb00ccd6f2f5ab961917</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-06 04:17:52</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=7dc8c20cdbabeb00ccd6f2f5ab961917"/>
+</record_update>

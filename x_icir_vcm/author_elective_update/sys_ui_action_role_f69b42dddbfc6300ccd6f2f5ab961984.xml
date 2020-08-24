@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="DELETE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>Nehal.Ranpise@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-26 08:47:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f69b42dddbfc6300ccd6f2f5ab961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Save.x_icir_vcm.vcm_all</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_ui_action display_value="Save">b5f4efebdb6c2380c203a2364b961991</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_f69b42dddbfc6300ccd6f2f5ab961984</sys_update_name>
+        <sys_updated_by>Nehal.Ranpise@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-26 08:47:39</sys_updated_on>
+        <sys_user_role display_value="x_icir_vcm.vcm_all" name="x_icir_vcm.vcm_all">7e944b0fdbecaf40ccd6f2f5ab961939</sys_user_role>
+    </sys_ui_action_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sys_ui_action_role_f69b42dddbfc6300ccd6f2f5ab961984</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role"><sys_ui_action_role action="INSERT_OR_UPDATE"><sys_class_name>sys_ui_action_role</sys_class_name><sys_created_by>Nehal.Ranpise@infocenter.io</sys_created_by><sys_created_on>2018-09-26 08:47:39</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>f69b42dddbfc6300ccd6f2f5ab961984</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Save.x_icir_vcm.vcm_all</sys_name><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_ui_action display_value="Save">b5f4efebdb6c2380c203a2364b961991</sys_ui_action><sys_update_name>sys_ui_action_role_f69b42dddbfc6300ccd6f2f5ab961984</sys_update_name><sys_updated_by>Nehal.Ranpise@infocenter.io</sys_updated_by><sys_updated_on>2018-09-26 08:47:39</sys_updated_on><sys_user_role display_value="x_icir_vcm.vcm_all" name="x_icir_vcm.vcm_all">7e944b0fdbecaf40ccd6f2f5ab961939</sys_user_role></sys_ui_action_role></record_update>]]></payload>
+        <payload_hash>265156640</payload_hash>
+        <record_name>Save.x_icir_vcm.vcm_all</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Nehal.Ranpise@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-26 08:47:39</sys_created_on>
+        <sys_id>781c46dddbfc6300ccd6f2f5ab9619fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>166150ff4780000001</sys_recorded_at>
+        <sys_updated_by>Nehal.Ranpise@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-26 08:47:39</sys_updated_on>
+        <type>UI Action Role</type>
+        <update_guid>701c46dd63fc630084db57d58074c5fc</update_guid>
+        <update_guid_history>701c46dd63fc630084db57d58074c5fc:265156640</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Nehal.Ranpise@infocenter.io</sys_created_by>
+        <sys_created_on>2018-10-01 14:07:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ui_action_role">sys_ui_action_role</sys_db_object>
+        <sys_id>2f1ae16322154df09569e89647d7f8e9</sys_id>
+        <sys_metadata>f69b42dddbfc6300ccd6f2f5ab961984</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Save.x_icir_vcm.vcm_all</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sys_ui_action_role_f69b42dddbfc6300ccd6f2f5ab961984</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_role_f69b42dddbfc6300ccd6f2f5ab961984">781c46dddbfc6300ccd6f2f5ab9619fc</sys_update_version>
+        <sys_updated_by>Nehal.Ranpise@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-10-01 14:07:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

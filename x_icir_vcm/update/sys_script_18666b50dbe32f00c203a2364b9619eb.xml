@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>true</action_query>
+        <action_update>false</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_icir_vcm_vendor</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Vendor Access To Proj/Task/Acntnt</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	//Created by - Nehal Ranpise
+	//Created on - 07 Feb 2019
+	//Purpose - To Access the Subconsultant Records.
+	
+	var vendorId = '';
+	var venId = '';
+	var proTask, project;
+	if(!gs.hasRole('admin') && gs.hasRole('x_icir_vcm.all')){
+
+		//Project Managers can access their associated Subconsultants records.
+		proTask = new GlideRecord('x_icir_vcm_task');
+		proTask.addQuery('project_manager',gs.getUserID());
+		proTask.query();
+		while(proTask.next()){
+			var proManagerNo = proTask.project_lvl3_number;
+			project = new GlideRecord('x_icir_vcm_projects');
+			project.addQuery('project_lvl3_number', proManagerNo);
+			project.query();
+			while(project.next()){
+				vendorId = vendorId + ',' + project.vendor_id;			
+				venId = vendorId.toString().substr(1);
+			}
+		}
+		
+		//Project Accountants can access their associated Subconsultants records.
+		proTask = new GlideRecord('x_icir_vcm_task');
+		proTask.addQuery('project_accountant', gs.getUserID());
+		proTask.query();
+		while(proTask.next()){
+			var proAccountNo = proTask.project_lvl3_number;
+			project = new GlideRecord('x_icir_vcm_projects');
+			project.addQuery('project_lvl3_number', proAccountNo);
+			project.query();
+			while(project.next()){
+				vendorId = vendorId + ',' + project.vendor_id;
+				venId = vendorId.toString().substr(1);
+			}
+		}
+		
+		//Task Managers can access their associated Subconsultants records.
+		proTask = new GlideRecord('x_icir_vcm_task');
+		proTask.addQuery('task_manager', gs.getUserID());
+		proTask.query();
+		while(proTask.next()){
+			var proTaskNo = proTask.project_lvl3_number;
+			project = new GlideRecord('x_icir_vcm_projects');
+			project.addQuery('project_lvl3_number', proTaskNo);
+			project.query();
+			while(project.next()){
+				vendorId = vendorId + ',' + project.vendor_id;
+				venId = vendorId.toString().substr(1);
+			}
+		}
+		
+		//Approvers for Additional Profile Updates and COI can access their Subconsultant records.
+		var approver = new GlideRecord('sysapproval_approver');
+		approver.addQuery('approver', gs.getUserID());
+		approver.query();
+		while(approver.next()){
+			// 			var addUpdates = new GlideRecordSecure('x_icir_scm_additional_profile_updates');
+			// 			addUpdates.addQuery('sys_id', approver.document_id);
+			// 			addUpdates.query();
+			// 			while(addUpdates.next()){
+				// 				vendorId = vendorId + ',' + addUpdates.vendor_id;
+				// 			}
+				
+				var coi = new GlideRecord('x_icir_vcm_certificate_of_insurance');
+				coi.addQuery('sys_id', approver.document_id);
+				coi.query();
+				while(coi.next()){
+					vendorId = vendorId + ',' + coi.vendor_id;
+					venId = vendorId.toString().substr(1);
+				}
+			}
+			
+			//Members of the Biller Group can access their Subconsultant records.
+			proTask = new GlideRecord('x_icir_vcm_task');
+			proTask.query();
+			while(proTask.next()){
+				var billerGroup = proTask.biller_group;
+				var member = new GlideRecord('sys_user_grmember');
+				member.addQuery('group', billerGroup);
+				member.query();
+				while(member.next()){
+					var mem = member.user;
+					var currUser = gs.getUserID();
+					if(mem == currUser){
+						project = new GlideRecord('x_icir_vcm_projects');
+						project.addQuery('project_lvl3_number', proTask.project_lvl3_number);
+						project.query();
+						while(project.next()){
+							vendorId = vendorId + ',' + project.vendor_id;
+							venId = vendorId.toString().substr(1);
+						}
+					}
+				}
+			}
+			//gs.addInfoMessage(venId);
+			var query = 'sys_idIN'+ venId;
+			var qc = current.addEncodedQuery(query);
+		}
+		
+	})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Nehal.Ranpise@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 05:41:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>18666b50dbe32f00c203a2364b9619eb</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>Vendor Access To Proj/Task/Acntnt</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_script_18666b50dbe32f00c203a2364b9619eb</sys_update_name>
+        <sys_updated_by>shweta.bagde@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 09:40:18</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=18666b50dbe32f00c203a2364b9619eb"/>
+</record_update>

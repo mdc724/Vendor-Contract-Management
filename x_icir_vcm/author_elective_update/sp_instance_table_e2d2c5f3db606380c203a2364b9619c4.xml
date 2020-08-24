@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table">
+    <sp_instance_table action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field/>
+        <field_list/>
+        <filter table="x_icir_vcm_vendor">^primary_user=javascript:gs.getUserID()<item endquery="false" field="primary_user" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserID()"/>
+        </filter>
+        <glyph/>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>0</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">48e1c5b3db606380c203a2364b961926</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Data Table from Instance Definition">38058ff1cb11020000f8d856634c9c8c</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-21 11:36:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e2d2c5f3db606380c203a2364b9619c4</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Vendor Form</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_instance_table_e2d2c5f3db606380c203a2364b9619c4</sys_update_name>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-21 11:51:22</sys_updated_on>
+        <table>x_icir_vcm_vendor</table>
+        <title>Vendor Form</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_table>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sp_instance_table_e2d2c5f3db606380c203a2364b9619c4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table"><sp_instance_table action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><display_field/><field_list/><filter table="x_icir_vcm_vendor">^primary_user=javascript:gs.getUserID()<item endquery="false" field="primary_user" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserID()"/></filter><glyph/><id/><maximum_entries>5</maximum_entries><order>0</order><order_by/><order_direction>asc</order_direction><roles/><short_description/><size>md</size><sp_column display_value="1">48e1c5b3db606380c203a2364b961926</sp_column><sp_page/><sp_widget display_value="Data Table from Instance Definition">38058ff1cb11020000f8d856634c9c8c</sp_widget><sys_class_name>sp_instance_table</sys_class_name><sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by><sys_created_on>2018-09-21 11:36:51</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>e2d2c5f3db606380c203a2364b9619c4</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Vendor Form</sys_name><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>sp_instance_table_e2d2c5f3db606380c203a2364b9619c4</sys_update_name><sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by><sys_updated_on>2018-09-21 11:51:22</sys_updated_on><table>x_icir_vcm_vendor</table><title>Vendor Form</title><url/><widget_parameters/></sp_instance_table></record_update>]]></payload>
+        <payload_hash>-1734386432</payload_hash>
+        <record_name>Vendor Form</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-21 11:51:22</sys_created_on>
+        <sys_id>97268577db606380c203a2364b9619d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>165fbf85d530000001</sys_recorded_at>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-21 11:51:22</sys_updated_on>
+        <type>Instance with Table</type>
+        <update_guid>5f268577c4606380feeceb2c37b290d0</update_guid>
+        <update_guid_history>5f268577c4606380feeceb2c37b290d0:-1734386432,d9a589378a60638010e6000efb5dc156:1010195596,3df301f38f6063809e79bdcfe0f04e57:-613109722,330301f391606380c4727c8e7b14ea53:-100539835,a2d2c5f300606380c8c2360c6c458ac5:177384344</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2018-09-28 00:51:13">c52923f5dbf0e300ccd6f2f5ab961911</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-28 04:51:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_instance_table">sp_instance_table</sys_db_object>
+        <sys_id>4ce34def426545c8b7d13c7d22e31210</sys_id>
+        <sys_metadata>e2d2c5f3db606380c203a2364b9619c4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vendor Form</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sp_instance_table_e2d2c5f3db606380c203a2364b9619c4</sys_update_name>
+        <sys_update_version display_value="sp_instance_table_e2d2c5f3db606380c203a2364b9619c4">97268577db606380c203a2364b9619d1</sys_update_version>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-28 04:51:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

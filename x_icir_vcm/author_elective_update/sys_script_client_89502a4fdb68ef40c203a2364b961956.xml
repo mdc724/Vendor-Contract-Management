@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>address_1</field>
+        <global>true</global>
+        <messages/>
+        <name>Attachment Check</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+
+		var sysid = g_form.getUniqueValue();
+	//g_form.addInfoMessage(sysid);
+		var ga = new GlideAjax('ScriptIncludeClientCallableUtils');
+		ga.addParam('sysparm_name','attachments');
+		ga.addParam('id',sysid);
+		ga.getXML(setUserValues);
+		
+		function setUserValues(response) {
+			var answer = response.responseXML.documentElement.getAttribute("answer");
+			alert(answer);
+			if(answer == 'false'){
+			alert("You must attach a file to submit the Record");
+			return false;
+			}	
+		}
+	}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-19 10:34:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>89502a4fdb68ef40c203a2364b961956</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>Attachment Check</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_script_client_89502a4fdb68ef40c203a2364b961956</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-19 11:59:44</sys_updated_on>
+        <table>x_icir_vcm_vendor_contract_management</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sys_script_client_89502a4fdb68ef40c203a2364b961956</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;address_1&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;messages/&gt;&lt;name&gt;Attachment Check&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+
+		var sysid = g_form.getUniqueValue();
+	//g_form.addInfoMessage(sysid);
+		var ga = new GlideAjax('ScriptIncludeClientCallableUtils');
+		ga.addParam('sysparm_name','attachments');
+		ga.addParam('id',sysid);
+		ga.getXML(setUserValues);
+		
+		function setUserValues(response) {
+			var answer = response.responseXML.documentElement.getAttribute("answer");
+			alert(answer);
+			if(answer == 'false'){
+			alert("You must attach a file to submit the Record");
+			return false;
+			}	
+		}
+	}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;udaya.sadhineni&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-19 10:34:59&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;89502a4fdb68ef40c203a2364b961956&lt;/sys_id&gt;&lt;sys_mod_count&gt;27&lt;/sys_mod_count&gt;&lt;sys_name&gt;Attachment Check&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Vendor Contract Management" source="x_icir_vcm"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Vendor Contract Management"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_89502a4fdb68ef40c203a2364b961956&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;udaya.sadhineni&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-19 11:59:44&lt;/sys_updated_on&gt;&lt;table&gt;x_icir_vcm_vendor_contract_management&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-360134029</payload_hash>
+        <record_name>Attachment Check</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-19 11:59:44</sys_created_on>
+        <sys_id>5ee4f68bdba8ef40c203a2364b961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>165f1b34d1c0000001</sys_recorded_at>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-19 11:59:44</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>16e4f68bd3a8ef40567e4dde0bd5da05</update_guid>
+        <update_guid_history>16e4f68bd3a8ef40567e4dde0bd5da05:-360134029,39b33a4bfda8ef408e30bb6edb0456ff:1981673126,01d1f60beba8ef4036e5ff232cfa7e3f:-25270826,f451720b27a8ef4000d046f573fcabf1:199249465,c790bac762a8ef40eccf3610e07fdfe7:867538886,14be2687c3a8ef40475b4688b910bf6b:-1754981320,645eae4715a8ef409876bfdff509dec0:-520626890,89ed2e470aa8ef40ad5539c28ad14a71:706584791,d4ecea0742a8ef40668aa6f57f654565:-1103154827,543c26070aa8ef402c8c71d048ecab6e:198067654,660c6a077aa8ef40ad15e520f5e9d903:1875506268,33ebe20781a8ef40bd344cf598e60ad3:540579631,f15b6ac36ca8ef403347dcf38011886d:1714669072,9a8a2ac3efa8ef4035a1485c3da7bcbe:-1062931614,366a62c397a8ef40f56cb3935c3d716a:-225345232,850ae2c383a8ef40583b02dc8a6a197e:-624654512,fa89a683e8a8ef40ad62278436895288:-1738005077,db182283a3a8ef40272da13e3b3483a6:1687073590,11862243cba8ef40a236d50531641ab6:-603858837,99e52e03b7a8ef4046d590545fad30e1:1571676655,54a52203ffa8ef400d16ea88ae0e4972:-107060785,d634aecfb468ef4034decd9d8b1c4124:-1921933742,e804a2cfc668ef4099a4259c8fa5ada8:1571676655,0293268fd368ef402a093599dd345d50:-1796290559,b052a68f0168ef409dcc522e1a606bff:-1146908749,ced1e28fe668ef4099f2ff2d56dd1630:-248231322,88b1268fd268ef406583a0c75f6a0549:-134687160,74816a0f2f68ef40c35f5a713d4c448a:1117541572</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-19 13:02:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>145065f9fdde4e688ea10423dbba9210</sys_id>
+        <sys_metadata>89502a4fdb68ef40c203a2364b961956</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Attachment Check</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent display_value="">8d995872db2caf40c203a2364b9619ba</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sys_script_client_89502a4fdb68ef40c203a2364b961956</sys_update_name>
+        <sys_update_version display_value="sys_script_client_89502a4fdb68ef40c203a2364b961956">5ee4f68bdba8ef40c203a2364b961905</sys_update_version>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-19 13:02:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

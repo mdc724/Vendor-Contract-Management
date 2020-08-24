@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
+    <m2m_sp_widget_dependency action="DELETE">
+        <sp_dependency display_value="sp_codemirror_includes">016f19255b301200e39fc7ad31f91abd</sp_dependency>
+        <sp_widget display_value="Copy of Lynx SC Catalog Item">eac7f654db6b2f00ccd6f2f5ab9619da</sp_widget>
+        <sys_class_name>m2m_sp_widget_dependency</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 02:17:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>76c7f654db6b2f00ccd6f2f5ab9619dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sp_codemirror_includes.Copy of Lynx SC Catalog Item</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>m2m_sp_widget_dependency_76c7f654db6b2f00ccd6f2f5ab9619dd</sys_update_name>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 02:17:24</sys_updated_on>
+    </m2m_sp_widget_dependency>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>m2m_sp_widget_dependency_76c7f654db6b2f00ccd6f2f5ab9619dd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="sp_codemirror_includes">016f19255b301200e39fc7ad31f91abd</sp_dependency><sp_widget display_value="Copy of Lynx SC Catalog Item">eac7f654db6b2f00ccd6f2f5ab9619da</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by><sys_created_on>2019-02-07 02:17:24</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>76c7f654db6b2f00ccd6f2f5ab9619dd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sp_codemirror_includes.Copy of Lynx SC Catalog Item</sys_name><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>m2m_sp_widget_dependency_76c7f654db6b2f00ccd6f2f5ab9619dd</sys_update_name><sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by><sys_updated_on>2019-02-07 02:17:24</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+        <payload_hash>-557451791</payload_hash>
+        <record_name>sp_codemirror_includes.Copy of Lynx SC Catalog Item</record_name>
+        <reverted_from/>
+        <source>640c41f7db17ab00c203a2364b9619cf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 02:17:24</sys_created_on>
+        <sys_id>b2c73e54db6b2f00ccd6f2f5ab9619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>168c5bed3640000001</sys_recorded_at>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 02:17:24</sys_updated_on>
+        <type>Widget Dependency</type>
+        <update_guid>bac73e54046b2f000184f93ad48ab7d3</update_guid>
+        <update_guid_history>bac73e54046b2f000184f93ad48ab7d3:-557451791</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2019-02-07 03:05:53">23878820db672f00c203a2364b961911</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 08:05:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="m2m_sp_widget_dependency">m2m_sp_widget_dependency</sys_db_object>
+        <sys_id>dd277a46c7d04c3cbfdc7b88d0898690</sys_id>
+        <sys_metadata>76c7f654db6b2f00ccd6f2f5ab9619dd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sp_codemirror_includes.Copy of Lynx SC Catalog Item</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>m2m_sp_widget_dependency_76c7f654db6b2f00ccd6f2f5ab9619dd</sys_update_name>
+        <sys_update_version display_value="m2m_sp_widget_dependency_76c7f654db6b2f00ccd6f2f5ab9619dd">b2c73e54db6b2f00ccd6f2f5ab9619d4</sys_update_version>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 08:05:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

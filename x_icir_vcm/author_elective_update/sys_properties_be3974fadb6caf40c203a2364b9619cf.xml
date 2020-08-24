@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description>This is the property of "IC-VCM Project/Task Managers" Group and it is responsible for initial Approvals.&#13;
+</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_icir_vcm.vcm_approval</name>
+        <read_roles/>
+        <suffix>vcm_approval</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-18 08:22:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>be3974fadb6caf40c203a2364b9619cf</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_icir_vcm.vcm_approval</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_properties_be3974fadb6caf40c203a2364b9619cf</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-20 05:19:08</sys_updated_on>
+        <type>string</type>
+        <value>fae77cbadb6caf40c203a2364b9619b7</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=be3974fadb6caf40c203a2364b9619cf"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sys_properties_be3974fadb6caf40c203a2364b9619cf</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>This is the property of "IC-VCM Project/Task Managers" Group and it is responsible for initial Approvals.&#13;
+</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>x_icir_vcm.vcm_approval</name><read_roles/><suffix>vcm_approval</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-18 08:22:03</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>be3974fadb6caf40c203a2364b9619cf</sys_id><sys_mod_count>4</sys_mod_count><sys_name>x_icir_vcm.vcm_approval</sys_name><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>sys_properties_be3974fadb6caf40c203a2364b9619cf</sys_update_name><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-20 05:19:08</sys_updated_on><type>string</type><value>fae77cbadb6caf40c203a2364b9619b7</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=be3974fadb6caf40c203a2364b9619cf"/></record_update>]]></payload>
+        <payload_hash>-1876947457</payload_hash>
+        <record_name>x_icir_vcm.vcm_approval</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-20 05:19:10</sys_created_on>
+        <sys_id>14d2e69fdba4ef40ccd6f2f5ab9619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>165f56aed530000001</sys_recorded_at>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-20 05:19:10</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>94d2e69f82a4ef400d5cfd43998aedb6</update_guid>
+        <update_guid_history>94d2e69f82a4ef400d5cfd43998aedb6:-1876947457,f792e29f42a4ef4080c6b6964764f3dd:1559707417,78022a5f21a4ef40ab4efa59e56f663f:-127906172,adbc46439868ef40c1c0b6f87a29467b:985198417,4889b4fac16caf400aed51cf48507081:1812042286</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-20 05:43:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>56efdd9b9e234a20a5c569d255bca990</sys_id>
+        <sys_metadata>be3974fadb6caf40c203a2364b9619cf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_icir_vcm.vcm_approval</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sys_properties_be3974fadb6caf40c203a2364b9619cf</sys_update_name>
+        <sys_update_version display_value="sys_properties_be3974fadb6caf40c203a2364b9619cf">14d2e69fdba4ef40ccd6f2f5ab9619b7</sys_update_version>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-20 05:43:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

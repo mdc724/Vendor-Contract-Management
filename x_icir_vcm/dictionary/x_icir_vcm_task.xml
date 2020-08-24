@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Vendor Project Task" max_length="40" name="x_icir_vcm_task" sizeclass="4" type="collection">
+        <element label="Allow charging" max_length="40" name="allow_charging" type="boolean"/>
+        <element label="Biller group" max_length="32" name="biller_group" reference="sys_user_group" type="reference"/>
+        <element label="Budget amount" max_length="20" name="budget_amount" type="currency"/>
+        <element label="ITD cost" max_length="20" name="itd_cost" type="currency"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Org name" max_length="40" name="org_name" type="string"/>
+        <element label="Project accountant" max_length="32" name="project_accountant" reference="sys_user" type="reference"/>
+        <element label="Project-Lvl1-Number" max_length="40" name="project_lvl1_number" type="string"/>
+        <element label="Project-Lvl2-Name" max_length="40" name="project_lvl2_name" type="string"/>
+        <element display="true" label="Project-Lvl2-Number" max_length="40" name="project_lvl2_number" type="string"/>
+        <element label="Project-Lvl3-Name" max_length="40" name="project_lvl3_name" type="string"/>
+        <element label="Project-Lvl3-Number" max_length="40" name="project_lvl3_number" type="string"/>
+        <element label="Project manager" max_length="32" name="project_manager" reference="sys_user" type="reference"/>
+        <element label="Region name" max_length="40" name="region_name" type="string"/>
+        <element label="Remaining budget" max_length="20" name="remaining_budget" type="currency"/>
+        <element label="Task manager" max_length="32" name="task_manager" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="task_manager"/>
+        </index>
+        <index name="index2">
+            <element name="biller_group"/>
+        </index>
+        <index name="index3">
+            <element name="project_accountant"/>
+        </index>
+        <index name="index4">
+            <element name="project_manager"/>
+        </index>
+    </element>
+</database>

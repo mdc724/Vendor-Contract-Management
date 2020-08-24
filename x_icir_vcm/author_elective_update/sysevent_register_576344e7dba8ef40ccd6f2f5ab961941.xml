@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="DELETE">
+        <description/>
+        <event_name>x_icir_vcm.approval.reject</event_name>
+        <fired_by>WorkFlow 'VCM-Vendor Request Approval'</fired_by>
+        <queue/>
+        <suffix>approval.reject</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-20 12:22:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>576344e7dba8ef40ccd6f2f5ab961941</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_icir_vcm.approval.reject</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sysevent_register_576344e7dba8ef40ccd6f2f5ab961941</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-20 12:37:23</sys_updated_on>
+        <table>x_icir_vcm_vendor_contract_management</table>
+    </sysevent_register>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sysevent_register_576344e7dba8ef40ccd6f2f5ab961941</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register"><sysevent_register action="INSERT_OR_UPDATE"><description/><event_name>x_icir_vcm.approval.reject</event_name><fired_by>WorkFlow 'VCM-Vendor Request Approval'</fired_by><queue/><suffix>approval.reject</suffix><sys_class_name>sysevent_register</sys_class_name><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-20 12:22:02</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>576344e7dba8ef40ccd6f2f5ab961941</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_icir_vcm.approval.reject</sys_name><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>sysevent_register_576344e7dba8ef40ccd6f2f5ab961941</sys_update_name><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-20 12:37:23</sys_updated_on><table>x_icir_vcm_vendor_contract_management</table></sysevent_register></record_update>]]></payload>
+        <payload_hash>-1217859652</payload_hash>
+        <record_name>x_icir_vcm.approval.reject</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-20 12:37:23</sys_created_on>
+        <sys_id>2317c8ebdba8ef40ccd6f2f5ab96196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>165f6fc202e0000001</sys_recorded_at>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-20 12:37:23</sys_updated_on>
+        <type>Event Registration</type>
+        <update_guid>e717c8eb16a8ef40a5ade31762224b6c</update_guid>
+        <update_guid_history>e717c8eb16a8ef40a5ade31762224b6c:-1217859652,b29340e742a8ef402604fbe06f2829d7:831617593</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:56:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sysevent_register">sysevent_register</sys_db_object>
+        <sys_id>160c8df1f21147349b8104dee43046f9</sys_id>
+        <sys_metadata>576344e7dba8ef40ccd6f2f5ab961941</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_icir_vcm.approval.reject</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent display_value="">8d995872db2caf40c203a2364b9619ba</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sysevent_register_576344e7dba8ef40ccd6f2f5ab961941</sys_update_name>
+        <sys_update_version display_value="sysevent_register_576344e7dba8ef40ccd6f2f5ab961941">2317c8ebdba8ef40ccd6f2f5ab96196d</sys_update_version>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:56:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

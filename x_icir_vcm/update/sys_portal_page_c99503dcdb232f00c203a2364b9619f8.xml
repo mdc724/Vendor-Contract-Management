@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2020-08-24 16:19:15">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout/>
+        <order>4100</order>
+        <read_roles>snc_internal</read_roles>
+        <roles/>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-07 03:17:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c99503dcdb232f00c203a2364b9619f8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>PA Invoice Summary by Invoice Status</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_portal_page_c99503dcdb232f00c203a2364b9619f8</sys_update_name>
+        <sys_updated_by>shweta.bagde@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-03-11 10:01:20</sys_updated_on>
+        <title>PA Invoice Summary by Invoice Status</title>
+        <user/>
+        <view>pa_new_tab_3_8</view>
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Invoice Summary by Invoice Status">c99503dcdb232f00c203a2364b9619f8</page>
+                <summary>VCM-Invoice Summary by Invoice Status</summary>
+                <sys_created_by>udaya.sadhineni</sys_created_by>
+                <sys_created_on>2019-02-07 03:19:25</sys_created_on>
+                <sys_id>c7f5c7dcdb232f00c203a2364b961929</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>udaya.sadhineni</sys_updated_by>
+                <sys_updated_on>2019-02-07 03:19:25</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2019-02-06 22:19:25">c7f5c7dcdb232f00c203a2364b961929</portal_section>
+                        <sys_created_by>udaya.sadhineni</sys_created_by>
+                        <sys_created_on>2019-02-07 03:19:25</sys_created_on>
+                        <sys_id>03f5c7dcdb232f00c203a2364b96192a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+                        <sys_updated_on>2019-02-07 03:19:25</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2019-02-06 22:19:25">c7f5c7dcdb232f00c203a2364b961929</portal_section>
+                        <sys_created_by>udaya.sadhineni</sys_created_by>
+                        <sys_created_on>2019-02-07 03:19:25</sys_created_on>
+                        <sys_id>0ff5c7dcdb232f00c203a2364b96192a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+                        <sys_updated_on>2019-02-07 03:19:25</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 2019-02-06 22:19:25">c7f5c7dcdb232f00c203a2364b961929</portal_section>
+                        <sys_created_by>udaya.sadhineni</sys_created_by>
+                        <sys_created_on>2019-02-07 03:19:25</sys_created_on>
+                        <sys_id>47f5c7dcdb232f00c203a2364b96192b</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+                        <sys_updated_on>2019-02-07 03:19:25</sys_updated_on>
+                        <value/>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2019-02-06 22:19:25">c7f5c7dcdb232f00c203a2364b961929</portal_section>
+                        <sys_created_by>udaya.sadhineni</sys_created_by>
+                        <sys_created_on>2019-02-07 03:19:25</sys_created_on>
+                        <sys_id>4bf5c7dcdb232f00c203a2364b96192a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+                        <sys_updated_on>2019-02-07 03:19:25</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_publish</name>
+                        <portal_section display_value="Created 2019-02-06 22:19:25">c7f5c7dcdb232f00c203a2364b961929</portal_section>
+                        <sys_created_by>udaya.sadhineni</sys_created_by>
+                        <sys_created_on>2019-02-07 03:19:25</sys_created_on>
+                        <sys_id>87f5c7dcdb232f00c203a2364b96192a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+                        <sys_updated_on>2019-02-07 03:19:25</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2019-02-06 22:19:25">c7f5c7dcdb232f00c203a2364b961929</portal_section>
+                        <sys_created_by>udaya.sadhineni</sys_created_by>
+                        <sys_created_on>2019-02-07 03:19:25</sys_created_on>
+                        <sys_id>c3f5c7dcdb232f00c203a2364b96192a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+                        <sys_updated_on>2019-02-07 03:19:25</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2019-02-06 22:19:25">c7f5c7dcdb232f00c203a2364b961929</portal_section>
+                        <sys_created_by>udaya.sadhineni</sys_created_by>
+                        <sys_created_on>2019-02-07 03:19:25</sys_created_on>
+                        <sys_id>cbf5c7dcdb232f00c203a2364b961929</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+                        <sys_updated_on>2019-02-07 03:19:25</sys_updated_on>
+                        <value>7145de73db5bab00c203a2364b9619de</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2019-02-06 22:19:25">c7f5c7dcdb232f00c203a2364b961929</portal_section>
+                        <sys_created_by>udaya.sadhineni</sys_created_by>
+                        <sys_created_on>2019-02-07 03:19:25</sys_created_on>
+                        <sys_id>cff5c7dcdb232f00c203a2364b96192a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+                        <sys_updated_on>2019-02-07 03:19:25</sys_updated_on>
+                        <value>VCM-Invoice Summary by Invoice Status</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal_page>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget">
+    <m2m_sp_ng_pro_sp_widget action="DELETE">
+        <sp_angular_provider display_value="spAttachmentManager">06e836f0d722120023c84f80de6103a1</sp_angular_provider>
+        <sp_widget display_value="Copy of Form">25468e87db6caf40ccd6f2f5ab96196f</sp_widget>
+        <sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-19 08:35:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>21468ec7db6caf40ccd6f2f5ab9619ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>spAttachmentManager.Copy of Form</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_21468ec7db6caf40ccd6f2f5ab9619ee</sys_update_name>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-19 08:35:59</sys_updated_on>
+    </m2m_sp_ng_pro_sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>m2m_sp_ng_pro_sp_widget_21468ec7db6caf40ccd6f2f5ab9619ee</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget"><m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE"><sp_angular_provider display_value="spAttachmentManager">06e836f0d722120023c84f80de6103a1</sp_angular_provider><sp_widget display_value="Copy of Form">25468e87db6caf40ccd6f2f5ab96196f</sp_widget><sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name><sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by><sys_created_on>2018-09-19 08:35:59</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>21468ec7db6caf40ccd6f2f5ab9619ee</sys_id><sys_mod_count>0</sys_mod_count><sys_name>spAttachmentManager.Copy of Form</sys_name><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>m2m_sp_ng_pro_sp_widget_21468ec7db6caf40ccd6f2f5ab9619ee</sys_update_name><sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by><sys_updated_on>2018-09-19 08:35:59</sys_updated_on></m2m_sp_ng_pro_sp_widget></record_update>]]></payload>
+        <payload_hash>-442772041</payload_hash>
+        <record_name>spAttachmentManager.Copy of Form</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-19 08:35:59</sys_created_on>
+        <sys_id>a9468ec7db6caf40ccd6f2f5ab9619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>165f0f8c2e10000001</sys_recorded_at>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-19 08:35:59</sys_updated_on>
+        <type>Angular Providers</type>
+        <update_guid>a1468ec76e6caf402a6821db235f38ef</update_guid>
+        <update_guid_history>a1468ec76e6caf402a6821db235f38ef:-442772041</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2018-09-20 00:25:28">bd86521fdb602380c203a2364b9619d4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-20 04:25:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="m2m_sp_ng_pro_sp_widget">m2m_sp_ng_pro_sp_widget</sys_db_object>
+        <sys_id>313f781e280a4ababf83ac0dea0699a4</sys_id>
+        <sys_metadata>21468ec7db6caf40ccd6f2f5ab9619ee</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>spAttachmentManager.Copy of Form</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_21468ec7db6caf40ccd6f2f5ab9619ee</sys_update_name>
+        <sys_update_version display_value="m2m_sp_ng_pro_sp_widget_21468ec7db6caf40ccd6f2f5ab9619ee">a9468ec7db6caf40ccd6f2f5ab9619ef</sys_update_version>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-20 04:25:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

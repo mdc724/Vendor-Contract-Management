@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_icir_vcm_Support_Coverage_Details.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+<style>
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+	margin-top: 7%;
+	
+}
+</style>
+	
+<table align="center">	
+
+	<tr>    	
+		<th colspan="2"><h2><center>Support Coverage details</center></h2></th>	  </tr>
+	<tr>
+		<th height="50%" width="50%">Support Hours of Operation</th>
+		<td>(including time zone): 24 hours</td>
+	</tr>	
+	<tr>
+		<th height="50%" width="50%">Support Days of Operation</th>
+		<td>(including time zone): 7 days a week</td>
+	</tr>	
+    
+    <tr>
+  		<th rowspan="3" height="50%" width="50%">Contact Details</th>
+  		<td>https://infocenter.io/contact-us</td>
+	</tr>
+	<tr>
+  		<td>support@infocenter.io</td>
+	</tr>
+ 	<tr>
+  		<td>(855) 4INFOCT [(855) 446-3628]</td>
+	</tr>   
+    		
+</table>	
+
+	
+</j:jelly>]]></html>
+        <name>Support_Coverage_Details</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>shweta.bagde@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-20 08:28:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>78dd47d7db28ef40ccd6f2f5ab9619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Support_Coverage_Details</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_ui_page_78dd47d7db28ef40ccd6f2f5ab9619ba</sys_update_name>
+        <sys_updated_by>shweta.bagde@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-20 08:28:42</sys_updated_on>
+    </sys_ui_page>
+</record_update>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application/>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Choices Configurations</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_icir_vcm_choices_configuration</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_icir_vcm.choices_configuration_user</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-28 08:55:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fbf0accadb74e300ccd6f2f5ab96190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Choices Configurations</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_app_module_fbf0accadb74e300ccd6f2f5ab96190c</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-28 08:55:16</sys_updated_on>
+        <timeline_page/>
+        <title>Choices Configurations</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sys_app_module_fbf0accadb74e300ccd6f2f5ab96190c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application/><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Choices Configurations</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_icir_vcm_choices_configuration</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_icir_vcm.choices_configuration_user</roles><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-28 08:55:16</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fbf0accadb74e300ccd6f2f5ab96190c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Choices Configurations</sys_name><sys_overrides/><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>sys_app_module_fbf0accadb74e300ccd6f2f5ab96190c</sys_update_name><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2018-09-28 08:55:16</sys_updated_on><timeline_page/><title>Choices Configurations</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-579681074</payload_hash>
+        <record_name>Choices Configurations</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-28 08:56:31</sys_created_on>
+        <sys_id>9e41e8cadb74e300ccd6f2f5ab96193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1661f64cd230000001</sys_recorded_at>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-28 08:56:31</sys_updated_on>
+        <type>Module</type>
+        <update_guid>f3f0accaa474e3008ce2db6c0172d70e</update_guid>
+        <update_guid_history>f3f0accaa474e3008ce2db6c0172d70e:2044535541,f3f0accaa474e3008ce2db6c0172d70e:2044535541</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2019-03-07 00:34:15">a751b799db043b40ccd6f2f5ab9619f9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>shweta.bagde@infocenter.io</sys_created_by>
+        <sys_created_on>2019-03-07 05:34:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>2a3eeda451144c0089bc155c20ed1900</sys_id>
+        <sys_metadata>fbf0accadb74e300ccd6f2f5ab96190c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Choices Configurations</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sys_app_module_fbf0accadb74e300ccd6f2f5ab96190c</sys_update_name>
+        <sys_update_version display_value="sys_app_module_fbf0accadb74e300ccd6f2f5ab96190c">9e41e8cadb74e300ccd6f2f5ab96193c</sys_update_version>
+        <sys_updated_by>shweta.bagde@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-03-07 05:34:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

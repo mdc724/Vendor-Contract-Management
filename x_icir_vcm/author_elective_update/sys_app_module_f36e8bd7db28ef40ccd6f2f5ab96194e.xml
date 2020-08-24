@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Vendor Contract Management">7fe81872db2caf40c203a2364b9619d9</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Vendor Contract Tasks</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_icir_vcm_vendor_contract_task</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>x_icir_vcm_Support_Coverage_Details.do</query>
+        <report/>
+        <roles>x_icir_vcm.subconsultant_all</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>shweta.bagde@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-20 08:29:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f36e8bd7db28ef40ccd6f2f5ab96194e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Support Coverage details</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_app_module_f36e8bd7db28ef40ccd6f2f5ab96194e</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 08:29:24</sys_updated_on>
+        <timeline_page/>
+        <title>Support Coverage details</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sys_app_module_f36e8bd7db28ef40ccd6f2f5ab96194e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Vendor Contract Management">7fe81872db2caf40c203a2364b9619d9</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>DIRECT</link_type><map_page/><mobile_title>Vendor Contract Tasks</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_icir_vcm_vendor_contract_task</name><order>1100</order><override_menu_roles>false</override_menu_roles><query>x_icir_vcm_Support_Coverage_Details.do</query><report/><roles>x_icir_vcm.subconsultant_all</roles><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>shweta.bagde@infocenter.io</sys_created_by><sys_created_on>2018-09-20 08:29:44</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f36e8bd7db28ef40ccd6f2f5ab96194e</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Support Coverage details</sys_name><sys_overrides/><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>sys_app_module_f36e8bd7db28ef40ccd6f2f5ab96194e</sys_update_name><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2019-02-05 08:29:24</sys_updated_on><timeline_page/><title>Support Coverage details</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1420019990</payload_hash>
+        <record_name>Support Coverage details</record_name>
+        <reverted_from/>
+        <source>640c41f7db17ab00c203a2364b9619cf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 08:29:24</sys_created_on>
+        <sys_id>28c975b7dbd7ab00c203a2364b961959</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>168bcc6afd70000001</sys_recorded_at>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 08:29:24</sys_updated_on>
+        <type>Module</type>
+        <update_guid>ecc975b7ffd7ab00de6ec2a4d384eb58</update_guid>
+        <update_guid_history>ecc975b7ffd7ab00de6ec2a4d384eb58:1420019990,c69655772457ab00094c0a0c3571625e:-165541513,59577b71ee34e300dea22131dc49a5be:-698969548,2cce0fd7df28ef4025d8d7d341c913ed:-798052824,ff6e8bd75b28ef401624ae48a93a6a4f:1875835900</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2019-02-05 04:02:19">2e4182bfdbd7ab00c203a2364b961952</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 09:02:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>2ad104e569ad4ae8a167152fefee9890</sys_id>
+        <sys_metadata>f36e8bd7db28ef40ccd6f2f5ab96194e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Support Coverage details</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sys_app_module_f36e8bd7db28ef40ccd6f2f5ab96194e</sys_update_name>
+        <sys_update_version display_value="sys_app_module_f36e8bd7db28ef40ccd6f2f5ab96194e">28c975b7dbd7ab00c203a2364b961959</sys_update_version>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 09:02:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

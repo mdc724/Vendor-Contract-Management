@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Invoice Approval Task" max_length="40" name="x_icir_vcm_invoice_approval_task" sizeclass="11" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element display="true" label="Description" max_length="4000" name="description" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Parent Invoice" max_length="32" name="parent_invoice" read_only="true" reference="x_icir_vcm_invoices" type="reference"/>
+        <element choice="3" default="Open" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Open" sequence="0" value="Open"/>
+                <element inactive_on_update="false" label="Work in progress" sequence="1" value="Work in progress"/>
+                <element inactive_on_update="false" label="Pending" sequence="2" value="Pending"/>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="Completed"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="4" value="Cancelled"/>
+                <element inactive_on_update="false" label="Not Required" sequence="5" value="Not Required"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="parent_invoice"/>
+        </index>
+        <index name="index2">
+            <element name="assigned_to"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+	//alert(c.data.currUser);
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.box{
+ 	float:left;
+  /*margin:45% 0 3.8%;*/
+  position:fixed;
+  bottom:0;
+  left:0;
+}
+.invoice-box{
+	float:left;
+  width:100%;
+}
+.vendor-box{
+ 	float:left;
+  width:100%;
+}
+.icon{
+ 	float:left; 
+  width:100%;
+}
+.icon img{
+ 	margin:5px auto 10px; 
+}
+.heading{
+ 	font-weight:bold;
+  float:left;
+  text-align:center;
+  width:100%;
+  margin:0;
+  /*background:url("vcm-link-tab.png") no-repeat left top;*/
+  background-color:#c02033;
+  border:2px solid #000;
+  box-shadow:-3px 3px 0px rgba(0, 0, 0, 0.49);
+  font-size: 22px;
+  border-radius: 35px;
+  padding: 10px 8px;
+  color: #fff;
+  text-shadow: 2px 2px #2b0005;
+  font-family: Georgia, Times, "Times New Roman", serif; 
+}
+.box-desc{
+ 	float:left;
+  text-align:center;
+  color:#fff;
+  font-size:16px;
+  margin:5% 0;
+  width:100%;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>vcm_portal_widget_new</id>
+        <internal>false</internal>
+        <link/>
+        <name>VCM Portal Widget New</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	
+// 	data.vendorId = '';
+// 	var vendor = new GlideRecord('x_icir_vcm_vendor');
+// 	vendor.addQuery('primary_user', data.currUser);
+// 	vendor.query();
+// 	if(vendor.next()){
+// 		data.vendorId = vendor.sys_id.toString();
+// 	}
+	
+	//
+	data.currUser = gs.getUserID();	
+	var contact = new GlideRecord('x_icir_vcm_contacts');
+	contact.addQuery('contact', data.currUser);
+	contact.query();
+	if(contact.next()){		
+		data.vendorId = contact.vendor_id.toString();			
+		var invoice = new GlideRecord('x_icir_vcm_invoices');
+		invoice.addQuery('vendor_company_name', contact.vendor_id.toString());
+		invoice.query();		
+		while(invoice.next())
+			data.invoiceId = invoice.sys_id + ',' + data.invoiceId;		
+	}
+	
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>satej.kalyani@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 10:11:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9154a0e8dbe72f00c203a2364b96196b</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_name>VCM Portal Widget New</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_widget_9154a0e8dbe72f00c203a2364b96196b</sys_update_name>
+        <sys_updated_by>satej.kalyani@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-08 05:35:55</sys_updated_on>
+        <template><![CDATA[<div class="container-fluid">
+  
+<div class="row"> <!--row starts here-->
+  
+  <div class="col-sm-7 box"> <!-- col-sm-6 starts here-->
+    <div class="col-sm-4"> <!-- invoice col-sm-4 starts here-->
+      <div class="icon"><img src="invoice-icon.png" class="img-responsive" width="64" height="64"/></div>
+      <a class="invoice-box" href="/vcm/?id=vcm_invoice_rec_prod&sys_id=096d4054db6beb00c203a2364b9619d4"><h2 class="heading">Submit Invoice</h2></a>
+      <p class="box-desc">Submit your requests for payment here.</p>
+    </div> <!-- invoice col-sm-4 ends here-->
+
+    <div class="col-sm-4"> <!-- vendor col-sm-4 starts here-->
+      <!--<a class="vendor-box" href="/vcm/?id=vcm_vendor">-->
+      <div class="icon"><img src="account-icon.png" class="img-responsive" width="64" height="64"/></div>
+      <a class="vendor-box" href="/vcm/?id=vcm_vendor_form&table=x_icir_vcm_vendor&sys_id={{data.vendorId}}"><h2 class="heading">Manage Account</h2></a>
+      <p class="box-desc">Maintain your company information and insurance.</p>
+    </div> <!-- vendor col-sm-4 ends here-->
+
+    <div class="col-sm-4"> <!-- my invoice col-sm-4 starts here-->
+      <div class="icon"><img src="invoice-icon.png" class="img-responsive" width="64" height="64"/></div>
+      <a class="invoice-box" href="/vcm?spa=1&table=x_icir_vcm_invoices&id=vcm_invoices_list&filter=sys_idIN{{data.invoiceId}}&d=desc&o=number"><h2 class="heading">My Invoices</h2></a>
+      <p class="box-desc">Submitted Invoices.</p>
+    </div> <!-- my invoice col-sm-4 ends here-->
+  </div> <!-- col-sm-6 ends here-->
+  
+  <div class="col-sm-5">
+    
+  </div>
+  
+</div> <!--row ends here-->
+  
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

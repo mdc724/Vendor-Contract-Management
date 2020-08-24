@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>//Created by - Udaya Sadhineni&#13;
+//Created on - 06 Feb 2019&#13;
+//Purpose - To populate Project name on change of Project number on Invoice Project Task</description>
+        <field>project</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OnChange of Project Set Proj Lvl2 Name</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading) {
+		return;
+	}
+	
+	if(window == null){
+		g_form.clearValue('assignment');
+	//	g_form.setValue('project_lvl3_name','');
+		var projectNo = newValue;
+		var ga = new GlideAjax('ScriptIncludeClientCallableUtils');
+		ga.addParam('sysparm_name','setName');
+		ga.addParam('number',projectNo);
+		ga.getXML(setUserValues);
+	}
+	function setUserValues(response) {
+		var answer = response.responseXML.documentElement.getAttribute("answer");
+		g_form.setValue('project_lvl2_name',answer);
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-06 14:05:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>483f0c54dba32f00ccd6f2f5ab9619ad</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>OnChange of Project Set Proj Lvl2 Name</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_script_client_483f0c54dba32f00ccd6f2f5ab9619ad</sys_update_name>
+        <sys_updated_by>shweta.bagde@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 10:26:29</sys_updated_on>
+        <table>x_icir_vcm_invoice_per_task</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

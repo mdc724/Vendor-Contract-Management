@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list action="DELETE" parent="" relationship="" sys_domain="global" table="x_icir_vcm_task" version="2" view="sys_ref_list">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>project_lvl1_number</element>
+            <list_id display_value="x_icir_vcm_task" element="NULL" name="x_icir_vcm_task" parent="NULL" relationship="NULL" sys_domain="global" view="78213412db210300ccd6f2f5ab961952">6c2dc6ccdbabeb00ccd6f2f5ab961962</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2019-02-06 04:32:32</sys_created_on>
+            <sys_id>e82dc6ccdbabeb00ccd6f2f5ab96196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2019-02-06 04:32:32</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>project_lvl2_number</element>
+            <list_id display_value="x_icir_vcm_task" element="NULL" name="x_icir_vcm_task" parent="NULL" relationship="NULL" sys_domain="global" view="78213412db210300ccd6f2f5ab961952">6c2dc6ccdbabeb00ccd6f2f5ab961962</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2019-02-06 04:32:32</sys_created_on>
+            <sys_id>6c2dc6ccdbabeb00ccd6f2f5ab96196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2019-02-06 04:32:32</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>project_lvl2_name</element>
+            <list_id display_value="x_icir_vcm_task" element="NULL" name="x_icir_vcm_task" parent="NULL" relationship="NULL" sys_domain="global" view="78213412db210300ccd6f2f5ab961952">6c2dc6ccdbabeb00ccd6f2f5ab961962</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2019-02-06 04:32:32</sys_created_on>
+            <sys_id>ec2dc6ccdbabeb00ccd6f2f5ab96196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2019-02-06 04:32:32</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>project_lvl3_number</element>
+            <list_id display_value="x_icir_vcm_task" element="NULL" name="x_icir_vcm_task" parent="NULL" relationship="NULL" sys_domain="global" view="78213412db210300ccd6f2f5ab961952">6c2dc6ccdbabeb00ccd6f2f5ab961962</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2019-02-06 04:32:32</sys_created_on>
+            <sys_id>602dc6ccdbabeb00ccd6f2f5ab961970</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2019-02-06 04:32:32</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>project_lvl3_name</element>
+            <list_id display_value="x_icir_vcm_task" element="NULL" name="x_icir_vcm_task" parent="NULL" relationship="NULL" sys_domain="global" view="78213412db210300ccd6f2f5ab961952">6c2dc6ccdbabeb00ccd6f2f5ab961962</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2019-02-06 04:32:32</sys_created_on>
+            <sys_id>e02dc6ccdbabeb00ccd6f2f5ab961970</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2019-02-06 04:32:32</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_icir_vcm_task</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2019-02-06 04:32:32</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6c2dc6ccdbabeb00ccd6f2f5ab961962</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_icir_vcm_task</sys_name>
+            <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+            <sys_update_name>sys_ui_list_x_icir_vcm_task_sys_ref_list</sys_update_name>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2019-02-06 04:32:32</sys_updated_on>
+            <sys_user/>
+            <view display_value="Reference List" name="sys_ref_list">78213412db210300ccd6f2f5ab961952</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sys_ui_list_x_icir_vcm_task_sys_ref_list</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="x_icir_vcm_task" version="2" view="sys_ref_list"><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>project_lvl1_number</element><list_id display_value="x_icir_vcm_task" element="NULL" name="x_icir_vcm_task" parent="NULL" relationship="NULL" sys_domain="global" view="78213412db210300ccd6f2f5ab961952">6c2dc6ccdbabeb00ccd6f2f5ab961962</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2019-02-06 04:32:32</sys_created_on><sys_id>e82dc6ccdbabeb00ccd6f2f5ab96196f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2019-02-06 04:32:32</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>project_lvl2_number</element><list_id display_value="x_icir_vcm_task" element="NULL" name="x_icir_vcm_task" parent="NULL" relationship="NULL" sys_domain="global" view="78213412db210300ccd6f2f5ab961952">6c2dc6ccdbabeb00ccd6f2f5ab961962</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2019-02-06 04:32:32</sys_created_on><sys_id>6c2dc6ccdbabeb00ccd6f2f5ab96196f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2019-02-06 04:32:32</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>project_lvl2_name</element><list_id display_value="x_icir_vcm_task" element="NULL" name="x_icir_vcm_task" parent="NULL" relationship="NULL" sys_domain="global" view="78213412db210300ccd6f2f5ab961952">6c2dc6ccdbabeb00ccd6f2f5ab961962</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2019-02-06 04:32:32</sys_created_on><sys_id>ec2dc6ccdbabeb00ccd6f2f5ab96196f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2019-02-06 04:32:32</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>project_lvl3_number</element><list_id display_value="x_icir_vcm_task" element="NULL" name="x_icir_vcm_task" parent="NULL" relationship="NULL" sys_domain="global" view="78213412db210300ccd6f2f5ab961952">6c2dc6ccdbabeb00ccd6f2f5ab961962</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2019-02-06 04:32:32</sys_created_on><sys_id>602dc6ccdbabeb00ccd6f2f5ab961970</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2019-02-06 04:32:32</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>project_lvl3_name</element><list_id display_value="x_icir_vcm_task" element="NULL" name="x_icir_vcm_task" parent="NULL" relationship="NULL" sys_domain="global" view="78213412db210300ccd6f2f5ab961952">6c2dc6ccdbabeb00ccd6f2f5ab961962</list_id><max_value>false</max_value><min_value>false</min_value><position>4</position><sum>false</sum><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2019-02-06 04:32:32</sys_created_on><sys_id>e02dc6ccdbabeb00ccd6f2f5ab961970</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2019-02-06 04:32:32</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>x_icir_vcm_task</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2019-02-06 04:32:32</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6c2dc6ccdbabeb00ccd6f2f5ab961962</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_icir_vcm_task</sys_name><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>sys_ui_list_x_icir_vcm_task_sys_ref_list</sys_update_name><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2019-02-06 04:32:32</sys_updated_on><sys_user/><view display_value="Reference List" name="sys_ref_list">78213412db210300ccd6f2f5ab961952</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+        <payload_hash>1743796912</payload_hash>
+        <record_name>Vendor Project Task</record_name>
+        <reverted_from/>
+        <source>640c41f7db17ab00c203a2364b9619cf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-06 04:32:32</sys_created_on>
+        <sys_id>ac2dc6ccdbabeb00ccd6f2f5ab961972</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>168c114320f0000001</sys_recorded_at>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-06 04:32:32</sys_updated_on>
+        <type>List Layout</type>
+        <update_guid>242dc6ccc7abeb00f4153eeb924bdb72</update_guid>
+        <update_guid_history>242dc6ccc7abeb00f4153eeb924bdb72:1743796912,d3ccc2cc46abeb00f290f4fbfc54e7b2:1332944108,99597bf10734e300a2b7759c6086c40b:-206244836,11597bf13f34e30084be8fa1ed094a08:281646061</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>shweta.bagde@infocenter.io</sys_created_by>
+        <sys_created_on>2019-03-11 08:53:29</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
+        <sys_id>b30d6e64d99c48fcb5a878807c0a1f99</sys_id>
+        <sys_metadata>a5f6b537dbd7ab00c203a2364b961968</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_icir_vcm_task</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent display_value="Vendor Project Task">95e133bddbf0e300ccd6f2f5ab96195b</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sys_ui_list_x_icir_vcm_task_sys_ref_list</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_x_icir_vcm_task_sys_ref_list">ac2dc6ccdbabeb00ccd6f2f5ab961972</sys_update_version>
+        <sys_updated_by>shweta.bagde@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-03-11 08:53:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

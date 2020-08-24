@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_icir_vcm_certificate_of_insurance</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <event_name>x_icir_vcm.coi.expiry</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>&nbsp;</p>
+<table style="height: 499px; border-color: #fafafa;" width="692" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="border-color: #fafafa;">
+<table style="height: 5px; border-color: #fafafa;" width="690" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="border-color: #fafafa;"><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;">&nbsp; ${mail_script:infocenter_logo}&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></td>
+<td style="text-align: right;">
+<p><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="color: #808080;">This notification was sent from ServiceNow.</span></span></p>
+<p><span style="color: #808080; font-size: 10pt; font-family: tahoma, arial, helvetica, sans-serif;">Please login&nbsp;view the record for more detail.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="text-align: right;">&nbsp;</td>
+</tr>
+<tr style="border-color: #fafafa;">
+<td style="border: 1px solid black; text-align: center;" colspan="2">
+<p><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;">&nbsp;</span></p>
+<p><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 24pt; color: #b62242;"><strong><strong style="font-size: 24px;">COI Expiration</strong></strong></span></p>
+<p><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid black; padding: 15px; text-align: center;" colspan="2">
+<div style="text-align: left;"><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;">Hi,</span></div>
+<div style="text-align: left;">&nbsp;</div>
+<div style="text-align: left;"><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;">Please Update COI, Following are the details of COI :</span></div>
+<div style="text-align: left;">&nbsp;</div>
+<div style="text-align: left;"><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;">Vendor ID : ${vendor_id}</span></div>
+<div style="text-align: left;">&nbsp;</div>
+<div style="text-align: left;"><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;">COI type : ${coi_type}<br /></span></div>
+<div style="text-align: left;"><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;">&nbsp;</span></div>
+<div style="text-align: left;"><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;">Status : ${status}</span></div>
+<div style="text-align: left;">&nbsp;</div>
+<div style="text-align: left;"><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;">Expiration date : ${expiration_of_insurance}</span></div>
+<div style="text-align: left;"><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;">&nbsp;</span></div>
+<div style="text-align: left;"><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;">Please follow the link to review ${URI}</span></div>
+<div style="text-align: left;">&nbsp;&nbsp;</div>
+<div style="text-align: left;"><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;">Thank You !</span></div>
+<div style="text-align: left;">&nbsp;</div>
+<div style="text-align: left;"><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;">${mail_script:notify_coi_about_to_expire}</span></div>
+<div style="text-align: left;">&nbsp;</div>
+<div style="text-align: left;">&nbsp;</div>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid black; padding: 15px; text-align: center;" colspan="2"><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: left;"><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;">&nbsp;</span></p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Notify On COI Expiration</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>vendor_id.email_address</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>false</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject/>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-19 09:17:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dc8fc6c3db68ef40c203a2364b96193a</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>Notify On COI Expiration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sysevent_email_action_dc8fc6c3db68ef40c203a2364b96193a</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-07 03:44:01</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

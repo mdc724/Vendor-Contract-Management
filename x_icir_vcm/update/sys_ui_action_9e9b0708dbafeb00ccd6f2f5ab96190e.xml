@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>false</active>
+        <client>false</client>
+        <client_script_v2/>
+        <comments>//Created by - Udaya Sadhineni&#13;
+//Created on - 06 Feb 2019&#13;
+//Purpose -  To create Invoice Approval Tasks for associated Task Managers</comments>
+        <condition>!gs.hasRole('x_icir_vcm.vendors') &amp;&amp; !current.isNewRecord()&amp;&amp;current.trigger_workflow==true&amp;&amp;current.status=='Pending PM Approval'</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Re-Assign to Task Manager</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[current.trigger_workflow = 'false';
+current.update();
+
+var taskManager = '';
+var proTask = new GlideRecordSecure('x_icir_vcm_invoice_per_task');
+proTask.addQuery('invoice', current.sys_id);
+proTask.query();
+while(proTask.next()){
+	taskManager = proTask.project.task_manager;
+	
+	var invApprTask = new GlideRecordSecure('x_icir_vcm_invoice_approval_task');
+	invApprTask.addQuery('parent_invoice', current.sys_id);
+	invApprTask.addQuery('assigned_to', 'IN', taskManager);
+	invApprTask.query();
+	if(!invApprTask.next()){
+		var newTask = new GlideRecordSecure('x_icir_vcm_invoice_approval_task');
+		newTask.initialize();
+		newTask.parent_invoice = current.sys_id;
+		newTask.assigned_to = taskManager;
+		newTask.active = 'true';
+		newTask.insert();
+		var task = 'New';
+	}
+	
+}
+// To display Info Message on Invoice
+if(task == 'New'){
+	gs.addInfoMessage('Tasks Created');
+}
+
+action.setRedirectURL(current);]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-06 09:20:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9e9b0708dbafeb00ccd6f2f5ab96190e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Re-Assign to Task Manager</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_ui_action_9e9b0708dbafeb00ccd6f2f5ab96190e</sys_update_name>
+        <sys_updated_by>shweta.bagde@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 11:23:07</sys_updated_on>
+        <table>x_icir_vcm_invoices</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+</record_update>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Accounting Period" max_length="40" name="x_icir_vcm_accounting_period" sizeclass="1" type="collection">
+        <element display="true" label="Month" max_length="40" name="month" type="string"/>
+        <element choice="1" label="Open" max_length="40" name="open" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="Yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="No"/>
+            </choice>
+        </element>
+        <element label="Year" max_length="40" name="year" type="string"/>
+    </element>
+</database>

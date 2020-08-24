@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>VCM Notify On COI Expiration</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2018-09-19 09:22:00</run_start>
+        <run_time>1970-01-01 05:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[(function() {
+	
+	//Created by - Udaya Sadhineni
+	//Created on - 05 Feb 2019
+	//Purpose - Notify the vendor if COI is about to expire in 30 days
+	
+	var coi = new GlideRecordSecure('x_icir_vcm_certificate_of_insurance');
+	coi.addNotNullQuery('expiration_of_insurance');
+	coi.query();
+	while(coi.next()) {
+		var date=gs.daysAgo(-30);
+		var gdt = new GlideDate();
+		gdt.setValue(date);
+		var gd =gdt.getValue();
+		if(coi.expiration_of_insurance == gd && coi.status != 'Expired'){
+			var subject = 'COI is about to Expire in 30 Days';
+			gs.eventQueue('x_icir_vcm.coi.expiry',coi,subject,'');
+		}
+	}
+})();]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-19 09:25:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>73c05ac3db68ef40c203a2364b961992</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>VCM Notify On COI Expiration</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sysauto_script_73c05ac3db68ef40c203a2364b961992</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 13:48:05</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

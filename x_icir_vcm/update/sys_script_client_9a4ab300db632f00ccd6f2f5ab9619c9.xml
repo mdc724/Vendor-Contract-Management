@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>//Created by - Udaya Sadhineni&#13;
+//Created on - 06 Feb 2019&#13;
+//Purpose - To Maake fields Read Only, Mandatory and Visible</description>
+        <field>accounting_period</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OnLoad of Invoice Mandatory &amp; Read Only</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	
+	//To make fields Mandatory on NOW and Portal
+	g_form.setMandatory('status', true);
+	g_form.setMandatory('external_status', true);
+	g_form.setMandatory('invoice_number', true);
+	g_form.setMandatory('invoice_date', true);
+	g_form.setMandatory('invoice_total', true);
+	
+	var view = g_form.getViewName();
+	if(view != 'default'){
+		g_form.setReadOnly('invoice_number', true);
+		g_form.setReadOnly('invoice_date', true);
+		g_form.setReadOnly('invoice_total', true);
+		g_form.setReadOnly('rejection_reason', true);
+		g_form.setReadOnly('notes_to_project_manager', true);
+		g_form.setReadOnly('notes_to_accounting', true);
+		
+		g_form.setVisible('status', false);
+		g_form.setVisible('external_status', false);
+		g_form.setVisible('accounting_period', false);
+		g_form.setVisible('rejection_reason', false);
+		g_form.setVisible('explanation_of_rejection', false);
+		
+		var state = g_form.getValue('status');
+		var extnlStatus = g_form.getValue('external_status');
+		if(state == 'New' && extnlStatus == 'Entered'){
+			g_form.setReadOnly('invoice_number', false);
+			g_form.setReadOnly('invoice_date', false);
+			g_form.setReadOnly('invoice_total', false);
+			g_form.setReadOnly('rejection_reason', false);
+			g_form.setReadOnly('notes_to_project_manager', false);
+			g_form.setReadOnly('notes_to_accounting', false);
+		}
+	}
+	
+	//To make 'Accounting Period' Visible and Mandatory on NOW platform and to hide it on Portal
+	else{
+		var status = g_form.getValue('status');
+		if(status == 'Pending Finance Approval'){
+			g_form.setVisible('accounting_period', true);
+			g_form.setMandatory('accounting_period', true);
+		}
+		else{
+			g_form.setVisible('accounting_period', false);
+		}
+		
+		//To show 'Rejection Reason' and 'Explanation of Rejection' fields Visible and Mandatory
+		var reason = g_form.getValue('show_rejection_reason');
+		if(reason == true){
+			g_form.setVisible('rejection_reason', true);
+			g_form.setVisible('explanation_of_rejection', true);
+			g_form.setMandatory('rejection_reason', true);
+		}
+		else{
+			g_form.setVisible('rejection_reason', false);
+			g_form.setVisible('explanation_of_rejection', false);
+		}
+		
+		//To make the Invoice form read only after Invoice has been Approved
+		g_form.setReadOnly('external_status', true);
+		if(status == 'Approved Pending Transfer' || status == 'Closed' || status == 'Approved'){
+			g_form.setReadOnly('status', true);
+			g_form.setReadOnly('invoice_number', true);
+			g_form.setReadOnly('invoice_date', true);
+			g_form.setReadOnly('invoice_total', true);
+			g_form.setReadOnly('accounting_period', true);
+			g_form.setReadOnly('notes_to_project_manager', true);
+			g_form.setReadOnly('notes_to_accounting', true);
+			g_form.setReadOnly('retainage_amount', true);
+			
+			g_form.setVisible('accounting_period', true);
+		}
+		
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-06 12:42:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9a4ab300db632f00ccd6f2f5ab9619c9</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>OnLoad of Invoice Mandatory &amp; Read Only</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_script_client_9a4ab300db632f00ccd6f2f5ab9619c9</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-07 11:26:12</sys_updated_on>
+        <table>x_icir_vcm_invoices</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

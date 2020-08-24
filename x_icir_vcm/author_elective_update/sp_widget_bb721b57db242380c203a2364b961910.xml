@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.invoice-box{
+	float:left;
+  border:5px solid #28B463;
+  width:100%;
+  position:relative;
+  padding:10px;
+  text-align:center;
+  margin:30% 0 12%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color:#515153;
+}
+.invoice-box:hover{
+ 	background:#28B463;
+  color:#fff;
+}
+.icon{
+ 	float:left; 
+  width:100%;
+}
+.icon img{
+ 	margin:5px auto 10px; 
+}
+.heading{
+ 	font-weight:bold;
+  float:left;
+  text-align:center;
+  width:100%;
+  margin:10px 0;
+}
+/*.text{
+ 	font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color:#464645;
+}*/
+.button-box{
+ 	float:left;
+  position:absolute;
+  margin-left:40%;
+}
+.botton{
+ 	background:#9d1535;
+  color:#fff;
+  padding:5px 15px;
+  float:left;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #9d1535;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.invoice-box:hover .overlay {
+  height: 100%;
+}
+.text {
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -10%);
+  -ms-transform: translate(-50%, -10%);
+  transform: translate(-50%, -10%);
+  text-align: center;
+  width:90%;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>vcm-invoice-box</id>
+        <internal>false</internal>
+        <link/>
+        <name>VCM Invoice Box</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	data.currUser = gs.getUserID();
+	data.vendorId ='';
+	var vendor = new GlideRecord('x_icir_vcm_vendor');
+	vendor.addQuery('vendor_nm',gs.getUserID());
+	vendor.query();
+	if(vendor.next()){
+		data.vendorId = vendor.sys_id.toString();
+	}
+	
+	data.invoiceIds = '';
+	var invoice = new GlideRecord('x_icir_vcm_vendor_contract_management');
+	invoice.addQuery('vendor_name.vendor_nm',gs.getUserID());
+	invoice.query();
+	while(invoice.next()){
+		data.invoiceIds = invoice.sys_id.toString() + "," + data.invoiceIds;
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>satej.kalyani@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-20 08:47:29</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>bb721b57db242380c203a2364b961910</sys_id>
+        <sys_mod_count>73</sys_mod_count>
+        <sys_name>VCM Invoice Box</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_widget_bb721b57db242380c203a2364b961910</sys_update_name>
+        <sys_updated_by>satej.kalyani@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-21 05:28:50</sys_updated_on>
+        <template><![CDATA[<a class="invoice-box" href="vcm/?spa=1&table=x_icir_vcm_vendor_contract_management&id=vcm_invoices&filter=vendor_name={{data.vendorId}}">
+  <!--<div class="overlay">
+    <div class="icon"><img src="vcm-invoice-icon.png" class="img-responsive" width="64" height="64"/></div>
+		<p class="text">Invoice captures the details regarding the invoice claim as provided by the sub-contractor or approved Vendor.</p>
+  </div>-->
+  <div class="icon"><img src="vcm-invoice-icon.png" class="img-responsive" width="64" height="64"/></div>
+  <h2 class="heading">Submit Invoices</h2>
+	<p>Submit your requests for payment here.</p>
+  <!--<div class="button-box"> 
+   <a href="vcm/?spa=1&table=x_icir_vcm_vendor_contract_management&id=vcm_invoices&filter=vendor_name={{data.vendorId}}" class="botton">Invoices</a> 
+  </div>-->
+</a>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sp_widget_bb721b57db242380c203a2364b961910</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function() {  /* widget controller */  var c = this;}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.invoice-box{
+	float:left;
+  border:5px solid #28B463;
+  width:100%;
+  position:relative;
+  padding:10px;
+  text-align:center;
+  margin:30% 0 12%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color:#515153;
+}
+.invoice-box:hover{
+ 	background:#28B463;
+  color:#fff;
+}
+.icon{
+ 	float:left; 
+  width:100%;
+}
+.icon img{
+ 	margin:5px auto 10px; 
+}
+.heading{
+ 	font-weight:bold;
+  float:left;
+  text-align:center;
+  width:100%;
+  margin:10px 0;
+}
+/*.text{
+ 	font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color:#464645;
+}*/
+.button-box{
+ 	float:left;
+  position:absolute;
+  margin-left:40%;
+}
+.botton{
+ 	background:#9d1535;
+  color:#fff;
+  padding:5px 15px;
+  float:left;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #9d1535;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.invoice-box:hover .overlay {
+  height: 100%;
+}
+.text {
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -10%);
+  -ms-transform: translate(-50%, -10%);
+  transform: translate(-50%, -10%);
+  text-align: center;
+  width:90%;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;vcm-invoice-box&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;VCM Invoice Box&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	data.currUser = gs.getUserID();
+	data.vendorId ='';
+	var vendor = new GlideRecord('x_icir_vcm_vendor');
+	vendor.addQuery('vendor_nm',gs.getUserID());
+	vendor.query();
+	if(vendor.next()){
+		data.vendorId = vendor.sys_id.toString();
+	}
+	
+	data.invoiceIds = '';
+	var invoice = new GlideRecord('x_icir_vcm_vendor_contract_management');
+	invoice.addQuery('vendor_name.vendor_nm',gs.getUserID());
+	invoice.query();
+	while(invoice.next()){
+		data.invoiceIds = invoice.sys_id.toString() + "," + data.invoiceIds;
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;satej.kalyani@infocenter.io&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-20 08:47:29&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;bb721b57db242380c203a2364b961910&lt;/sys_id&gt;&lt;sys_mod_count&gt;73&lt;/sys_mod_count&gt;&lt;sys_name&gt;VCM Invoice Box&lt;/sys_name&gt;&lt;sys_package display_value="Vendor Contract Management" source="x_icir_vcm"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Vendor Contract Management"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_bb721b57db242380c203a2364b961910&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;satej.kalyani@infocenter.io&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-21 05:28:50&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;a class="invoice-box" href="vcm/?spa=1&amp;table=x_icir_vcm_vendor_contract_management&amp;id=vcm_invoices&amp;filter=vendor_name={{data.vendorId}}"&gt;
+  &lt;!--&lt;div class="overlay"&gt;
+    &lt;div class="icon"&gt;&lt;img src="vcm-invoice-icon.png" class="img-responsive" width="64" height="64"/&gt;&lt;/div&gt;
+		&lt;p class="text"&gt;Invoice captures the details regarding the invoice claim as provided by the sub-contractor or approved Vendor.&lt;/p&gt;
+  &lt;/div&gt;--&gt;
+  &lt;div class="icon"&gt;&lt;img src="vcm-invoice-icon.png" class="img-responsive" width="64" height="64"/&gt;&lt;/div&gt;
+  &lt;h2 class="heading"&gt;Submit Invoices&lt;/h2&gt;
+	&lt;p&gt;Submit your requests for payment here.&lt;/p&gt;
+  &lt;!--&lt;div class="button-box"&gt; 
+   &lt;a href="vcm/?spa=1&amp;table=x_icir_vcm_vendor_contract_management&amp;id=vcm_invoices&amp;filter=vendor_name={{data.vendorId}}" class="botton"&gt;Invoices&lt;/a&gt; 
+  &lt;/div&gt;--&gt;
+&lt;/a&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1140143230</payload_hash>
+        <record_name>VCM Invoice Box</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>satej.kalyani@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-21 05:28:50</sys_created_on>
+        <sys_id>fb9e232bdba02380ccd6f2f5ab9619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>165fa9a24670000001</sys_recorded_at>
+        <sys_updated_by>satej.kalyani@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-21 05:28:50</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>b39e232b62a02380f5838a8266dc7fb3</update_guid>
+        <update_guid_history>b39e232b62a02380f5838a8266dc7fb3:-1140143230,f92ee7a76fa02380bd89367efe5ccf4f:1441786609,d5ad67e7e1a02380c8c3e2c2fe713f1c:-219811022,155d67e71ea02380e3560d6aec703b16:-1208871921,d11d63e7efa0238080443f967a5ca384:414558543,200da3e779a02380669c4ca6b03a2883:1135390232,63ec63e737a023806b8ca32c54163b7e:-951833561,34dc23e7b9a023803a1b4ba793fe2786:-1263641240,28acafa702a02380fdcae00ed30036dd:503343237,3a7c6fa702a023804fc5e895d2b1f16a:1900569705,971c2ba719a023805123d92f4045ce77:713113644,2fdb2ba7eba0238018b8132a34b88265:649661589,7bbbeb63c3a02380e36bd6a54731316d:-19170179,c7971827e0e42380a3665a2e77ce8e7f:-1008088880,137718a320e4238079987e8ab4598c41:1858368759,ce5758e3efe4238012549acf4dc1fbdd:1074878791,df4710271ae423808b91d4b2944bb960:1529443408,6f9bc8eb1ba423807f0c504c7269286a:-941552135,4deac4eba0a423808dbdd781b7b673a6:-1457514294,c0f884ab05a423805be067ca72306705:1266025847,6ce8c0ab7ba423805e6a8ef135a71236:1346924366,83d804ab5ca4238025ad4953858c992f:-1728118836,69b804abeca42380a689d7bb17c4e31d:-1073039067,e8a8c0ab25a423801953c6c165ccd730:-2044113957,0516882b32a423802e7724ff67f63fc5:1883566075,7ba5442b87a4238097a20d0555332f8c:106812018,9295c4e75fa42380e3663bfb38c7b9b3:178933635,8c4508e7f4a42380fee9d02bd8b18fca:-1065624181,d2e144a721a42380ccf279e698e3cca3:-846190102,d0a00467c3a42380e605c32a151c2d4d:-18302479,c7feffd337a42380b4181a7436ccf1e8:-703672151,cabe3bd3c1a4238089ee4efe997ef6e1:515911497,30ddb3d34da42380768e73e5924f6588:-363351849,9ba9bfdfc26423800e20b6cfa7abe71e:1085168343,9ac83f9f4a64238078932eb11acddf71:347482422,3f033bdb6c642380cc9c72f626970eea:-864837911,0fd2b7db0264238021586bd6941397fa:1582309735,1750fb5bc76423800f19bb8bf414adc5:-1089490968,3c07ef5320642380907e149a08a206b4:-1988740410,d525a75392642380e3c42e8037214e70:1889820120,5805e75373642380e4d4902e7d007812:-158794375,4913a713ba6423801b6d48cdb433a81a:558748640,e403a713dc64238092f01fa462240914:448237453,82f2a79f33242380b0d1b477bbb83d40:-258589416,f4e263132d642380343eb30e0e6c30c8:-1329375079,b4d2efdf4c242380712c70babe6ed2cc:1050791330,26b263136064238068f0c79944993aba:-564197068,75a2e313a36423808545d48ae17b9220:-293274526,110f579f75242380b98176ee4f62de76:-903335749,84ee539ff92423807dbf471ec6afb1b7:-1796024299,67be539fc2242380ad1d3f57632a292b:-1967695174,578e9f5f51242380c5354b05d7a1db03:930971379,d079579b082423806a2d64c0acd724db:-508491430,02591b9bee24238024f9b255a59310f2:-731348319,fa491f5b9a242380110671e9516fcb3d:-2077766554,34d5131b6e24238064ec651f76b4b765:-717640464,d5b59fd77a242380cc7d57fad3bd12a5:-415406621,a74493d75624238024b059fcb2827b0e:1374621145,414453d7a9242380b1fa5b75b9226cc1:886169853,523453d73a242380e22701a52989992d:576067665,b8349f9729242380219dd750fe7dae51:40272114,a224179744242380eb8c54a97a7d64db:1971874085,48149b97f5242380f693bc0ff35439ad:-1854364841,8fe3df575624238083418a044730d33b:618158074,1a835397ec242380eb60ac5f28bc513a:-1917650969,3173d797f9242380b8a2506c55294e87:-1939477965,5b631b97612423803bdcef3df3cfaec7:-1516921294,af535797b5242380dcf0409603f5d5f7:-1432822463,fd431b97bd242380c7f15322b69fa722:-315279966,7d33d7971a2423800011846692d2d480:-968386974,ba231b57fc242380e482c3fee1620316:1053327469,cb13139787242380d284f631a357137b:1358949557,bff29f57bf242380525bba3c3343d7af:-14979434,3f721b57752423807d91e41aa4304911:1799018495</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2018-09-21 09:24:19">387b59f7dba06380c203a2364b96199e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-21 13:24:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>39a746cb840d4737976d0915e515cbc9</sys_id>
+        <sys_metadata>bb721b57db242380c203a2364b961910</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VCM Invoice Box</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sp_widget_bb721b57db242380c203a2364b961910</sys_update_name>
+        <sys_update_version display_value="sp_widget_bb721b57db242380c203a2364b961910">fb9e232bdba02380ccd6f2f5ab9619b3</sys_update_version>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-21 13:24:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

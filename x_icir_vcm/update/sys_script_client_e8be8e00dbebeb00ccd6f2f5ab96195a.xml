@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>//Created by - Udaya Sadhineni&#13;
+//Created on - 06 Feb 2019&#13;
+//Purpose - To populate Project name on change of Project number on COI</description>
+        <field>project_lvl3_number</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OnChange Of Proj No Populates Proj Name</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading) {
+		return;
+	}
+	
+	if(window == null){
+		g_form.setValue('project_lvl3_name','');
+		var projectNo = newValue;
+		var ga = new GlideAjax('ScriptIncludeClientCallableUtils');
+		ga.addParam('sysparm_name','getProject');
+		ga.addParam('number',projectNo);
+		ga.getXML(setUserValues);
+	}
+	function setUserValues(response) {
+		var answer = response.responseXML.documentElement.getAttribute("answer");
+		g_form.setValue('project_lvl3_name',answer);
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-06 04:52:29</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e8be8e00dbebeb00ccd6f2f5ab96195a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>OnChange Of Proj No Populates Proj Name</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_script_client_e8be8e00dbebeb00ccd6f2f5ab96195a</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-06 14:08:04</sys_updated_on>
+        <table>x_icir_vcm_certificate_of_insurance</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

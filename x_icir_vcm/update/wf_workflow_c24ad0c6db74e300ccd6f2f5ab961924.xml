@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"ends":["9d895a77db5bab00c203a2364b961993"],"activities":{},"stages":{},"subflows":[]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type>run_match</condition_type>
+        <description/>
+        <expected_sequences>9d895a77db5bab00c203a2364b96198f,55895a77db5bab00c203a2364b961991,15891e77db5bab00c203a2364b96194d,11895a77db5bab00c203a2364b961993,005c123bdb5bab00c203a2364b9619fc,9d895a77db5bab00c203a2364b961993</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>9d895a77db5bab00c203a2364b96198f,55895a77db5bab00c203a2364b961991,15891e77db5bab00c203a2364b96194d,11895a77db5bab00c203a2364b961993,1d891e77db5bab00c203a2364b961952,005c123bdb5bab00c203a2364b9619fc,7bac1af7db5bab00c203a2364b9619d7,9d895a77db5bab00c203a2364b961993</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>VCM-COI Approval</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration display_value="2 business days by 4pm">3bf802c20a0a0b52008e2859cd8abcf2</relative_duration>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">9d895a77db5bab00c203a2364b96198f</start>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>dd895a77db5bab00c203a2364b96198d</sys_id>
+        <sys_mod_count>124</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 12:42:33</sys_updated_on>
+        <table>x_icir_vcm_certificate_of_insurance</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="VCM-COI Approval">c24ad0c6db74e300ccd6f2f5ab961924</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>VCM-COI Approval</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-28 08:25:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c24ad0c6db74e300ccd6f2f5ab961924</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>VCM-COI Approval</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>wf_workflow_c24ad0c6db74e300ccd6f2f5ab961924</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:49:17</sys_updated_on>
+        <table>x_icir_vcm_certificate_of_insurance</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>9d895a77db5bab00c203a2364b96198f</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:03:26</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="VCM-COI Approval">dd895a77db5bab00c203a2364b96198d</workflow_version>
+        <x>74</x>
+        <y>124</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=9d895a77db5bab00c203a2364b96198f"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">9d895a77db5bab00c203a2364b96198f</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>d9895a77db5bab00c203a2364b961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Approval - User">35433da80a0a029a0028c639a1e51eb4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>COI Approval</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>15891e77db5bab00c203a2364b96194d</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:03:42</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="VCM-COI Approval">dd895a77db5bab00c203a2364b96198d</workflow_version>
+        <x>366</x>
+        <y>226</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=15891e77db5bab00c203a2364b96194d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>11891e77db5bab00c203a2364b96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the approval status for this approval.  When called, the following information is available:&#13;
+//&#13;
+//    counts.total = total number of users that are part of this approval&#13;
+//    counts.approved = # of users that approved so far&#13;
+//    counts.rejected = # of users that rejected so far&#13;
+//    counts.requested = # of users that are pending approval&#13;
+//    counts.not_requested = # of users that are not pending approval&#13;
+//    counts.not_required = # of users that approval is not required&#13;
+//&#13;
+</value>
+        <variable display_value="">02c86d780a0a0b261e6a356bc893d348</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>11891e77db5bab00c203a2364b961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>any</value>
+        <variable display_value="">c35e5bdd0a0a0ba96248a709f495c9ae</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>1120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>15891e77db5bab00c203a2364b961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a76c6257c0a8006645cff43883470e64</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>19891e77db5bab00c203a2364b96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">e863e3b80a0004f911d67787e77e0f16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>103</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>1d891e77db5bab00c203a2364b96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">e37b77ac0a0004f973283ad13b341c5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>1d891e77db5bab00c203a2364b961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a7781cb6c0a80066147dc7a5244d5d16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>51891e77db5bab00c203a2364b961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">4485eef70a6a803f6bc4bafa9e999640</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>55891e77db5bab00c203a2364b96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e4cc40a0a0ba96248a7098ec9cb06</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>59891e77db5bab00c203a2364b96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">e846198f0a0004f91fba434a514ba8b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>59891e77db5bab00c203a2364b961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a76680b9c0a8006661b107d0f21fae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>5d891e77db5bab00c203a2364b96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">02ca01820a0a0b261cf923fb95f5e1d0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>104</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>5d891e77db5bab00c203a2364b961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">e37a96e80a0004f978b47d2d6c5e0b22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>91891e77db5bab00c203a2364b96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a782cde9c0a8006608f39abdd85c8395</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>1330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>95891e77db5bab00c203a2364b96194e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:52:58</sys_updated_on>
+        <value>f6deec87dbf46700ccd6f2f5ab961997</value>
+        <variable display_value="">02c618170a0a0b26436f5c2c9f7a3901</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>95891e77db5bab00c203a2364b961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user ids and/or group ids or an array of user/group ids to add as approvers.&#13;
+//&#13;
+// For example:&#13;
+//       answer = [];&#13;
+//       answer.push('id1');&#13;
+//       answer.push('id2');&#13;
+</value>
+        <variable display_value="">c35e582f0a0a0ba96248a70985207e63</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>99891e77db5bab00c203a2364b96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a77191a4c0a800662b403f7dff5f1bbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>99891e77db5bab00c203a2364b961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a7754e91c0a800664938d0ef6d2664d7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>1110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>9d891e77db5bab00c203a2364b96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a769a182c0a8006629db7fa3fc2a863d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>d1891e77db5bab00c203a2364b96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a775f59ac0a8006665d72362ae687035</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>d1891e77db5bab00c203a2364b961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a774138dc0a80066000be7af20961c7d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>d5891e77db5bab00c203a2364b961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a76b8c6ec0a800664bb14d5d8b9cd7c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>d9891e77db5bab00c203a2364b96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">502163410a6a803f0356332b24dc7945</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>dd891e77db5bab00c203a2364b96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a77903a7c0a8006641af7c9b1d34444e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>51891e77db5bab00c203a2364b961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">4485eef70a6a803f6bc4bafa9e999640</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>11891e77db5bab00c203a2364b961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>any</value>
+        <variable display_value="">c35e5bdd0a0a0ba96248a709f495c9ae</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>59891e77db5bab00c203a2364b96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">e846198f0a0004f91fba434a514ba8b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>103</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>1d891e77db5bab00c203a2364b96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">e37b77ac0a0004f973283ad13b341c5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>104</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>5d891e77db5bab00c203a2364b961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">e37a96e80a0004f978b47d2d6c5e0b22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>99891e77db5bab00c203a2364b96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a77191a4c0a800662b403f7dff5f1bbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>59891e77db5bab00c203a2364b961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a76680b9c0a8006661b107d0f21fae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>dd891e77db5bab00c203a2364b96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a77903a7c0a8006641af7c9b1d34444e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>55891e77db5bab00c203a2364b96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e4cc40a0a0ba96248a7098ec9cb06</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>d9891e77db5bab00c203a2364b96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">502163410a6a803f0356332b24dc7945</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>19891e77db5bab00c203a2364b96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">e863e3b80a0004f911d67787e77e0f16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>d1891e77db5bab00c203a2364b961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a774138dc0a80066000be7af20961c7d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>99891e77db5bab00c203a2364b961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a7754e91c0a800664938d0ef6d2664d7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>1110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>9d891e77db5bab00c203a2364b96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a769a182c0a8006629db7fa3fc2a863d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>1120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>15891e77db5bab00c203a2364b961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a76c6257c0a8006645cff43883470e64</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>d5891e77db5bab00c203a2364b961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a76b8c6ec0a800664bb14d5d8b9cd7c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>d1891e77db5bab00c203a2364b96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a775f59ac0a8006665d72362ae687035</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>1d891e77db5bab00c203a2364b961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a7781cb6c0a80066147dc7a5244d5d16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>1330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>95891e77db5bab00c203a2364b96194e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:52:58</sys_updated_on>
+        <value>f6deec87dbf46700ccd6f2f5ab961997</value>
+        <variable display_value="">02c618170a0a0b26436f5c2c9f7a3901</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>91891e77db5bab00c203a2364b96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a782cde9c0a8006608f39abdd85c8395</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>11891e77db5bab00c203a2364b96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the approval status for this approval.  When called, the following information is available:&#13;
+//&#13;
+//    counts.total = total number of users that are part of this approval&#13;
+//    counts.approved = # of users that approved so far&#13;
+//    counts.rejected = # of users that rejected so far&#13;
+//    counts.requested = # of users that are pending approval&#13;
+//    counts.not_requested = # of users that are not pending approval&#13;
+//    counts.not_required = # of users that approval is not required&#13;
+//&#13;
+</value>
+        <variable display_value="">02c86d780a0a0b261e6a356bc893d348</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>5d891e77db5bab00c203a2364b96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">02ca01820a0a0b261cf923fb95f5e1d0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15891e77db5bab00c203a2364b96194d</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>95891e77db5bab00c203a2364b961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user ids and/or group ids or an array of user/group ids to add as approvers.&#13;
+//&#13;
+// For example:&#13;
+//       answer = [];&#13;
+//       answer.push('id1');&#13;
+//       answer.push('id2');&#13;
+</value>
+        <variable display_value="">c35e582f0a0a0ba96248a70985207e63</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="COI Approval">15891e77db5bab00c203a2364b96194d</activity>
+        <condition>activity.result == 'approved' || activity.result == 'skipped'</condition>
+        <condition_default display_value="Approved">586e1fa60a0a0b5c008121ab894f2b06</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Approved</name>
+        <order>1</order>
+        <short_description>Approval request was approved</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>d1891e77db5bab00c203a2364b961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="COI Approval">15891e77db5bab00c203a2364b96194d</activity>
+        <condition>activity.result == 'rejected'</condition>
+        <condition_default display_value="Rejected">586e4ef60a0a0b5c00440b56c014c8a5</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Rejected</name>
+        <order>2</order>
+        <short_description>Approval request was rejected</short_description>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>55891e77db5bab00c203a2364b961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>9d895a77db5bab00c203a2364b961993</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:03:56</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="VCM-COI Approval">dd895a77db5bab00c203a2364b96198d</workflow_version>
+        <x>1007</x>
+        <y>232</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=9d895a77db5bab00c203a2364b961993"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Create Event">9f680b92c0a801640026553f665b429f</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Notify on Approved</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:01:00</sys_created_on>
+        <sys_id>005c123bdb5bab00c203a2364b9619fc</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:03:51</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="VCM-COI Approval">dd895a77db5bab00c203a2364b96198d</workflow_version>
+        <x>782</x>
+        <y>120</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=005c123bdb5bab00c203a2364b9619fc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>005c123bdb5bab00c203a2364b9619fc</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:01:00</sys_created_on>
+        <sys_id>5d7c9eb7db5bab00c203a2364b96199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:01:00</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 2&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>005c123bdb5bab00c203a2364b9619fc</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:01:00</sys_created_on>
+        <sys_id>957c9eb7db5bab00c203a2364b96199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:01:00</sys_updated_on>
+        <value>aecb96f7db5bab00c203a2364b961994</value>
+        <variable display_value="">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>005c123bdb5bab00c203a2364b9619fc</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:01:00</sys_created_on>
+        <sys_id>997c9eb7db5bab00c203a2364b96199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:01:00</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 1&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>005c123bdb5bab00c203a2364b9619fc</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:01:00</sys_created_on>
+        <sys_id>957c9eb7db5bab00c203a2364b96199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:01:00</sys_updated_on>
+        <value>aecb96f7db5bab00c203a2364b961994</value>
+        <variable display_value="">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>005c123bdb5bab00c203a2364b9619fc</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:01:00</sys_created_on>
+        <sys_id>997c9eb7db5bab00c203a2364b96199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:01:00</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 1&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>005c123bdb5bab00c203a2364b9619fc</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:01:00</sys_created_on>
+        <sys_id>5d7c9eb7db5bab00c203a2364b96199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:01:00</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 2&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Notify on Approved">005c123bdb5bab00c203a2364b9619fc</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:01:00</sys_created_on>
+        <sys_id>d57cd23bdb5bab00c203a2364b961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:01:00</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Create Event">9f680b92c0a801640026553f665b429f</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Notify on Rejection</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:02:23</sys_created_on>
+        <sys_id>7bac1af7db5bab00c203a2364b9619d7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:03:52</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="VCM-COI Approval">dd895a77db5bab00c203a2364b96198d</workflow_version>
+        <x>786</x>
+        <y>324</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=7bac1af7db5bab00c203a2364b9619d7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7bac1af7db5bab00c203a2364b9619d7</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:02:23</sys_created_on>
+        <sys_id>11ccdef7db5bab00c203a2364b96195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:02:23</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 2&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7bac1af7db5bab00c203a2364b9619d7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:02:23</sys_created_on>
+        <sys_id>59ccdef7db5bab00c203a2364b96195b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:02:23</sys_updated_on>
+        <value>2a7cdaf7db5bab00c203a2364b9619ae</value>
+        <variable display_value="">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7bac1af7db5bab00c203a2364b9619d7</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:02:23</sys_created_on>
+        <sys_id>5dccdef7db5bab00c203a2364b96195b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:02:23</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 1&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7bac1af7db5bab00c203a2364b9619d7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:02:23</sys_created_on>
+        <sys_id>59ccdef7db5bab00c203a2364b96195b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:02:23</sys_updated_on>
+        <value>2a7cdaf7db5bab00c203a2364b9619ae</value>
+        <variable display_value="">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7bac1af7db5bab00c203a2364b9619d7</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:02:23</sys_created_on>
+        <sys_id>5dccdef7db5bab00c203a2364b96195b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:02:23</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 1&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7bac1af7db5bab00c203a2364b9619d7</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:02:23</sys_created_on>
+        <sys_id>11ccdef7db5bab00c203a2364b96195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:02:23</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 2&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Notify on Rejection">7bac1af7db5bab00c203a2364b9619d7</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:02:23</sys_created_on>
+        <sys_id>a5ccdef7db5bab00c203a2364b96195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:02:23</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Sets Status to Active</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>11895a77db5bab00c203a2364b961993</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:03:43</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="VCM-COI Approval">dd895a77db5bab00c203a2364b96198d</workflow_version>
+        <x>547</x>
+        <y>132</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=11895a77db5bab00c203a2364b961993"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>11895a77db5bab00c203a2364b961993</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>91895a77db5bab00c203a2364b961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>status=Active^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>11895a77db5bab00c203a2364b961993</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>91895a77db5bab00c203a2364b961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>status=Active^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Sets Status to Active">11895a77db5bab00c203a2364b961993</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>d5895a77db5bab00c203a2364b961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Sets Status to Reject</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>1d891e77db5bab00c203a2364b961952</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:03:46</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="VCM-COI Approval">dd895a77db5bab00c203a2364b96198d</workflow_version>
+        <x>549</x>
+        <y>356</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=1d891e77db5bab00c203a2364b961952"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1d891e77db5bab00c203a2364b961952</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>9d891e77db5bab00c203a2364b961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>status=Rejected^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1d891e77db5bab00c203a2364b961952</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>9d891e77db5bab00c203a2364b961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <value>status=Rejected^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Sets Status to Reject">1d891e77db5bab00c203a2364b961952</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>d1891e77db5bab00c203a2364b961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Sets Status to Under Review</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>55895a77db5bab00c203a2364b961991</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:03:31</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="VCM-COI Approval">dd895a77db5bab00c203a2364b96198d</workflow_version>
+        <x>117</x>
+        <y>269</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=55895a77db5bab00c203a2364b961991"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>55895a77db5bab00c203a2364b961991</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>d9895a77db5bab00c203a2364b961991</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:50:40</sys_updated_on>
+        <value>status=Under Review^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>55895a77db5bab00c203a2364b961991</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>d9895a77db5bab00c203a2364b961991</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:50:40</sys_updated_on>
+        <value>status=Under Review^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Sets Status to Under Review">55895a77db5bab00c203a2364b961991</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>59895a77db5bab00c203a2364b961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">d5895a77db5bab00c203a2364b961993</condition>
+        <from display_value="Sets Status to Active">11895a77db5bab00c203a2364b961993</from>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:02:59</sys_created_on>
+        <sys_id>02ec1a3bdb5bab00c203a2364b961954</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:02:59</sys_updated_on>
+        <to display_value="Notify on Approved">005c123bdb5bab00c203a2364b9619fc</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">59895a77db5bab00c203a2364b961992</condition>
+        <from display_value="Sets Status to Under Review">55895a77db5bab00c203a2364b961991</from>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>15891e77db5bab00c203a2364b961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <to display_value="COI Approval">15891e77db5bab00c203a2364b96194d</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">d9895a77db5bab00c203a2364b961990</condition>
+        <from display_value="Begin">9d895a77db5bab00c203a2364b96198f</from>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>19891e77db5bab00c203a2364b961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <to display_value="Sets Status to Under Review">55895a77db5bab00c203a2364b961991</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Approved">d1891e77db5bab00c203a2364b961952</condition>
+        <from display_value="COI Approval">15891e77db5bab00c203a2364b96194d</from>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>1d891e77db5bab00c203a2364b961954</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <to display_value="Sets Status to Active">11895a77db5bab00c203a2364b961993</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">d57cd23bdb5bab00c203a2364b961943</condition>
+        <from display_value="Notify on Approved">005c123bdb5bab00c203a2364b9619fc</from>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:03:07</sys_created_on>
+        <sys_id>4cfc1a3bdb5bab00c203a2364b96193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:03:07</sys_updated_on>
+        <to display_value="End">9d895a77db5bab00c203a2364b961993</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">d1891e77db5bab00c203a2364b961953</condition>
+        <from display_value="Sets Status to Reject">1d891e77db5bab00c203a2364b961952</from>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:03:01</sys_created_on>
+        <sys_id>66ecd23bdb5bab00c203a2364b961957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:03:01</sys_updated_on>
+        <to display_value="Notify on Rejection">7bac1af7db5bab00c203a2364b9619d7</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Rejected">55891e77db5bab00c203a2364b961952</condition>
+        <from display_value="COI Approval">15891e77db5bab00c203a2364b96194d</from>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>99891e77db5bab00c203a2364b961954</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <to display_value="Sets Status to Reject">1d891e77db5bab00c203a2364b961952</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">a5ccdef7db5bab00c203a2364b96195c</condition>
+        <from display_value="Notify on Rejection">7bac1af7db5bab00c203a2364b9619d7</from>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:03:10</sys_created_on>
+        <sys_id>a8fc5a3bdb5bab00c203a2364b961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:03:10</sys_updated_on>
+        <to display_value="End">9d895a77db5bab00c203a2364b961993</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 10:48:11</sys_created_on>
+        <sys_id>d1895a77db5bab00c203a2364b96198e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 10:48:11</sys_updated_on>
+        <workflow_version display_value="VCM-COI Approval">dd895a77db5bab00c203a2364b96198d</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=c24ad0c6db74e300ccd6f2f5ab961924^sys_id!=dd895a77db5bab00c203a2364b96198d">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

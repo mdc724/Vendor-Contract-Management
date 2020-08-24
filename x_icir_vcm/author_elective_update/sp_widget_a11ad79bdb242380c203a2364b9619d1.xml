@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.logo{
+  margin:2% auto 5%;
+  width:250px;
+  height:70px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>vcm_logo</id>
+        <internal>false</internal>
+        <link/>
+        <name>VCM Logo</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>satej.kalyani@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-20 09:20:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a11ad79bdb242380c203a2364b9619d1</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>VCM Logo</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_widget_a11ad79bdb242380c203a2364b9619d1</sys_update_name>
+        <sys_updated_by>satej.kalyani@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-20 10:18:54</sys_updated_on>
+        <template><![CDATA[<div class="logo">
+	<img src="vcm-logo.png" class="img-responsive" width="250" height="70"/>
+</div>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sp_widget_a11ad79bdb242380c203a2364b9619d1</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function() {  /* widget controller */  var c = this;}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.logo{
+  margin:2% auto 5%;
+  width:250px;
+  height:70px;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;vcm_logo&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;VCM Logo&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;satej.kalyani@infocenter.io&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-20 09:20:38&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;a11ad79bdb242380c203a2364b9619d1&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;VCM Logo&lt;/sys_name&gt;&lt;sys_package display_value="Vendor Contract Management" source="x_icir_vcm"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Vendor Contract Management"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_a11ad79bdb242380c203a2364b9619d1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;satej.kalyani@infocenter.io&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-20 10:18:54&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="logo"&gt;
+	&lt;img src="vcm-logo.png" class="img-responsive" width="250" height="70"/&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2050128837</payload_hash>
+        <record_name>VCM Logo</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>satej.kalyani@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-20 10:18:54</sys_created_on>
+        <sys_id>0b6723d3db642380c203a2364b96197e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>165f67d58b70000001</sys_recorded_at>
+        <sys_updated_by>satej.kalyani@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-20 10:18:54</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>cf6723d3066423802dc38ede1b16ad7d</update_guid>
+        <update_guid_history>cf6723d3066423802dc38ede1b16ad7d:2050128837,814d135f01242380391f0af2d4b81346:623101210,a5ec5f1fec2423805ebfa831dee16b4b:322254906,71ccdb1f692423802270df40a41b0cf1:1705809997,ee8a17dbd6242380905243b660ace3c2:589891087,ad7a93db432423806b23e2fd80d9b18a:-1684957661,7a4a93db112423801977430cb2329179:1170053792,211ad79b242423803c8cb0d58e51e1d2:105258263</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2018-09-21 09:25:16">3aabd9f7dba06380c203a2364b9619f5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-21 13:25:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>21172ed5473d4a979429b64ecaf2f8c1</sys_id>
+        <sys_metadata>a11ad79bdb242380c203a2364b9619d1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VCM Logo</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sp_widget_a11ad79bdb242380c203a2364b9619d1</sys_update_name>
+        <sys_update_version display_value="sp_widget_a11ad79bdb242380c203a2364b9619d1">0b6723d3db642380c203a2364b96197e</sys_update_version>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-21 13:25:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

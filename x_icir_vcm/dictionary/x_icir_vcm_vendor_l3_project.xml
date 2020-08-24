@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Vendor L3 Project" max_length="40" name="x_icir_vcm_vendor_l3_project" sizeclass="4" type="collection">
+        <element label="Project-L2-Name" max_length="40" name="project_l2_name" type="string"/>
+        <element label="Project-L2-Number" max_length="40" name="project_l2_number" type="string"/>
+        <element label="Project-L3-Name" max_length="40" name="project_l3_name" type="string"/>
+        <element label="Project-L3-Number" max_length="40" name="project_l3_number" type="string"/>
+        <element display="true" label="Project-LV3" max_length="40" name="project_lv3" type="string"/>
+        <element label="Project Task" max_length="32" name="project_task" reference="x_icir_vcm_task" type="reference"/>
+        <index name="index">
+            <element name="project_task"/>
+        </index>
+    </element>
+</database>

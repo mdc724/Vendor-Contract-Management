@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_icir_vcm_accounting_period" version="2" view="sys_ref_list">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>month</element>
+            <list_id display_value="x_icir_vcm_accounting_period" element="NULL" name="x_icir_vcm_accounting_period" parent="NULL" relationship="NULL" sys_domain="global" view="78213412db210300ccd6f2f5ab961952">18ca8eb7db1bab00c203a2364b961945</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2019-02-05 09:43:40</sys_created_on>
+            <sys_id>dcca8eb7db1bab00c203a2364b961945</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2019-02-05 09:43:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>open</element>
+            <list_id display_value="x_icir_vcm_accounting_period" element="NULL" name="x_icir_vcm_accounting_period" parent="NULL" relationship="NULL" sys_domain="global" view="78213412db210300ccd6f2f5ab961952">18ca8eb7db1bab00c203a2364b961945</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2019-02-05 09:43:40</sys_created_on>
+            <sys_id>50ca8eb7db1bab00c203a2364b961946</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2019-02-05 09:43:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_icir_vcm_accounting_period</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>udaya.sadhineni</sys_created_by>
+            <sys_created_on>2019-02-05 09:43:40</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>18ca8eb7db1bab00c203a2364b961945</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_icir_vcm_accounting_period</sys_name>
+            <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+            <sys_update_name>sys_ui_list_x_icir_vcm_accounting_period_sys_ref_list</sys_update_name>
+            <sys_updated_by>udaya.sadhineni</sys_updated_by>
+            <sys_updated_on>2019-02-05 09:43:40</sys_updated_on>
+            <sys_user/>
+            <view display_value="Reference List" name="sys_ref_list">78213412db210300ccd6f2f5ab961952</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

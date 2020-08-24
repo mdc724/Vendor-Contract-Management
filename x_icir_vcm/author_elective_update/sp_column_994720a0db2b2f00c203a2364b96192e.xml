@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <size>12</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">994720a0db2b2f00c203a2364b96192c</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>satej.kalyani@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 10:24:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>994720a0db2b2f00c203a2364b96192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_column_994720a0db2b2f00c203a2364b96192e</sys_update_name>
+        <sys_updated_by>satej.kalyani@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 10:24:27</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sp_column_994720a0db2b2f00c203a2364b96192e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">994720a0db2b2f00c203a2364b96192c</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>satej.kalyani@infocenter.io</sys_created_by><sys_created_on>2019-02-07 10:24:27</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>994720a0db2b2f00c203a2364b96192e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>sp_column_994720a0db2b2f00c203a2364b96192e</sys_update_name><sys_updated_by>satej.kalyani@infocenter.io</sys_updated_by><sys_updated_on>2019-02-07 10:24:27</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>2013043156</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>640c41f7db17ab00c203a2364b9619cf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>satej.kalyani@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 10:24:27</sys_created_on>
+        <sys_id>154720a0db2b2f00c203a2364b961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>168c77cbe210000001</sys_recorded_at>
+        <sys_updated_by>satej.kalyani@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 10:24:27</sys_updated_on>
+        <type>Column</type>
+        <update_guid>1d4720a0492b2f00f5202518591cc72f</update_guid>
+        <update_guid_history>1d4720a0492b2f00f5202518591cc72f:2013043156</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2019-02-07 05:25:37">5e8764a0db2b2f00c203a2364b9619ac</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>satej.kalyani@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 10:25:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>70a02280def64ac8a58fe3ec1b208f10</sys_id>
+        <sys_metadata>994720a0db2b2f00c203a2364b96192e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sp_column_994720a0db2b2f00c203a2364b96192e</sys_update_name>
+        <sys_update_version display_value="sp_column_994720a0db2b2f00c203a2364b96192e">154720a0db2b2f00c203a2364b961930</sys_update_version>
+        <sys_updated_by>satej.kalyani@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 10:25:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

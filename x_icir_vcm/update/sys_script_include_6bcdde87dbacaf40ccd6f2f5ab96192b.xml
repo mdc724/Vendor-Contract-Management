@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_icir_vcm.ScriptIncludeServerSideUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>//Created by - Shweta Bagde&#13;
+//Created on - 19-Sep-2018&#13;
+//Purpose - Common server side script include</description>
+        <name>ScriptIncludeServerSideUtils</name>
+        <script><![CDATA[var ScriptIncludeServerSideUtils = Class.create();
+ScriptIncludeServerSideUtils.prototype = {
+	initialize: function() {
+	},
+	
+	//returns list of Project Task associated with that Vendor
+	//This function is called from 'Project' on Invoice Per Project Task table.
+	returnProjects:function(){
+		
+		var proj = '';
+		var subName = current.invoice.vendor_company_name;
+		var grProj = new GlideRecordSecure('x_icir_vcm_projects');
+		grProj.addQuery('vendor_id', subName);
+		grProj.query();
+		while(grProj.next()){
+			var grTask = new GlideRecordSecure('x_icir_vcm_task');
+			grTask.addQuery('project_lvl3_number', grProj.project_lvl3_number);
+			grTask.query();
+			while(grTask.next()){
+				proj = proj + "," + grTask.sys_id;
+			}
+		}
+		return 'sys_idIN' + proj;
+	},
+	
+	//returns list of Project Task associated with that Vendor
+	//This function is called from 'Project-Lvl3 – Number' on COI table
+	returnProjTasks:function(){
+		
+		var tasks = '';
+		var subProj = new GlideRecordSecure('x_icir_vcm_projects');
+		subProj.addQuery('vendor_id', current.vendor_id);
+		subProj.query();
+		while(subProj.next()){
+			var subProjTask = new GlideRecordSecure('x_icir_vcm_task');
+			subProjTask.addQuery('project_lvl3_number', subProj.project_lvl3_number);
+			subProjTask.query();
+			while(subProjTask.next()){
+				tasks = tasks + "," + subProjTask.sys_id;
+			}
+		}
+		return 'sys_idIN' + tasks;
+	},
+	
+	//return list of project task associated with that vendor
+	returnProjectIds:function(){
+		var proj3Ids = '';
+		var grProject = new GlideRecordSecure('x_icir_vcm_vendor_l3_project');
+		grProject.addQuery('project_l2_number',current.project.project_lvl2_number);
+		grProject.query();
+		// gs.addInfoMessage(grProject.getRowCount());
+		while(grProject.next()){
+			proj3Ids = grProject.sys_id + "," + proj3Ids;
+		}
+		return 'sys_idIN' + proj3Ids;
+	},
+	
+	type: 'ScriptIncludeServerSideUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>shweta.bagde@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-19 10:24:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6bcdde87dbacaf40ccd6f2f5ab96192b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>ScriptIncludeServerSideUtils</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_script_include_6bcdde87dbacaf40ccd6f2f5ab96192b</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-06 07:24:59</sys_updated_on>
+    </sys_script_include>
+</record_update>

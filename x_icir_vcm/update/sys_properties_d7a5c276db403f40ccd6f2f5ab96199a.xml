@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>This is the Value of Vendor(x_icir_vcm_vendor) Role</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_icir_vcm.vendor.role</name>
+        <read_roles/>
+        <suffix>vendor.role</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>Sindhu.Papineni@infocenter.io</sys_created_by>
+        <sys_created_on>2019-03-11 13:36:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d7a5c276db403f40ccd6f2f5ab96199a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_icir_vcm.vendor.role</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_properties_d7a5c276db403f40ccd6f2f5ab96199a</sys_update_name>
+        <sys_updated_by>Sindhu.Papineni@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-03-11 14:13:15</sys_updated_on>
+        <type>string</type>
+        <value>c5374f4fdbecaf40ccd6f2f5ab9619bf</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=d7a5c276db403f40ccd6f2f5ab96199a"/>
+</record_update>

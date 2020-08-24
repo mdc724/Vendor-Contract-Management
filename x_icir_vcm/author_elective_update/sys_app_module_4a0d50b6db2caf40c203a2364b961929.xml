@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Subconsultant Management">7fe81872db2caf40c203a2364b9619d9</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Vendors</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_icir_vcm_subconsultant</name>
+        <order>100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_icir_vcm.vcm_all,x_icir_vcm.vendor</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>Nehal.Ranpise@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-18 06:17:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4a0d50b6db2caf40c203a2364b961929</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Subconsultants</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_app_module_4a0d50b6db2caf40c203a2364b961929</sys_update_name>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-28 04:56:07</sys_updated_on>
+        <timeline_page/>
+        <title>Subconsultants</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sys_app_module_4a0d50b6db2caf40c203a2364b961929</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Subconsultant Management">7fe81872db2caf40c203a2364b9619d9</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Vendors</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_icir_vcm_subconsultant</name><order>100</order><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_icir_vcm.vcm_all,x_icir_vcm.vendor</roles><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>Nehal.Ranpise@infocenter.io</sys_created_by><sys_created_on>2018-09-18 06:17:41</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4a0d50b6db2caf40c203a2364b961929</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Subconsultants</sys_name><sys_overrides/><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>sys_app_module_4a0d50b6db2caf40c203a2364b961929</sys_update_name><sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by><sys_updated_on>2018-09-28 04:56:07</sys_updated_on><timeline_page/><title>Subconsultants</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>565747928</payload_hash>
+        <record_name>Subconsultants</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-28 04:56:07</sys_created_on>
+        <sys_id>f84a2339dbf0e300ccd6f2f5ab961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1661e88b5d60000001</sys_recorded_at>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-28 04:56:07</sys_updated_on>
+        <type>Module</type>
+        <update_guid>b04a233942f0e300c328e965963bb600</update_guid>
+        <update_guid_history>b04a233942f0e300c328e965963bb600:565747928,041a2ff504f0e300abe69a8286744145:1806829398,2484f253a5e02380224a113fa7cf6cf0:1274719588,4af160faf72caf406533e1d4aad8b208:-1018824686,4e0d50b6b82caf404bc6dff031356c2a:-1037819916</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2018-09-28 01:03:36">52fb2b39dbf0e300ccd6f2f5ab961995</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-28 05:03:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>16e8d1a2fe0b40a7b4530c84e9e4e9e9</sys_id>
+        <sys_metadata>4a0d50b6db2caf40c203a2364b961929</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_icir_vcm_subconsultant</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sys_app_module_4a0d50b6db2caf40c203a2364b961929</sys_update_name>
+        <sys_update_version display_value="sys_app_module_4a0d50b6db2caf40c203a2364b961929">f84a2339dbf0e300ccd6f2f5ab961900</sys_update_version>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-28 05:03:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

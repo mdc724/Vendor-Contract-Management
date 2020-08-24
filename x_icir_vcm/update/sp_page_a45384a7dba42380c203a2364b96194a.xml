@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>vcm_invoices_list</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>Nehal.Ranpise@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-20 12:21:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a45384a7dba42380c203a2364b96194a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>vcm_invoices_list</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_page_a45384a7dba42380c203a2364b96194a</sys_update_name>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-21 12:02:12</sys_updated_on>
+        <title>VCM Invoices List</title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=a45384a7dba42380c203a2364b96194a"/>
+</record_update>

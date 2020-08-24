@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
+    <m2m_sp_widget_dependency action="DELETE">
+        <sp_dependency display_value="Spectrum Color Picker">726427700b111200b0b02c6317673a6e</sp_dependency>
+        <sp_widget display_value="Copy of Form">6a1d7ac7dbecaf40ccd6f2f5ab9619dc</sp_widget>
+        <sys_class_name>m2m_sp_widget_dependency</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-19 12:35:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>621d7ac7dbecaf40ccd6f2f5ab9619df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Spectrum Color Picker.Copy of Form</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>m2m_sp_widget_dependency_621d7ac7dbecaf40ccd6f2f5ab9619df</sys_update_name>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-19 12:35:32</sys_updated_on>
+    </m2m_sp_widget_dependency>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>m2m_sp_widget_dependency_621d7ac7dbecaf40ccd6f2f5ab9619df</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="Spectrum Color Picker">726427700b111200b0b02c6317673a6e</sp_dependency><sp_widget display_value="Copy of Form">6a1d7ac7dbecaf40ccd6f2f5ab9619dc</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by><sys_created_on>2018-09-19 12:35:32</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>621d7ac7dbecaf40ccd6f2f5ab9619df</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Spectrum Color Picker.Copy of Form</sys_name><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>m2m_sp_widget_dependency_621d7ac7dbecaf40ccd6f2f5ab9619df</sys_update_name><sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by><sys_updated_on>2018-09-19 12:35:32</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+        <payload_hash>1489240861</payload_hash>
+        <record_name>Spectrum Color Picker.Copy of Form</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-19 12:35:32</sys_created_on>
+        <sys_id>221d7ac7dbecaf40ccd6f2f5ab9619e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>165f1d412430000001</sys_recorded_at>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-19 12:35:32</sys_updated_on>
+        <type>Widget Dependency</type>
+        <update_guid>2a1d7ac751ecaf407913e61fb74b76e0</update_guid>
+        <update_guid_history>2a1d7ac751ecaf407913e61fb74b76e0:1489240861</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2018-09-19 08:52:53">0d110b8bdbecaf40ccd6f2f5ab9619b2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2018-09-19 12:52:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="m2m_sp_widget_dependency">m2m_sp_widget_dependency</sys_db_object>
+        <sys_id>058ca27c35094f2c88f1915258f2e090</sys_id>
+        <sys_metadata>621d7ac7dbecaf40ccd6f2f5ab9619df</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Spectrum Color Picker.Copy of Form</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>m2m_sp_widget_dependency_621d7ac7dbecaf40ccd6f2f5ab9619df</sys_update_name>
+        <sys_update_version display_value="m2m_sp_widget_dependency_621d7ac7dbecaf40ccd6f2f5ab9619df">221d7ac7dbecaf40ccd6f2f5ab9619e1</sys_update_version>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2018-09-19 12:52:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

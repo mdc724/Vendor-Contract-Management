@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table">
+    <sp_instance_table action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field/>
+        <field_list/>
+        <filter/>
+        <glyph/>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>1</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">60cf2b50db6f2f00ccd6f2f5ab9619c6</sp_column>
+        <sp_page/>
+        <sp_widget display_value="VCM COI List - Data Table from URL Def">2cde6710db6f2f00ccd6f2f5ab9619e0</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 06:22:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2cdfa750db6f2f00ccd6f2f5ab9619ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_instance_table_2cdfa750db6f2f00ccd6f2f5ab9619ce</sys_update_name>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 06:22:11</sys_updated_on>
+        <table/>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_table>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sp_instance_table_2cdfa750db6f2f00ccd6f2f5ab9619ce</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table"><sp_instance_table action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><display_field/><field_list/><filter/><glyph/><id/><maximum_entries>5</maximum_entries><order>1</order><order_by/><order_direction>asc</order_direction><roles/><short_description/><size>md</size><sp_column display_value="1">60cf2b50db6f2f00ccd6f2f5ab9619c6</sp_column><sp_page/><sp_widget display_value="VCM COI List - Data Table from URL Def">2cde6710db6f2f00ccd6f2f5ab9619e0</sp_widget><sys_class_name>sp_instance_table</sys_class_name><sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by><sys_created_on>2019-02-07 06:22:11</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>2cdfa750db6f2f00ccd6f2f5ab9619ce</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>sp_instance_table_2cdfa750db6f2f00ccd6f2f5ab9619ce</sys_update_name><sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by><sys_updated_on>2019-02-07 06:22:11</sys_updated_on><table/><title/><url/><widget_parameters/></sp_instance_table></record_update>]]></payload>
+        <payload_hash>-273390597</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>640c41f7db17ab00c203a2364b9619cf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 06:22:11</sys_created_on>
+        <sys_id>6cdfa750db6f2f00ccd6f2f5ab9619d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>168c69ef0800000001</sys_recorded_at>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 06:22:11</sys_updated_on>
+        <type>Instance with Table</type>
+        <update_guid>64dfa7502d6f2f00787078b45ac8dad0</update_guid>
+        <update_guid_history>64dfa7502d6f2f00787078b45ac8dad0:-273390597</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2019-02-07 01:42:03">1b54ff14db6f2f00ccd6f2f5ab96195b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Anagha.Kunjeer@infocenter.io</sys_created_by>
+        <sys_created_on>2019-02-07 06:42:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_instance_table">sp_instance_table</sys_db_object>
+        <sys_id>3c70d753aa3b4651ab7c8656101373e1</sys_id>
+        <sys_metadata>2cdfa750db6f2f00ccd6f2f5ab9619ce</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sp_instance_table_2cdfa750db6f2f00ccd6f2f5ab9619ce</sys_update_name>
+        <sys_update_version display_value="sp_instance_table_2cdfa750db6f2f00ccd6f2f5ab9619ce">6cdfa750db6f2f00ccd6f2f5ab9619d0</sys_update_version>
+        <sys_updated_by>Anagha.Kunjeer@infocenter.io</sys_updated_by>
+        <sys_updated_on>2019-02-07 06:42:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

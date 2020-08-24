@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_icir_vcm.AutoPopulateFields</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>AutoPopulateFields</name>
+        <script><![CDATA[var AutoPopulateFields = Class.create();
+AutoPopulateFields.prototype = {
+	initialize: function() {
+	},
+	
+	getValues: function(){
+		var number;
+		//var cust =this.getParameter('name');
+		gs.addInfoMessage(cust);
+		var gr = new GlideRecordSecure('x_icir_vcm_vendor');
+		gr.addQuery('sys_id',this.getParameter('name'));
+		gr.query();
+		if(gr.next()){
+			gs.addInfoMessage(gr.number);
+			number = gr.number;
+		}
+		return number;
+	},
+	
+	type: 'AutoPopulateFields'
+	
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-19 06:31:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9ca6e18bdbe4ef40c203a2364b96195c</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>AutoPopulateFields</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_script_include_9ca6e18bdbe4ef40c203a2364b96195c</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-19 08:31:22</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sys_script_include_9ca6e18bdbe4ef40c203a2364b96195c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_icir_vcm.AutoPopulateFields&lt;/api_name&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;AutoPopulateFields&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var AutoPopulateFields = Class.create();
+AutoPopulateFields.prototype = {
+	initialize: function() {
+	},
+	
+	getValues: function(){
+		var number;
+		//var cust =this.getParameter('name');
+		gs.addInfoMessage(cust);
+		var gr = new GlideRecordSecure('x_icir_vcm_vendor');
+		gr.addQuery('sys_id',this.getParameter('name'));
+		gr.query();
+		if(gr.next()){
+			gs.addInfoMessage(gr.number);
+			number = gr.number;
+		}
+		return number;
+	},
+	
+	type: 'AutoPopulateFields'
+	
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;udaya.sadhineni&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-19 06:31:24&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;9ca6e18bdbe4ef40c203a2364b96195c&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;AutoPopulateFields&lt;/sys_name&gt;&lt;sys_package display_value="Vendor Contract Management" source="x_icir_vcm"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Vendor Contract Management"&gt;3fe81872db2caf40c203a2364b9619e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_9ca6e18bdbe4ef40c203a2364b96195c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;udaya.sadhineni&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-19 08:31:22&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-44630442</payload_hash>
+        <record_name>AutoPopulateFields</record_name>
+        <reverted_from/>
+        <source>92199c72db2caf40c203a2364b961980</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-19 08:31:23</sys_created_on>
+        <sys_id>d235024bdb28ef40c203a2364b961956</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>165f0f48bf40000001</sys_recorded_at>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-19 08:31:23</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>9a35024b0428ef40f10f7eebb909c755</update_guid>
+        <update_guid_history>9a35024b0428ef40f10f7eebb909c755:-44630442,6ff48a8b9628ef40043f95b2ff2761b9:-154486851,cb74468bea28ef40d59425bcbc782f36:-1172933292,1ad34a4b2028ef406348117f7bcceb5f:84705746,8d7b7907a428ef408ee1cfff2c7c5b86:-1270981738,6c44b5032a28ef405cdfff9772a0a09f:-2099849883,f7a1b5cf6fe4ef4038164cb64d62bf75:-1419345702,4b80398ffae4ef40401d1de7e7de70cd:446047096,f0bca10fe3e4ef40a1308f739f7ba6e8:-1293075675,6b9ca54f53e4ef40f48d4f9e25b5ef20:1571855961,a59c210f3ee4ef4081e17684ffc81ad3:-1729337402,923aa10f24e4ef40b4120b25144c3ce3:614027325,e5f9210ff8e4ef4069e1ec92586bf275:652279906,34c9298b0ce4ef4078dd8dfec65609c7:-898354049</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-19 08:37:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>091742b3c1e742708298393ef63dc369</sys_id>
+        <sys_metadata>9ca6e18bdbe4ef40c203a2364b96195c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AutoPopulateFields</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sys_script_include_9ca6e18bdbe4ef40c203a2364b96195c</sys_update_name>
+        <sys_update_version display_value="sys_script_include_9ca6e18bdbe4ef40c203a2364b96195c">d235024bdb28ef40c203a2364b961956</sys_update_version>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2018-09-19 08:37:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

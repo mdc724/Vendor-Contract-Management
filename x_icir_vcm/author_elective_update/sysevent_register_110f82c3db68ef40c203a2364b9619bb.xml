@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="DELETE">
+        <caller_access/>
+        <description/>
+        <event_name>x_icir_vcm.coi_expiry</event_name>
+        <fired_by>Scheduled Job - VCM Notify On COI Expiration</fired_by>
+        <queue/>
+        <suffix>coi_expiry</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2018-09-19 09:15:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>110f82c3db68ef40c203a2364b9619bb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_icir_vcm.coi_expiry</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sysevent_register_110f82c3db68ef40c203a2364b9619bb</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:44:10</sys_updated_on>
+        <table>x_icir_vcm_certificate_of_insurance</table>
+    </sysevent_register>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sysevent_register_110f82c3db68ef40c203a2364b9619bb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register"><sysevent_register action="INSERT_OR_UPDATE"><caller_access/><description/><event_name>x_icir_vcm.coi_expiry</event_name><fired_by>Scheduled Job - VCM Notify On COI Expiration</fired_by><queue/><suffix>coi_expiry</suffix><sys_class_name>sysevent_register</sys_class_name><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2018-09-19 09:15:51</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>110f82c3db68ef40c203a2364b9619bb</sys_id><sys_mod_count>2</sys_mod_count><sys_name>x_icir_vcm.coi_expiry</sys_name><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>sysevent_register_110f82c3db68ef40c203a2364b9619bb</sys_update_name><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2019-02-05 11:44:10</sys_updated_on><table>x_icir_vcm_certificate_of_insurance</table></sysevent_register></record_update>]]></payload>
+        <payload_hash>80383258</payload_hash>
+        <record_name>x_icir_vcm.coi_expiry</record_name>
+        <reverted_from/>
+        <source>640c41f7db17ab00c203a2364b9619cf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 11:44:10</sys_created_on>
+        <sys_id>21562ebfdb5bab00c203a2364b961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>168bd78fffd0000001</sys_recorded_at>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:44:10</sys_updated_on>
+        <type>Event Registration</type>
+        <update_guid>e5562ebf1a5bab000291e0e12c5d2e33</update_guid>
+        <update_guid_history>e5562ebf1a5bab000291e0e12c5d2e33:80383258,e0912afb5c5bab00dd0dc9af7ded717b:1340639753,fd6f06832968ef40e6dedafc55b5a92a:2021305644</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-05 12:13:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sysevent_register">sysevent_register</sys_db_object>
+        <sys_id>4dacca3e722d401ba8be6ae5cff96299</sys_id>
+        <sys_metadata>110f82c3db68ef40c203a2364b9619bb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_icir_vcm.coi_expiry</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent display_value="Certificate of Insurance">83a7af75dbf0e300ccd6f2f5ab961901</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sysevent_register_110f82c3db68ef40c203a2364b9619bb</sys_update_name>
+        <sys_update_version display_value="sysevent_register_110f82c3db68ef40c203a2364b9619bb">21562ebfdb5bab00c203a2364b961934</sys_update_version>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-05 12:13:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

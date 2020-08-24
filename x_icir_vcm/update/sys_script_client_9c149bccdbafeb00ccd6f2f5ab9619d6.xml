@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>//Created by - Udaya Sadhineni&#13;
+//Created on - 23 Jan 2019&#13;
+//Purpose - Not to allow user to enter Retainage Amount more then the Invoice Total Amount</description>
+        <field>retainage_amount</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OnChange of Is Retainage Amount</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	
+	if (isLoading) {
+		return;
+	}
+	if(newValue == ''){
+		g_form.setValue('retainage','');
+		return;
+	}
+	
+	var invoiceAmt = g_form.getDecimalValue('invoice_total');
+	var retainageAmt = g_form.getDecimalValue('retainage_amount');
+	if(retainageAmt != '0.00'){
+		var retainagePercent = invoiceAmt / retainageAmt ;
+		g_form.setValue('retainage',retainagePercent);
+	}
+	else{
+		g_form.setValue('retainage','');
+	}
+	
+	if(invoiceAmt < retainageAmt ){
+		g_form.setValue('retainage_amount','USD;0.00');
+		g_form.addInfoMessage('Please enter the Retainage Amount less then the Invoice Total !');
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-06 09:44:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9c149bccdbafeb00ccd6f2f5ab9619d6</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>OnChange of Is Retainage Amount</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_script_client_9c149bccdbafeb00ccd6f2f5ab9619d6</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-06 10:42:10</sys_updated_on>
+        <table>x_icir_vcm_invoices</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

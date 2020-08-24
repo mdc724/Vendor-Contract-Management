@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.vcm-portal-greeting-widget {&#13;
+  padding-left: 12px;&#13;
+  padding-right: 12px;&#13;
+}&#13;
+&#13;
+.vcm-portal-greeting-widget__container {&#13;
+  min-height: 320px;&#13;
+  max-width: 600px;&#13;
+  display: table;&#13;
+}&#13;
+&#13;
+.vcm-portal-greeting-widget__content {&#13;
+  padding: 15px 0 30px;&#13;
+  display: table-cell;&#13;
+  vertical-align: middle;&#13;
+}&#13;
+&#13;
+.vcm-portal-greeting-widget h1,&#13;
+.vcm-portal-greeting-widget h3 {&#13;
+	font-weight: 400;&#13;
+  line-height: 1.1;&#13;
+  color: #333;&#13;
+}&#13;
+&#13;
+.vcm-portal-greeting-widget h1 {&#13;
+  margin-bottom: 25px;&#13;
+  font-weight: 600;&#13;
+}&#13;
+&#13;
+&#13;
+&#13;
+// Mobile / Small Screens&#13;
+@media screen and (max-width: 768px) {&#13;
+  .vcm-portal-greeting-widget__container {&#13;
+  	min-height: 0;&#13;
+  }&#13;
+  .vcm-portal-greeting-widget__content {&#13;
+    padding: 15px 0 35px;&#13;
+  }&#13;
+  .vcm-portal-greeting-widget h1 {&#13;
+  	font-size: 24px;&#13;
+  }&#13;
+  .vcm-portal-greeting-widget h3 {&#13;
+  	font-size: 18px;&#13;
+  }&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title,short_description</field_list>
+        <has_preview>false</has_preview>
+        <id>vcm_portal_greeting</id>
+        <internal>false</internal>
+        <link/>
+        <name>VCM Portal Greeting</name>
+        <option_schema>[{"name":"show_name","section":"other","label":"Show Name","type":"boolean"},{"hint":"i.e. Welcome, Hi, Hola","name":"greeting","default_value":"Hi","section":"other","label":"Greetings","type":"string"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	data.greeting = gs.getMessage(options.greeting) || gs.getMessage("Hi");
+	data.title = gs.getMessage(options.title) || gs.getMessage("how can we help?");
+	data.short_description = gs.getMessage(options.short_description) || false;
+	
+	if (options.show_name != "true")
+		options.show_name = false;
+	else
+		options.show_name = true;
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>mac.bleser@glew.io</sys_created_by>
+        <sys_created_on>2019-03-26 05:42:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6a692163db943780c203a2364b961921</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_name>VCM Portal Greeting</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sp_widget_6a692163db943780c203a2364b961921</sys_update_name>
+        <sys_updated_by>mac.bleser@glew.io</sys_updated_by>
+        <sys_updated_on>2019-03-26 15:15:25</sys_updated_on>
+        <template><![CDATA[<div class="vcm-portal-greeting-widget container">
+  <div class="vcm-portal-greeting-widget__container">
+    <div class="vcm-portal-greeting-widget__content">
+      <h1 class=""><span ng-if="options.show_name" class="tagline-name">{{data.greeting}} {{::user.first_name}},</span> {{::data.title}}</h1>
+      <h3 ng-if="options.short_description" class="" ng-bind="options.short_description"></h3>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

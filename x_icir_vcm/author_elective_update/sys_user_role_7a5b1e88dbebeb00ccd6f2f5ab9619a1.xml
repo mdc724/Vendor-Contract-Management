@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_icir_vcm.vendor_l3_project_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>vendor_l3_project_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-06 05:34:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7a5b1e88dbebeb00ccd6f2f5ab9619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_icir_vcm.vendor_l3_project_user</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_update_name>sys_user_role_7a5b1e88dbebeb00ccd6f2f5ab9619a1</sys_update_name>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-06 05:34:41</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</application>
+        <file_path/>
+        <instance_id>978e28dadba5cf4060a6f0e5bf9619ae</instance_id>
+        <instance_name>ven02229</instance_name>
+        <name>sys_user_role_7a5b1e88dbebeb00ccd6f2f5ab9619a1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><encryption_context/><grantable>true</grantable><includes_roles/><name>x_icir_vcm.vendor_l3_project_user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>vendor_l3_project_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>udaya.sadhineni</sys_created_by><sys_created_on>2019-02-06 05:34:41</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>7a5b1e88dbebeb00ccd6f2f5ab9619a1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_icir_vcm.vendor_l3_project_user</sys_name><sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope><sys_update_name>sys_user_role_7a5b1e88dbebeb00ccd6f2f5ab9619a1</sys_update_name><sys_updated_by>udaya.sadhineni</sys_updated_by><sys_updated_on>2019-02-06 05:34:41</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>-1759945042</payload_hash>
+        <record_name>x_icir_vcm.vendor_l3_project_user</record_name>
+        <reverted_from/>
+        <source>640c41f7db17ab00c203a2364b9619cf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-02-06 05:34:41</sys_created_on>
+        <sys_id>f65b1e88dbebeb00ccd6f2f5ab9619a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>168c14d15f80000001</sys_recorded_at>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-02-06 05:34:41</sys_updated_on>
+        <type>Role</type>
+        <update_guid>fe5b1e887debeb005128ce69c5787fa4</update_guid>
+        <update_guid_history>fe5b1e887debeb005128ce69c5787fa4:-1759945042</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2019-03-14 01:07:37">d56eeba3dbc4bf40ccd6f2f5ab9619d8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>udaya.sadhineni</sys_created_by>
+        <sys_created_on>2019-03-14 05:07:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>435af2a87dbe437dbce5fee3360a68e9</sys_id>
+        <sys_metadata>7a5b1e88dbebeb00ccd6f2f5ab9619a1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_icir_vcm.vendor_l3_project_user</sys_name>
+        <sys_package display_value="Vendor Contract Management" source="x_icir_vcm">3fe81872db2caf40c203a2364b9619e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Vendor Contract Management">3fe81872db2caf40c203a2364b9619e0</sys_scope>
+        <sys_scope_delete display_value="">10f7e6901f8f47e69075d98c142de984</sys_scope_delete>
+        <sys_update_name>sys_user_role_7a5b1e88dbebeb00ccd6f2f5ab9619a1</sys_update_name>
+        <sys_update_version display_value="sys_user_role_7a5b1e88dbebeb00ccd6f2f5ab9619a1">f65b1e88dbebeb00ccd6f2f5ab9619a5</sys_update_version>
+        <sys_updated_by>udaya.sadhineni</sys_updated_by>
+        <sys_updated_on>2019-03-14 05:07:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
